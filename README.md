@@ -28,10 +28,9 @@ Please refer to the corresponding docs for the items listed in requirements for 
 
 #### To deploy from scratch:
 ```
-$> cd /data/web/
+assuming we clone ScholarGuard to /data/web/
+$> cd /data/web/ScholarGuard
 
-# change the username in the clone URL appropriately
-$> git clone https://hariharshankar@bitbucket.org/lanlprototeam/orchestrator.git
 $> cd orchestrator
 
 # build the docker containters
@@ -101,7 +100,7 @@ $> ./bin/add_or_update_users_in_db
 Commit the changes made to the code in the above repository and pull the changes to the deployment directory in the server.
 In the server:
 ```
-$> cd /data/web/orchestrator
+$> cd /data/web/ScholarGuard/orchestrator
 $> git pull
 $> docker-compose build
 $> docker-compose stop
@@ -112,9 +111,9 @@ Starting the orchestrator via Docker will start all the necessary databases, and
 bring up all the necessary components. 
 
 ### Endpoints and Directories in the Server
-The orchestrator is in the server `myresearch.institute` with IP `34.216.124.252`.
+Assuming that The orchestrator is in the server `myresearch.institute`.
 
-The Orchestrator is deployed in the directory `/data/web/orchestrator`. 
+The Orchestrator is deployed in the directory `/data/web/ScholarGuard/orchestrator`. 
 
 The main end point for the orchestrator is `https://myresearch.institute`. 
 The orchestrator maintains different LDN inboxes for the 3 different components. 
@@ -146,7 +145,7 @@ $> ./bin/resend_missed_events_to_capture
 ```
 This command must be run from within the virtualenv:
 ```
-$> source /data/venv/researcher_pod/bin/activate
+$> source /data/venv/orchestrator/bin/activate
 $> cd /data/web/orchestrator/web/
 $> python setup.py install
 $> cd ../
@@ -176,16 +175,14 @@ Please refer to the corresponding docs for the items listed in requirements for 
 
 ### Deployment
 The repository for the tracker is at:
-https://bitbucket.org/lanlprototeam/artifact_tracker/src/master/
+./artifact_tracker/
 
 **NOTE**: The `docker` and `docker-compose` commands may need the `sudo` prefix.
 
 To deploy from scratch:
 ```
-$> cd /data/web/
+$> cd /data/web/ScholarGuard/
 
-# change the username in the clone URL appropriately
-$> git clone https://hariharshankar@bitbucket.org/lanlprototeam/artifact_tracker.git
 $> cd artifact_tracker
 $> docker-compose build
 # the -d option starts the services in the background as a daemon
@@ -196,7 +193,7 @@ To deploy bug fixes or modifications:
 Commit the local changes made to the code in the above repository, and pull the changes to the deployment directory in the server.
 In the server:
 ```
-$> cd /data/web/artifact_tracker
+$> cd /data/web/ScholarGuard/artifact_tracker
 $> git pull
 $> docker-compose build
 $> docker-compose stop
@@ -206,9 +203,9 @@ $> docker-compose up -d
 Starting the tracker via Docker will start all the necessary components.
 
 ### Endpoints and Directories in the Server
-The tracker is in the server `myresearch.institute` with IP `34.216.124.252`.
+Assuming the tracker is in the server `myresearch.institute`.
 
-The tracker is deployed in the directory `/data/web/artifact_tracker`. 
+The tracker is deployed in the directory `/data/web/ScholarGuard/artifact_tracker`. 
 
 The only HTTP end point for the tracker is the LDN inbox at `https://myresearch.institute/tracker/inbox/`.
 
@@ -246,19 +243,17 @@ Accept-Post: application/ld+json
 ----------------
 
 ## Capture 
-The Capture consist of two modules: Capture Inbox and Capture Crawler.
-The sourcecode for both modules in stormarchiver repository. The Capture Crawler is implemented using stormcrawler framework see https://github.com/DigitalPebble/storm-crawler. 
-The stormcrawler arhitecture utilizes an Apache storm topology. A topology is a graph of stream transformations where each node is a spout or bolt. 
-I implemented custom SQLSpoutInput spout   because the need to assoiciate  each url with tracker event id. 
-Custom StatusUpdaterBolt is finishing Topology with  a need to add extra metadata to the mysql table like subtrace etc. 
-The trace is executed in  Navigation Filter plug-in. The  custom Selenium protocol is also a plug-in and extends stormcrawler  AbstractHttpProtocol. It spawns Warcproxy process for each url with new Remote Web Driver connection to Selenium hub. 
-Selenium hub is installed in docker container. The Webdriver instance communicate with Selenium hub by  wire protocol via JSON over HTTP, see https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol.
-The Capture Inbox is Rest Jersey WEB server on top of Grizzly httpserver. The Capture Inbox and  Capture Crawler sharing the same MySQL database as communication bridge.
+The Capture system consists of two main modules: Capture Inbox and Capture Crawler. The source code for both modules is available in the stormarchiver repository. The Capture Crawler is built using the Stormcrawler framework, which operates on an Apache Storm topology. A topology is a directed graph of data stream transformations, where each node functions as either a spout or a bolt.
+
+I developed a custom SQLSpoutInput spout to associate each URL with a specific tracker event ID. Additionally, a custom StatusUpdaterBolt is used to conclude the topology by inserting extra metadata, such as sub-trace information, into the MySQL database. The trace execution is handled by the Navigation Filter plugin.
+
+The system also features a custom Selenium protocol plugin that extends the Stormcrawler AbstractHttpProtocol class. It spawns a Warcproxy process for each URL, creating a new Remote WebDriver connection to a Selenium hub. The Selenium hub is deployed in a Docker container, and the WebDriver instances communicate with the hub using the JSON Wire Protocol over HTTP.
+
 
 ### Requirements  Installation  Deployment
-see https://bitbucket.org/lanlprototeam/capture_inbox/src/master/
+see capture_inbox/
 and
-https://bitbucket.org/lanlprototeam/stormarchiver/src/master/
+stormarchiver/
 
 ### Endpoints and Directories in the Server
 
