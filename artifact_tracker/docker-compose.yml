@@ -1,0 +1,50 @@
+version: "3.5"
+
+services:
+
+  tracker-app:
+    build:
+      context: ./
+    image: "artifact_tracker_tracker-app"
+    ports:
+      - "6002:80"
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ./secrets:/app/secrets
+      - ./data/sql:/app/data/sql
+      - ./uwsgi.ini:/app/uwsgi.ini
+    environment:
+      FLASK_APP: "artifact_tracker"
+      FLASK_DEBUG: "true"
+      FLASK_THREADED: "true"
+    command: "uwsgi /app/uwsgi.ini"
+    sysctls:
+      - net.core.somaxconn=1024
+    networks:
+      - app
+
+  #tracker-worker:
+  #  image: artifact_tracker_tracker-app:latest
+  #  command: "celery -A artifact_tracker.celery worker --loglevel=debug"
+  #  volumes:
+ #     - ./config.yaml:/app/config.yaml
+ #     - ./secrets:/app/secrets
+ #     - ./data/sql:/app/data/sql
+ #   user: nobody
+ #   links:
+ #     - tracker-db
+ #     - tracker-app
+ #   depends_on:
+ #     - tracker-db
+ #   networks:
+ #     - app
+
+  #tracker-db:
+  #  image: redis:4
+  #  hostname: "artifact_tracker_redis"
+  #  networks:
+  #    - app
+
+networks:
+  app:
+    name: artifact_tracker

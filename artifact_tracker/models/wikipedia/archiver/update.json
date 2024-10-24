@@ -1,0 +1,140 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams#",
+    "http://mementoweb.org/test-ns#",
+    {
+      "schema": "https://schema.org/",
+      "tracker": "http://tracker.mementoweb.org/ns#",
+      "prov": "http://www.w3.org/ns/prov#",
+
+      "prov:used": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasInformedBy": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasGeneratedBy": {
+        "@type": "@id"
+      },
+      "prov:softwareAgent": {
+        "@type": "@id"
+      },
+      "prov:generatedAtTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "event": {
+    "@id": "http://myresearch.institute/archiver/event/arc89d48796c34a8589d9b3a276ad189",
+    "published": "2018-05-12T20:26:31Z",
+
+    "prov:wasGeneratedBy": "http://myresearch.institute/archiver/event/arc89d48796c34a8589d9b3a276ad189#activity",
+    "prov:generatedAtTime": "2018-05-12T20:26:31Z",
+    "prov:wasInformedBy": [
+      {
+        "id": "http://myresearch.institute/capture/event/capba89d48796c34a8589d9b3a276ad189",
+        "type": "tracker:Capture"
+      },
+      {
+        "id": "https://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276ad1897",
+        "type": "tracker:Tracker"
+      }
+    ],
+
+    "type": [
+      "Add",
+      "tracker:ArtifactArchiving",
+      "tracker:Archiver"
+    ],
+
+    "actor": {
+      "type": [
+        "Application"
+      ],
+      "id": "http://myresearch.institute/archive/",
+      "name": "My Research Institute's Memento Archiving Process"
+    },
+    "object": {
+      "type": "Collection",
+      "totalItems": 2,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "schema:MediaObject"
+          ],
+          "href": "http://myresearch.institute/capture/warc/sdf3sf3344422fdfdssfaeefsfasa.warc"
+        },
+        {
+          "type": [
+            "Link",
+            "schema:MediaObject"
+          ],
+          "href": "http://myresearch.institute/capture/warc/bdf3sf3344422fdfdssfaeefsfafb.warc"
+        }
+      ]
+    },
+    "result": {
+      "type": "Collection",
+      "totalItems": 2,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "Article",
+            "schema:Article"
+          ],
+          "href": "https://myresearch.institute/mementos/20180512202631/https://wikipedia.org/wiki/Memento_Project",
+          "OriginalResource": "https://wikipedia.org/wiki/Memento_Project",
+          "Memento": "https://myresearch.institute/mementos/20180512202631/https://wikipedia.org/wiki/Memento_Project",
+          "mementoDatetime": "2018-05-12T20:26:31Z",
+          "location": "urn:ipfs/GRuNkt4JbkTemhUDmua7JW5NaTQWCrVZbk2EvUvhhPm9NJP/QmQr2uoXCbmC5c1vLngeE9HU1CHfF7BVG2z98JR6DQNFoU"
+        },
+        {
+          "type": [
+            "Link",
+            "Article",
+            "schema:Article"
+          ],
+          "href": "https://myresearch.institute/mementos/20180512202631/https://wikipedia.org/wiki/Memento_Project?diff=prev",
+          "OriginalResource": "https://wikipedia.org/wiki/Memento_Project?diff=prev",
+          "Memento": "https://myresearch.institute/mementos/20180512202631/https://wikipedia.org/wiki/Memento_Project?diff=prev",
+          "mementoDatetime": "2018-05-12T20:26:31Z",
+          "location": "urn:ipfs/AbcNkt4JbkTemhUDmua7JW5NaTQWCrVZbk2EvUvhhPm9NJP/QmQr2uoXCbmC5c1vLngeE9HU1CHfF7BVG2z98JR6DQNFoU"
+        }
+      ]
+    }
+  },
+  "activity": {
+    "@id": "http://myresearch.institute/archiver/event/arc89d48796c34a8589d9b3a276ad189#activity",
+    "type": [
+      "prov:Activity",
+      "prov:SoftwareAgent"
+    ],
+    "prov:used": [
+      {
+        "id": "http://myresearch.institute/archive/",
+        "type": "prov:softwareAgent",
+        "prov:used": [
+          {
+            "id": "http://myresearch.institute/ingest/"
+          },
+          {
+            "id": "https://github.com/oduwsdl/ipwb",
+            "schema:version": "v0.2018.07.10.1504"
+          }
+        ]
+      },
+      {
+        "id": "http://myresearch.institute/capture/warc/sdf3sf3344422fdfdssfaeefsfasa.warc",
+        "type": "schema:MediaObject"
+      },
+      {
+        "id": "http://myresearch.institute/capture/warc/b321sf3344422fdfdssfaeefsfasa.warc",
+        "type": "schema:MediaObject"
+      }
+    ]
+  }
+}

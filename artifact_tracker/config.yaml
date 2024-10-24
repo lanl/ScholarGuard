@@ -1,0 +1,108 @@
+# This is the config used by the production tracker instance running in 
+# docker containers.
+
+# these are the options to configure the tracker application's inbox url, etc.
+artifact_tracker:
+
+  # the domain name of the server that will host the orchestrator
+  server_name: "myresearch.institute"
+
+  # the starting date time from which the tracker/orchestrator should start
+  # tracking events from.
+  disallow_events_before: ""
+  
+  # the protocol of the domain name; http/https
+  preferred_url_scheme: "https"
+  debug: true
+  log_level: debug
+  
+# options for the databases
+db:
+  # the SQlite database file path in the docker instance. Please check the 
+  # docker-compose.yml file for the corresponding volume that has been loaded.
+  sqlalchemy_database_uri: "sqlite+pysqlite:///data/sql/messages.db"
+
+tracker:
+  celery:
+    broker_url: "redis://tracker-db:6379/0"
+    backend_url: ""
+    import:
+      - "artifact_tracker.tracker.github"
+      - "artifact_tracker.tracker.slideshare"
+      - "artifact_tracker.tracker.stackoverflow"
+      - "artifact_tracker.tracker.hypothesis"
+      - "artifact_tracker.tracker.wikipedia"
+      - "artifact_tracker.tracker.publons"
+      - "artifact_tracker.tracker.medium"
+      - "artifact_tracker.tracker.blogger"
+      - "artifact_tracker.tracker.figshare"
+      - "artifact_tracker.tracker.wordpress"
+      - "artifact_tracker.tracker.personal_website"
+      - "artifact_tracker.tracker.twitter"
+
+portals:
+  github:
+    portal_url: "https://www.github.com/"
+    event_urls:
+      user_events_url: "https://api.github.com/users/{}/events"
+      user_received_events_url: "https://api.github.com/users/{}/received_events"
+
+  wikipedia:
+    portal_url: "https://www.wikipedia.org/"
+    event_urls:
+      contributions_url: "https://en.wikipedia.org/w/api.php?action=query&format=json&list=usercontribs&formatversion=latest&uclimit=500&ucuser={}&ucdir=older"
+
+  twitter:
+    portal_url: "https://www.twitter.com"
+    event_urls:
+      user_timeline_url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={}&count=200&exclude_replies=0&include_rts=1"
+
+  slideshare:
+    portal_url: "https://www.slideshare.net/"
+    event_urls:
+      user_slides_url: "https://www.slideshare.net/api/2/get_slideshows_by_user"
+
+  stackoverflow:
+    portal_url: "https://stackoverflow.com/"
+    event_urls:
+      user_posts_url: "https://api.stackexchange.com/2.2/users/{}/posts?order=desc&sort=activity&site=stackoverflow"
+
+  figshare:
+    portal_url: "https://figshare.com/"
+    event_urls:
+      articles_search_url: "https://api.figshare.com/v2/account/articles/search"
+      author_details_url: "https://api.figshare.com/v2/account/authors/{}"
+      oai_pmh_url: "https://api.figshare.com/v2/oai"
+
+  hypothesis:
+    portal_url: "https://hypothes.is/"
+    event_urls:
+      user_search_url: "https://hypothes.is/api/search?user={}&limit=200&offset=0"
+
+  publons:
+    portal_url: "https://publons.com/"
+    event_urls:
+      user_search_url: "https://publons.com/api/v2/academic/review/?academic={}&pre=true"
+
+  medium:
+    portal_url: "https://medium.com/"
+    event_urls:
+      posts_feed_url: "https://medium.com/feed/@{}"
+      recommended_feed_url: "https://medium.com/feed/@{}/has-recommended"
+
+  wordpress:
+    portal_url: "https://wordpress.com/"
+
+  personal_website:
+    portal_url:
+
+  blogger:
+    portal_url: "https://blogger.com/"
+    event_urls:
+      blog_domain_url: https://www.googleapis.com/blogger/v3/blogs/byurl?url={}&key={}
+      blog_posts_url: "https://www.googleapis.com/blogger/v3/blogs/{}/posts?maxResults=20&fields=etag%2Citems(author%2Cblog%2CcustomMetaData%2Cetag%2Cid%2Cimages%2Ckind%2Cpublished%2Cstatus%2Ctitle%2CtitleLink%2Cupdated%2Curl)%2Ckind%2CnextPageToken&key={}"
+
+  youtube:
+    portal_url: "https://youtube.com/"
+    event_urls:
+      channel_activities_url: https://www.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId={}&maxResults=50&fields=etag%2CeventId%2Citems%2Ckind%2CnextPageToken%2CpageInfo%2CprevPageToken%2CtokenPagination%2CvisitorId&key={}
