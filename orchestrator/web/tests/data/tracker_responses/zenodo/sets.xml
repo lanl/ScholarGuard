@@ -1,0 +1,1174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/static/xsl/oai2.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2018-07-18T17:00:29Z</responseDate>
+  <request verb="ListSets">https://zenodo.org/oai2d</request>
+  <ListSets>
+    <set>
+      <setSpec>user-zenodo</setSpec>
+      <setName>Zenodo</setName>
+    </set>
+    <set>
+      <setSpec>user-ecfunded</setSpec>
+      <setName>European Commission Funded Research (OpenAIRE)</setName>
+    </set>
+    <set>
+      <setSpec>user-aptamers</setSpec>
+      <setName>Aptamers</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Fera are a UK Government Agency.&amp;nbsp; Our website is www.defra.gov.uk/fera.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	We specialise in finding solutions for food,&amp;nbsp; food safety, chemical safety, bee health and environmental issues.&amp;nbsp; We offer bespoke research for customers wishing to find solutions and expert advice.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	We are working with sensors and aptamers and are hoping to expand this work and find other like minded scientists.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-sciencedomain-international</setSpec>
+      <setName>Sciencedomain international</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p style="text-align: justify;"&gt;&#13;
+	&lt;strong&gt;SCIENCEDOMAIN&lt;em&gt; international&lt;/em&gt; (SDI)&lt;/strong&gt; publishes high-quality, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, OPEN access international journals in various sectors of science, technology and medicine (STM). Fast and Open access principle of SDI help to promote rapid propagation of most up-to-date research findings to the researchers worldwide without any financial barrier.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-emi</setSpec>
+      <setName>European Middleware Initiative</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p id="aui_3_2_0_1104"&gt;&#13;
+	The European Middleware Initiative (EMI) is a close collaboration of the three major middleware providers, ARC, gLite and UNICORE, and other specialized software providers like dCache.&lt;/p&gt;&#13;
+&lt;p id="aui_3_2_0_196"&gt;&#13;
+	The&amp;nbsp;&lt;strong&gt;project&amp;#39;s mission&lt;/strong&gt;&amp;nbsp;is to&lt;/p&gt;&#13;
+&lt;ol&gt;&#13;
+	&lt;li&gt;&#13;
+		deliver a consolidated set of middleware components for deployment in EGI (as part of the Unified Middleware Distribution - UMD), PRACE and other DCIs,&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		extend the interoperability and integration with emerging computing models,&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		strengthen the reliability and manageability of the services and establish a sustainable model to support,&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		harmonise and evolve the middleware, ensuring it responds effectively to the requirements of the scientific communities relying on it.&lt;/li&gt;&#13;
+&lt;/ol&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-elife</setSpec>
+      <setName>eLife journal collection. </setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p style="margin: 0px 0px 1.25em; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(109, 110, 112); font-family: Helvetica, Arial, Verdana, sans-serif; line-height: 18px; -webkit-text-size-adjust: none;"&gt;&#13;
+	&amp;nbsp;eLife is a&amp;nbsp;&lt;a href="http://www.elifesciences.org/about/background/" style="margin: 0px; padding: 0px; vertical-align: baseline; background-color: transparent; color: rgb(34, 160, 216); text-decoration: none; -webkit-transition: color 0.25s ease-in; transition: color 0.25s ease-in;" target="_blank" title="Background"&gt;joint initiative&lt;/a&gt;&amp;nbsp;of the Howard Hughes Medical Institute, the Max Planck Society, and the Wellcome Trust.&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p style="margin: 0px 0px 1.25em; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(109, 110, 112); font-family: Helvetica, Arial, Verdana, sans-serif; line-height: 18px; -webkit-text-size-adjust: none;"&gt;&#13;
+	The&amp;nbsp;&lt;em style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;"&gt;eLife&lt;/em&gt;&amp;nbsp;journal is a platform for extending the reach and influence of new discoveries and to showcase new approaches to the presentation, use, and assessment of research. This zenodo community is for research objects connected to eLife articles.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-wiredrivenparallelrobots</setSpec>
+      <setName>Wire-driven parallel robots</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Community that is interested in the study, analysis and applications of wire-driven parallel robots (known also as cable robots)&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-mac-team</setSpec>
+      <setName>Multi-Actors Cooperation European network</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	MAC stands for Multi Actors Cooperation.&lt;br /&gt;&#13;
+	MAC-Team wants to involve all stakeholders of an issue, a problem, challenge... into collaborative projects to answer key corresponding priorities and share them back with the society a large.&lt;br /&gt;&#13;
+	The MAC-Team European network includes: SMEs, corporate, individuals, universities, training centres, research centres, federation/chambers of commerce, business incubators...&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	 Under the Belgian law, MAC-team is an international non-profit NGO aiming at transferring innovation and collaborative opportunities in education/training, research and socio-economic fields by involving all stakeholders related to a topic via cooperative projects. In that way it ensures a wide coverage, acceptance/awareness, consistency, implementation and capitalisation of the activities and actions.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	MAC-Team also encourages participative actions including crowd sourcing and open innovation approaches.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	MAC-Team is mainly acting via education/training and transfer of innovation projects. In addition, to innovation and business incubation support, MAC-Team presents a strong background in ICT and in the biotech and agro-food sector. Several successful and on-going projects to which MAC-Team contributed:&lt;/p&gt;&#13;
+&lt;ul&gt;&#13;
+	&lt;li&gt;&#13;
+		EUE-net (European University- Enterprise cooperation network supported under ERASMUS) which is now included into the MAC-Team network;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		food-Net / food-MAC, the Leonardo thematic network running since 1999 and maintained by MAC-Team on TNA (training needs analysis) and innovation transfer for SMEs in agro-food;&amp;nbsp;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		RESPECT project to help all stakeholders in a supply chain focusing on responsible practices;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		Wiki Skills and e-Culture transversal Lifelong Learning project to deploy collaborative culture in society and via innovative collaborative pedagogical (education and training) approaches;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		Risky Knowledge project to training enterprises and organisations (structures and actors) on security and safety issues related to ICTs and behaviors;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		Certitude project on tutor certification at European level (including ECVET approaches);&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		HERMES-OSR project on setting the basis for Organisation Social Responsibility training of trainers and label (beyond the only Corporate angle)&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		Ariadne project for managers in the social economy;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		EU Coop Campus project on training Cooperative members on social economy dimensions;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		AFI-MAC project on incubators, innovation and entrepreneurship;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		MAC-SSIIM, Leonardo project on informal Intellectual Property and innovation management for SMEs;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		Q-PlaNET project on quality for student placements in enterprises;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		agro-MAC VET project to support education and training level of new comers in the agriculture or farm business;&amp;nbsp;&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		oeno-MAC project to reinforce skills, competences and innovation in the wine supply chain (from the grapes to the glass, including market and process innovation);&lt;/li&gt;&#13;
+	&lt;li&gt;&#13;
+		e-Dairy Farm project to support dairy farmers in remote areas (milk transformation, product innovation, business adaptation in rural environment).&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-uzh</setSpec>
+      <setName>University of Zurich</setName>
+    </set>
+    <set>
+      <setSpec>user-yroc2013</setSpec>
+      <setName>Young Radiation Oncologists Conference 2013</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	The presentations presented at Young Radiation Oncologists Conference 2013.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-lis-in-africa</setSpec>
+      <setName>Library and Information Science in Africa</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Library and Information Science in Africa&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-nicpb</setSpec>
+      <setName>NICPB produced research</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	NICPB produced research - all fields&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-ibonanova</setSpec>
+      <setName>Institut Bonanova</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p style="margin: 0px; padding: 0px 0px 1.25em; border: 0px; outline: 0px; font-size: 0.8125em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; line-height: 1.25em; color: rgb(51, 51, 51);"&gt;&#13;
+	Bonanova Institute is a public center, specialized in health education and healthcare in Vocational Training.&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p style="margin: 0px; padding: 0px 0px 1.25em; border: 0px; outline: 0px; font-size: 0.8125em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; line-height: 1.25em; color: rgb(51, 51, 51);"&gt;&#13;
+	Our studies&lt;br /&gt;&#13;
+	&lt;br /&gt;&#13;
+	&lt;span style="background-color: rgb(231, 240, 249); font-size: 1em; line-height: 1.25em;"&gt;Initial vocational training&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p style="margin: 0px; padding: 0px 0px 1.25em; border: 0px; outline: 0px; font-size: 0.8125em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; line-height: 1.25em; color: rgb(51, 51, 51);"&gt;&#13;
+	Level 3 (ISCED)&lt;/p&gt;&#13;
+&lt;ul style="margin: 0px 0px 1em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 0.8125em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; list-style: none; color: rgb(51, 51, 51);"&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://todofp.es/dctm/todofp/europass/titulos-grado-medio/cuidados-auxiliares-enfermeria-ingles-10-marzo-2011.pdf?documentId=0901e72b809cc080" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Assistant Nurse&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://www.todofp.es/todofp/formacion/que-y-como-estudiar/oferta-formativa/familias/servicios-socioculturales/atencion-dependencia.html" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Dependent Care Nursing&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;h2 style="margin: 0.5em 0px 1em; padding: 0.5em 0.75em; border: 0px; outline: 0px; font-size: 1em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; line-height: 1.25em; background-color: rgb(231, 240, 249); color: rgb(51, 51, 51); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;"&gt;&#13;
+	Short cycles Vocational Training&lt;/h2&gt;&#13;
+&lt;p style="margin: 0px; padding: 0px 0px 1.25em; border: 0px; outline: 0px; font-size: 0.8125em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; line-height: 1.25em; color: rgb(51, 51, 51);"&gt;&#13;
+	Level 5 (ISCED)&lt;/p&gt;&#13;
+&lt;ul style="margin: 0px 0px 1em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 0.8125em; font-family: Verdana, Helvetica, Arial, sans-serif; vertical-align: baseline; list-style: none; color: rgb(51, 51, 51);"&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://todofp.es/dctm/todofp/europass/titulos-grado-superior/laboratorio-de-diagnostico-clinico-ingles.pdf?documentId=0901e72b806138a7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Medical/Biomedical laboratory technician&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://todofp.es/dctm/todofp/europass/titulos-grado-superior/anatomia-patologica-y-citologia-ingles.pdf?documentId=0901e72b80613877" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Anatomicopathalogical and cytological technician&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://todofp.es/dctm/todofp/europass/titulos-grado-superior/imagen-para-el-diagnostico-ingles.pdf?documentId=0901e72b8061389f" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Radiographer&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://todofp.es/dctm/todofp/europass/titulos-grado-superior/radioterapia-ingles.pdf?documentId=0901e72b806138be" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Radiotherapist&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+	&lt;li style="margin: 0px; padding: 0.5em 0px 0.5em 20px; border: 0px; outline: 0px; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; background-image: url(http://www.institutbonanova.cat/media/css/images/kland1.png); line-height: 1.25; background-position: 5px 0.75em; background-repeat: no-repeat no-repeat;"&gt;&#13;
+		&lt;a href="http://todofp.es/dctm/todofp/europass/titulos-grado-superior/documentacion-sanitaria-ingles.pdf?documentId=0901e72b80613894" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(153, 153, 153); text-decoration: none; cursor: pointer;"&gt;&lt;strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline;"&gt;Medical record and health information technician&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;span style="font-size: 0.8125em; line-height: 1.25em;"&gt;We are part of the consortium for health care and education &amp;nbsp;Parc de Salut Mar de Barcelona. That consortium includes Hospital del Mar, Hospital de l&amp;rsquo;Esperan&amp;ccedil;a and different centers for elderly and mental diseases. The consortium also includes, research centers and university studies of health sciences and life that are affiliated to Universitat Aut&amp;ograve;noma de Barcelona and Universitat Pompeu Fabra.&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;span style="font-size: 0.8125em; line-height: 1.25em;"&gt;We have trained professionals to work in the health sector, biomedical and health care since 1979. Such a sector is one of the most dynamics and important for the wellbeing of our society.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;span style="font-size: 0.8125em; line-height: 1.25em;"&gt;Our teachers, collaborations with companies, the updating and adaptation to technological and social reality, makes Institute Bonanova the best option for employment in hospitals, health centers, social health, mental health, radiology, radiotherapy, and laboratories, etc... &lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;span style="font-size: 0.8125em; line-height: 1.25em;"&gt;web: www.institutbonanova.cat&lt;/span&gt;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-transcription-historical-sources</setSpec>
+      <setName>Digitised historical sources.</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Transcriptions and scans of archival records.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-cfa</setSpec>
+      <setName>Harvard-Smithsonian Center for Astrophysics</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	The Center for Astrophysics combines the resources and research facilities of the &lt;a href="http://www.cfa.harvard.edu/hco/hco.html"&gt;Harvard College Observatory&lt;/a&gt; and the &lt;a href="http://www.cfa.harvard.edu/sao/sao.html"&gt;Smithsonian Astrophysical Observatory&lt;/a&gt; under a single director to pursue studies of those basic physical processes that determine the nature and evolution of the universe. The Smithsonian Astrophysical Observatory (SAO) is a bureau of the &lt;a href="http://www.si.edu"&gt;Smithsonian Institution&lt;/a&gt;, founded in 1890. The Harvard College Observatory (HCO), founded in 1839, is a research institution of the Faculty of Arts and Sciences, &lt;a href="http://www.harvard.edu"&gt;Harvard University&lt;/a&gt;, and provides facilities and substantial other support for teaching activities of the &lt;a href="http://astronomy.fas.harvard.edu/"&gt;Department of Astronomy&lt;/a&gt;. The long relationship between the two organizations, which began when the SAO moved its headquarters to Cambridge in 1955, was formalized by the establishment of a joint center in 1973. The CfA&amp;#39;s history of accomplishments in astronomy and astrophysics is reflected in a wide range of &lt;a href="http://www.cfa.harvard.edu/awards/"&gt; awards and prizes&lt;/a&gt; received by individual CfA scientists.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	Today, some 300 Smithsonian and Harvard scientists cooperate in broad programs of astrophysical research supported by Federal appropriations and University funds as well as contracts and grants from government agencies. These scientific investigations, touching on almost all major topics in astronomy, are organized into six divisions.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-model-reduction</setSpec>
+      <setName>Model Reduction</setName>
+    </set>
+    <set>
+      <setSpec>user-btfp</setSpec>
+      <setName>Bollettino telematico di filosofia politica</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Overlay journal of political philosophy&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-trc</setSpec>
+      <setName>Textile Reinforced Concrete (TRC)</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Textile-reinforced concrete is a type of reinforced concrete.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-digital-preservation-curation-stewardship</setSpec>
+      <setName>Digital Preservation/Curation/Stewardship of Documents and Records</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Digital Preservation/Curation/Stewardship of Documents and Records&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-wikimedia</setSpec>
+      <setName>Wikimedia</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Collection of papers related to Wikimedia projects (i.e. Wikipedia), mass collaboration and online communities.&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-hulib</setSpec>
+      <setName>Helsinki University Library</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Documents produced by Helsinki University Library data curation projects. Currently the collection is in a test phase.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-infolibgr</setSpec>
+      <setName>Library and Information Science in Greece</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Current research carried out on Library and Information Science field &amp;nbsp;in Greece&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-eui</setSpec>
+      <setName>European University Institute</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The European University Institute located in Florence, is an international doctoral and postdoctoral research institute, established by the EC Member States in 1976, specialising in economics, political and social sciences, law and history.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-arvados</setSpec>
+      <setName>Arvados</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	&lt;strong&gt;Arvados&lt;/strong&gt; is an open-source platform for&amp;nbsp;storing, organizing, analyzing, and sharing biomedical big-data beginning with genomic data. &amp;nbsp;We encourage archival of any scientific work related to Arvados and especially encourage items &lt;strong&gt;using&lt;/strong&gt;&amp;nbsp;Arvados.&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2320-0227</setSpec>
+      <setName>Journal of Scientific Research and Reports</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Journal of Scientific Research and Reports&amp;nbsp;(ISSN: 2320&amp;ndash;0227) aims to publish high quality papers (&lt;a href="http://www.sciencedomain.org/page.php?id=general-guideline-for-authors#Type_of_papers"&gt;Click here for Types of paper&lt;/a&gt;) in all areas of &amp;lsquo;scientific research&amp;rsquo;. By not excluding papers on the basis of subject area, this journal facilitates the research and wishes to publish papers as long as they are technically correct and scientifically motivated. The journal also encourages the submission of useful reports of negative results. This is a quality controlled, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, open access INTERNATIONAL journal.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-astro-slides</setSpec>
+      <setName>Astro Slides</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	A community to share slides that briefly, beautifully, and effectively visualize topics commonly covered in talk introductions and courses. Slides that make creative use of builds and animations are particularly encouraged. This is not the place to upload an entire talk, but rather a short sequence of slides that address one topic.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-myfish</setSpec>
+      <setName>FP7 MyFISH, Maximising yield of fisheries while balancing ecosystem, economic and social concerns (GA 289 257)</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&lt;strong&gt;Myfish&lt;/strong&gt; aims at developing new Maximum Sustainable Yield indicators that can ensure high levels of fishery yield while respecting ecological, economic and social sustainability thus contributing to achieve the Good Environmental Status (GES) foreseen in the Marine Strategy Framework Directive (MSFD).&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;PROJECT ACRONYM: MYFISH&lt;br /&gt;&#13;
+PROJECT TITLE: &amp;quot; Maximising yield of fisheries while balancing ecosystem, economic and social concerns &amp;quot;&lt;br /&gt;&#13;
+PROGRAMME: FP7, Cooperation, Food, Agriculture and Fisheries, and Biotechnology&lt;br /&gt;&#13;
+INSTRUMENT: Collaborative project&lt;br /&gt;&#13;
+TOTAL BUDGET: &amp;euro;6,513,288.34&lt;br /&gt;&#13;
+EC CONTRIBUTION: &amp;euro;4,999,999.00&lt;br /&gt;&#13;
+GRANT AGREEMENT: 289 257&lt;br /&gt;&#13;
+DURATION: March 2012 &amp;ndash; February 2016&lt;br /&gt;&#13;
+(48 months)&lt;br /&gt;&#13;
+COORDINATOR: Anna Rindorf, National Institute of Aquatic Resources, Technical University of Denmark, (DTU Aqua), Denmark&lt;br /&gt;&#13;
+CONSORTIUM: 31 partners from 12 countries&lt;br /&gt;&#13;
+WEB: www.myfishproject.eu&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-explorviz</setSpec>
+      <setName>ExplorViz</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;http://www.explorviz.net&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;ExplorViz - Live Trace Visualization for Large Software Landscapes&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-smart_cities</setSpec>
+      <setName>Smart Cities in Europe</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Smart Cities repository. Leader: Antonio S&amp;aacute;nchez Zaplana, Aguas de Alicante, E.M. (antonio.sanchez@aguasdealicante.es)&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-odsahe</setSpec>
+      <setName>Open Data in South African Higher Education</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Research outputs from the &amp;#39;Use of open data in the governance of South African higher education&amp;#39; research project conducted by the OpenUCT Initiative at the University of Cape Town as part of the Emerging Impacts of Open Data in Developing Countries (ODDC) project. This project is a collaborative undertaking between the World Wide Web Foundation and its contractors with seed funding from the International Development Research Center (IDRC).&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-livecode</setSpec>
+      <setName>Live coding research</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Research related to live programming languages and live coding.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-owlicetest</setSpec>
+      <setName>Owlice Test Community</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This is a test community set up to learn how Zenodo communities work and whether one will benefit my work.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-retinaphys</setSpec>
+      <setName>APS retina data</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This collection contains various files related to recordings from the retina using the large-scale, high-density Active Pixel Sensor multielectrode array (datasets, images, videos, presentations, publications, software)&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-prueba</setSpec>
+      <setName>Prueba</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;test&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-zsmu</setSpec>
+      <setName>Zaporozhye State Medical University</setName>
+    </set>
+    <set>
+      <setSpec>user-hispanic-dialectology</setSpec>
+      <setName>Hispanic Dialectology</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Hispanic Dialectology&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-biogeography</setSpec>
+      <setName>Biogeography</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The goal of this community is to assemble data and code releases associated with the publication of peer-reviewed scientific journal articles relevant to the field of biogeography.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-researchsoftwarestudies</setSpec>
+      <setName>Research Software Studies</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This community curates studies and datasets which focus on understanding the use of research software (aka scientific software). This may include surveys of the uptake or usage of research software; data on impacting factors such as training, accessibility, motivation and reward, and gender and diversity factors; and other studies on research software ecosystems.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-econf</setSpec>
+      <setName>ECONF</setName>
+    </set>
+    <set>
+      <setSpec>user-ukresearchdata</setSpec>
+      <setName>Open Consumer Research (UK)</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Collection of data, research papers, reports, white papers, presentations etc created, authored and&amp;nbsp;published by&amp;nbsp; UK Council of Customer Science.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-mosaic-lille</setSpec>
+      <setName>Mosaic Lille - Management of  Innovation and Creativity</setName>
+    </set>
+    <set>
+      <setSpec>user-lory_unilu_wf</setSpec>
+      <setName>UniLU - Universität Luzern, Wirtschaftswissenschaftliche Fakultät</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&lt;em&gt;Status: im Livetest&lt;/em&gt;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-hitran11</setSpec>
+      <setName>11th Biennial HITRAN Database Conference</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The 11th HITRAN Conference was held 16-18 June 2010 at the Harvard-Smithsonian Center for Astrophysics in Cambridge, Massachusetts.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-imperialhazelab</setSpec>
+      <setName>Imperial Hazelab Data Repository</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This is home to the data repository of the Imperial Hazelab, research group of Dr Guillermo Rein at the Department of Mechanical Engineering at Imperial College London. We study the heat transfer, heterogeneous chemistry and thermodynamics of fire and reactive solids. The purpose of our work is to reduce the worldwide burden of accidental fires and protect people, their property, and the environment.&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;For more information, visit http://www.imperial.ac.uk/hazelab and http://www.imperial.ac.uk/people/g.rein&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-texas_gpr</setSpec>
+      <setName>Ground-Penetrating Radar (GPR) Survey Data from Texas</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The datasets in this collection are comprised of ground-penetrating radar (GPR) data from various locations in Texas.&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-codata</setSpec>
+      <setName>CODATA</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Collection of data, research papers, reports, white papers, presentations etc created, authored and&amp;nbsp;published by CODATA, the Committee on Data for Science and Technology of the International Council of Science.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2231-2927</setSpec>
+      <setName>British Biotechnology Journal</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	British Biotechnology Journal (ISSN: 2231&amp;ndash;2927) publishes original research papers, review articles and short communications on all areas of Biotechnology including cell biology, genetics, microbiology, immunology, molecular biology, biochemistry, embryology,&amp;nbsp; immunogenetics, cell and tissue culture, molecular ecology, genetic engineering and biological engineering, bioremediation and biodegradation, bioinformatics, biotechnology regulations, pharmacogenomics, gene therapy, plant, animal, microbial and environmental biotechnology. The journal also encourages the submission of useful reports of negative results. This is a quality controlled, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, open access INTERNATIONAL journal.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	British Biotechnology Journal will have 4 issues per year. Each issue will be running issue and all officially accepted manuscripts will be immediately published online. State-of-the-art running issue concept gives authors the benefit of &amp;#39;Zero Waiting Time&amp;#39; for the officially accepted manuscripts to be published.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;strong&gt;Disclaimer:&lt;/strong&gt; This international journal has no connection with any scholarly society or association or any specific geographic location or any country. This is an independent journal run by SCIENCEDOMAIN international.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2320-7027</setSpec>
+      <setName>Asian Journal of Agricultural Extension, Economics &amp; Sociology</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	Asian Journal of Agricultural Extension, Economics &amp;amp; Sociology (ISSN: 2320&amp;ndash;7027) aims to publish high quality papers (&lt;a href="http://www.sciencedomain.org/page.php?id=general-guideline-for-authors#Type_of_papers"&gt;Click here for Types of paper&lt;/a&gt;) in all areas of &amp;lsquo;Agricultural Extension, Economics &amp;amp; Sociology research&amp;rsquo;. The journal also encourages the submission of useful reports of negative results. This is a quality controlled, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, open access INTERNATIONAL journal.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-confine</setSpec>
+      <setName>CONFINE project</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The EU FP7 project CONFINE is developing a community networks testbed.&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;This community contains all CONFINE publications.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-biosyslit</setSpec>
+      <setName>Biodiversity Literature Repository</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;A community to share publications related to bio-systematics. The goal is to provide&lt;/p&gt;&#13;
+&#13;
+&lt;ol&gt;&#13;
+	&lt;li&gt;open access to publications cited in publications or in combination with scientific names&lt;/li&gt;&#13;
+	&lt;li&gt;a digital object identifier (DOI) to enable citation of the publications including direct access to its digital representation.&lt;/li&gt;&#13;
+&lt;/ol&gt;&#13;
+&#13;
+&lt;p&gt;For additional search functionality&amp;nbsp; can be used. This includes also searches in CrossRef, DataCite, PubMed, RefBank, GNUB and Mendeley.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-open-research</setSpec>
+      <setName>Open Research</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;A community dedicated to Open Research.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-inspire</setSpec>
+      <setName>INSPIRE HEP</setName>
+    </set>
+    <set>
+      <setSpec>user-lisa7-posters</setSpec>
+      <setName>Library and Information Services in Astronomy 7 Posters</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The collection consists of posters which will be presented at the 7th Library and Information Services in Astronomy (LISA VII) to be held during June 17-20, 2014, at Naples, Italy&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-emva1288</setSpec>
+      <setName>EMVA 1288</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;In this community all kind of material is collected, relating to the 1288 standard of the European Machine Vision Industry (EMVA), in short EMVA 1288. Choosing the suitable camera for a given application often proves to be a challenging task. The data sheets provided by the manufacturers are difficult to compare. Frequently, vital pieces of information are not available and the user is forced to conduct a costly comparative test which still may fail to deliver all relevant camera parameters. This is where the EMVA 1288 Standard comes in. It creates transparency by defining reliable and exact measurement procedures as well as data presentation guidelines and makes the comparison of cameras and image sensors much easier.&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;For further details, see http://www.standard1288.org/ and http://en.wikipedia.org/wiki/EMVA1288&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-vlpb</setSpec>
+      <setName>Virtual Lab for Plant Breeding</setName>
+    </set>
+    <set>
+      <setSpec>user-soheval</setSpec>
+      <setName>SOH Evaluation Unit</setName>
+    </set>
+    <set>
+      <setSpec>user-tind</setSpec>
+      <setName>TIND</setName>
+    </set>
+    <set>
+      <setSpec>user-indoorpositioning</setSpec>
+      <setName>Indoor Positioning</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Research community to collect and share;&amp;nbsp;data, script, articles and other artefacts relating to Indoor Positioning.&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-galician-language</setSpec>
+      <setName>Galician language</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Galician language&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-kne-proceeding</setSpec>
+      <setName>Lecture Note Series on Computational and Systems Engineering</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;&#13;
+&lt;html&gt;&#13;
+  &lt;head&gt;&#13;
+    &lt;meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"&gt;&#13;
+    &lt;title&gt;About Journal Sidebar&lt;/title&gt;&#13;
+  &lt;/head&gt;&#13;
+  &lt;body&gt;&#13;
+    &lt;p style="font-family: Arial;"&gt;&lt;img style="width: 224px; height: 318px;" title="LC"&#13;
+        alt="LC"&#13;
+        src="http://www.arpub.net/upload/20141219093839354LCSE_cover_page.jpg"&gt;&#13;
+    &lt;/p&gt;&#13;
+    &lt;p style="font-family: Arial;"&gt;Lecture Note Series on&#13;
+      Computational and Systems Engineering focuses on all aspects of&#13;
+      theoretical analysis and practical application with emphasis on&#13;
+      computational methods and systems engineering.&lt;br&gt;&#13;
+      &lt;br&gt;&#13;
+      ISBN: 978-0-9888498-0-8&lt;span style="mso-spacerun:yes"&gt;&amp;nbsp;&#13;
+      &lt;/span&gt;&lt;span style="mso-tab-count:4"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#13;
+        &lt;/span&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;br&gt;&#13;
+      &lt;br&gt;&#13;
+      Editor: Sattar B.Sadkhan&lt;o:p&gt;&lt;/o:p&gt;&lt;br&gt;&#13;
+      &lt;br&gt;&#13;
+      Prof. Dr. Eng.&lt;o:p&gt;&lt;/o:p&gt;&lt;br&gt;&#13;
+      &lt;br&gt;&#13;
+      University of Babylon, Iraq&lt;o:p&gt;&lt;/o:p&gt; &lt;/p&gt;&#13;
+  &lt;/body&gt;&#13;
+&lt;/html&gt;&#13;
+&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-hufamo</setSpec>
+      <setName>International Workshop on  Human Factors in Modeling </setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Since modeling is an intrinsically human enterprise, many of the questions related to modeling can only be answered by empirical studies employing human factors. This new workshop series aspires to become a venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionality in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-climatechange</setSpec>
+      <setName>Climate Change</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The goal of this community is to assemble data and code releases associated with the publication of peer-reviewed scientific journal articles.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-esa-act</setSpec>
+      <setName>ESA Advanced Concepts Team</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Open Science data from ESA&amp;#39;s Advanced Concepts Team (www.esa.int/act)&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-wag</setSpec>
+      <setName>West Africa Geology</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Data sets and scientific products related to the Geology of the West African Craton&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-lory_unilu</setSpec>
+      <setName>UniLU - Universität Luzern</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&lt;em&gt;Status: im Livetest&lt;/em&gt;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-radiozen</setSpec>
+      <setName>Database of Medical Imaging and Radiology </setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;To compile a dynamic Radiology &amp;amp; Medical Imaging Datasets of case images using various Radiological Imaging modalities like Xray,USG,Color Doppler,CT,MRI,PET,Spect,Hybrid Imaging,optical coherence,themrography etc pooled from different imaging centres pertaining to various Medical,Surgical,Congenital,Accidental/Traumatic,Cancerpatients&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2231-0894</setSpec>
+      <setName>European Journal of Medicinal Plants</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	European Journal of Medicinal Plants (ISSN: 2231-0894) is dedicated to publish original research papers, reviews, and short communications in all areas of medicinal plants research including plant growth and development, agronomic management, plant nutrition, plant physiology, cell biology, molecular biology, biotechnology, medicinal properties, phytochemical constituents, fitoterapia, pharmacognosy, essential oils, ehnopharmacology and phytomedicine. The journal also encourages the submission of useful reports of negative results. This is a quality controlled, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, open access INTERNATIONAL journal.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	European Journal of Medicinal Plants will have 4 issues per year. Each issue will be running issue and all officially accepted manuscripts will be immediately published online. Running issue concept gives the authors the benefit of &amp;#39;Zero Waiting Time&amp;#39; for the officially accepted manuscripts to be published.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;strong&gt;Disclaimer:&lt;/strong&gt; This international journal has no connection with any scholarly society or association or any specific geographic location or any country. This is an independent journal run by SCIENCEDOMAIN international.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-f1000research</setSpec>
+      <setName>F1000Research</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;F1000Research&lt;/strong&gt;&amp;nbsp;&lt;/em&gt;is an innovative open access journal offering immediate publication, open peer review and full data deposition and sharing.&amp;nbsp;The journal accepts all scientifically sound articles, including single findings, case reports, protocols, replications, and null/negative results and more traditional articles.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-epfl-chili</setSpec>
+      <setName>CHILI Lab, EPFL</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Shared Resources for Computer Human Interaction for Learning and Instruction Lab at EPFL, Lausanne, Switzerland.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-e-infrastructures</setSpec>
+      <setName>The Research Accelerator Hub</setName>
+    </set>
+    <set>
+      <setSpec>user-create</setSpec>
+      <setName>CREATe Working Paper Series</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;CREATe is the RCUK Centre for Copyright and New Business Models in the Creative Economy, based at the University of Glasgow. It is funded jointly by the Arts and Humanities Research Council (AHRC), Engineering and Physical Sciences Research Council (EPSRC) and the Economic and Social Research Council (ESRC). CREATe investigates the future of creative production in the digital age, and in particular the role of copyright.&lt;br /&gt;&#13;
+&amp;nbsp;&lt;br /&gt;&#13;
+The Centre brings together an interdisciplinary team of academics from law, economics, management, computer science, sociology, psychology, ethnography and critical studies within a consortium of seven UK universities (Glasgow, East Anglia, Edinburgh, Goldsmiths University of London, Nottingham, St Andrews, and Strathclyde), and over 80 industry, public sector and civil society partners.&amp;nbsp;&lt;br /&gt;&#13;
+&amp;nbsp;&lt;br /&gt;&#13;
+For more details about CREATe, see http://www.create.ac.uk.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-ecc2014</setSpec>
+      <setName>ECC 2014: 5th Early Career Scientists Conference for Marine and Climate Research</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This collection contains the contributions presented at the conference &lt;em&gt;ECC 2014: 5th Early Career Scientists Conference for Marine and Climate Research:&amp;nbsp; Natural and Social Aspects of the Earth System&lt;/em&gt; in September 2014 in Bremen.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-asi</setSpec>
+      <setName>Small-Scale Air-Sea Interaction</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This community collection includes theses, technical reports, posters, data sets, videos, and other not published material from the Small-Scale Air-Sea Interaction Group at the Institute of Environmental Physics of Heidelberg University Germany back to its foundation in 1977.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-foster</setSpec>
+      <setName>FP7 FOSTER, Facilitating Open Science in European Research</setName>
+    </set>
+    <set>
+      <setSpec>user-phosphorusrecycling</setSpec>
+      <setName>Phosphorus Recycling</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Phosphorus is a scarce resource and is mainly used for production of fertilizers. Production, consumption and disposal leads to a series of environmental constraints. Recycling of phosphorus is believed to have a great impact towards a sustainable circular economy. This community archives scientific works on phosphorus recycling including: policy analysis, critical review and original scientific articles. Contributions may comprise technology &amp;amp; market analysis, socio-economic analysis and original technical/scientific research papers.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-rbi-data</setSpec>
+      <setName>Ruđer Bošković Institute Research Data Collection</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The Ruđer Bo&amp;scaron;ković Institute Research Data Collection contains primary research data produced the RBI staff.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-cs19</setSpec>
+      <setName>The 19th Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Proceedings from the 19th Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun, hosted by Uppsala University in Uppsala, Sweden from 06 &amp;ndash; 10 June 2016.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-ioc-code-cmip5</setSpec>
+      <setName>Data, codes and publications related to CMIP5</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This community gather data, codes and publications related to CMIP5. Only IOC-UNESCO related work&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-briefideas</setSpec>
+      <setName>Journal of Brief Ideas</setName>
+    </set>
+    <set>
+      <setSpec>user-cambridge</setSpec>
+      <setName>University of Cambridge Zenodo Community</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The University of Cambridge is committed to disseminating its research and scholarship as widely as possible. In keeping with this commitment, it supports the principle that the results of its research that have been publicly funded should be freely accessible, and therefore supports its staff in making their research available.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-emmc</setSpec>
+      <setName>European Materials Modelling Council</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The European materials modelling council (EMMC) is a community driven bottom-up action to connect all existing material modelling activities in Europe.&amp;nbsp;&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;This repository is for &amp;nbsp;documents and&amp;nbsp;reports relevant to the work of the EMMC.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-mashes</setSpec>
+      <setName>MAShES - Multimodal Spectral Control of Laser Processing - European Project (H2020)</setName>
+    </set>
+    <set>
+      <setSpec>user-eidors</setSpec>
+      <setName>EIDORS contributed data </setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The data repository of the EIDORS: &lt;em&gt;Electrical Impedance Tomography and Diffuse Optical Tomography Reconstruction Software &lt;/em&gt;project.&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;The aim is to make a collection of open access data, especially that used in published research, so that developers of reconstruction algorithms can test their methods on real (phantom, in vitro or in vivo) data.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-savmap</setSpec>
+      <setName>savmap</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Near real‐time ultrahigh‐resolution imaging from unmanned aerial vehicles for sustainable land use management and&amp;nbsp;biodiversity conservation in semi‐arid savanna under regional and global change&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-lory_zhb_sam_brand</setSpec>
+      <setName>ZHB / Sammlung Brandstetter</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&lt;em&gt;Status: im Livetest.&lt;/em&gt;&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;Renward Brandstetter - Schriften zur austronesischen Sprachforschung&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2231-0614-bjmmr</setSpec>
+      <setName>British Journal of Medicine and Medical Research</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	British Journal of Medicine and Medical Research (ISSN: 2231-0614) aims to publish research papers, reviews and short communications in the areas of medicine and medical research. This is a quality controlled, peer-reviewed, open access INTERNATIONAL journal. BJMMR will not only publish traditional full research reports, including short communications, but also this journal will publish reports/articles on all stages of the research process like study protocols, pilot studies and pre-protocols. BJMMR is novelty attracting, open minded, peer-reviewed medical periodical, designed to serve as a perfectly new platform for both mainstream and new ground shaking works as long as they are technically correct and scientifically motivated. The journal also encourages the submission of useful reports of negative results. This is a quality controlled, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, open access INTERNATIONAL journal.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	Subject matters include studies in clinical areas like immunology, anaesthesia, cardiovascular medicine, complementary medicine, dentistry and oral medicine, pathology, pharmacology and therapeutics, pharmacology and therapeutics, dermatology, respiratory medicine, rheumatology, drugs and medicines, ear, nose and throat/otolaryngology, emergency medicine, infectious diseases, neurology, nutrition and metabolism, obstetrics and gynaecology, endocrinology, gastroenterology, genetics, geriatric medicine, haematology, oncology, ophthalmology, paediatrics, psychiatry, radiology, renal medicine, pharmacognosy, sexual health, urology, epidemiology, ethnic studies, health policy, medical education, legal and forensic medicine, environmental medicine and public health, medicine development and safety testing, drug legislation and safety.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	British Journal of Medicine and Medical Research will have 4 issues per year. Each issue will be running issue and all officially accepted manuscripts will be immediately published online. State-of-the-art running issue concept gives authors the benefit of &amp;#39;Zero Waiting Time&amp;#39; for the officially accepted manuscripts to be published.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;strong&gt;Disclaimer:&lt;/strong&gt; This international journal has no connection with any scholarly society or association or any specific geographic location or any country. This is an independent journal run by SCIENCEDOMAIN international.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2231-0851</setSpec>
+      <setName>British Journal of Mathematics &amp; Computer Science</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	British Journal of Mathematics &amp;amp;Computer Science (ISSN: 2231-0851) aims to publish original research articles, review articles and short communications, in all areas of mathematics and computer science. Subject matters cover pure and applied mathematics, mathematical foundations, statistics and game theory, use of mathematics in natural science, engineering, medicine, and the social sciences, theoretical computer science, algorithms and data structures, computer elements and system architecture, programming languages and compilers, concurrent, parallel and distributed systems,&amp;nbsp; telecommunication and networking, software engineering, computer graphics, scientific computing, database management, computational science, artificial Intelligence, human-computer interactions, etc. This is a quality controlled, peer-reviewed, open access INTERNATIONAL journal.&lt;br /&gt;&#13;
+	&lt;br /&gt;&#13;
+	British Journal of Mathematics &amp;amp; Computer Science will have 4 issues per year. Each issue will be running issue and all officially accepted manuscripts will be immediately published online. State-of-the-art running issue concept gives authors the benefit of &amp;#39;Zero Waiting Time&amp;#39; for the officially accepted manuscripts to be published.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;strong&gt;Disclaimer:&lt;/strong&gt; This international journal has no connection with any scholarly society or association or any specific geographic location or any country. This is an independent journal run by SCIENCEDOMAIN international.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-bibliofil</setSpec>
+      <setName>Librarian's experimental space</setName>
+    </set>
+    <set>
+      <setSpec>user-soer</setSpec>
+      <setName>State of the Environment Reporting</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;State of the environment reports, data and indicators national, regionala and global levels.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-inmind</setSpec>
+      <setName>INMiND - Imaging of Neuroinflammation in Neurodegenerative Diseases</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;The goal of the EC FP7 Collaborative Project&amp;nbsp;INMiND (GA 278850) is to carry out collaborative research on molecular mechanisms that link neuroinflammation with neurodegeneration in order to&amp;nbsp;identify novel biological targets for activated microglia, which may serve for both&amp;nbsp;diagnostic and&amp;nbsp;therapeutic purposes, and to translate this knowledge into clinical application and patient benefit.&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-devotes-project</setSpec>
+      <setName>FP7 DEVOTES project</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;DEVOTES&amp;nbsp;is an international research project funded by the European Commission, within the Environment (including climate change) Theme of the 7th Framework Programme of the European Union.&lt;br /&gt;&#13;
+The overall goal of DEVOTES is to test indicators proposed by the EC and to develop new ones for the assessment at the species, habitat and ecosystem levels, which will lead to a classification status of marine waters. A cost-effective (i.e. by defining monitoring and assessment strategies) implementation of the indicators will be integrated into a unified assessment of the biodiversity.&lt;br /&gt;&#13;
+The outcomes of DEVOTES will contribute to filling knowledge gaps and existing needs in the assessment of the environmental status, within the Marine Strategy Framework Directive, in an harmonized way across the Mediterranean, Baltic, North Seas and the Atlantic Ocean.&lt;/p&gt;&#13;
+&#13;
+&lt;p&gt;PROJECT&amp;nbsp;ACRONYM: DEVOTES&lt;br /&gt;&#13;
+FULL&amp;nbsp;PROJECT TITLE: DEVelopment Of innovative Tools for understanding marine biodiversity and assessing good Environmental Status.&lt;br /&gt;&#13;
+GRANT AGREEMENT NUMBER: 308392&lt;br /&gt;&#13;
+FP7 THEME: Environment (Including Climate Change)&lt;br /&gt;&#13;
+INSTRUMENT: Collaborative project&lt;br /&gt;&#13;
+TOTAL BUDGET: &amp;euro; 12,050,970.10&lt;br /&gt;&#13;
+EC CONTRIBUTION: &amp;euro; 8,997,984.62&lt;br /&gt;&#13;
+DURATION: 1st November 2012 to 31st October 2016&lt;br /&gt;&#13;
+NUMBER OF PROJECT PARTNERS: 23&lt;br /&gt;&#13;
+WEBSITE:&amp;nbsp;&lt;a href="http://www.devotes-project.eu"&gt;www.devotes-project.eu&lt;/a&gt;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-optical_design_software</setSpec>
+      <setName>Optical Design Software</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;A community to share software written for optical design.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-cfa-theses</setSpec>
+      <setName>Harvard-Smithsonian Center for Astrophysics Dissertations &amp; Theses</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Dissertations &amp;amp; theses from the Harvard-Smithsonian Center for Astrophysics (CfA), curated and maintained by the John G. Wolbach Library, made available via the NASA Astrophysics Data System (ADS). This collection includes dissertations and theses from all academic levels.&lt;br /&gt;&#13;
+&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-psych-tel</setSpec>
+      <setName>PSYCH-TEL "Psychology-Technology Enhanced Learning and Teaching"</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;PSYCH-TEL is a community to share results of research (datasets and questionnaires) and teaching material for educational purposes only. Its aim is to promote the achievements and developments of scientific research from the School of Psychology, University of Liverpool (UK) and to support Higher Education enhanced by new technology. Also, this community may accomodate/store work from other educational researchers, developers and research support groups, but their work must be reviewed by the administrator before uploading.&amp;nbsp;&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-invid-h2020</setSpec>
+      <setName>InVID H2020 Project</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This is the collection of materials created within the &amp;quot;InVID: In Video Veritas - Verification of Social Media Video Content for the News Industry&amp;quot;, H2020 Innovation Action (Grant Agreement 687786).&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-ieee</setSpec>
+      <setName>IEEE</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;This community has beed&amp;nbsp;created&amp;nbsp;by the Institute of Electrical and Electronics Engineers (IEEE) for use by its members, authors, and researchers.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-reu-pres-2011</setSpec>
+      <setName>Solar REU presentations 2011</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;Final presentations by the students of the CfA HEA/SSP Solar Summer Intern Program of 2011.&amp;nbsp; Students conducted scientific research mentored by scientists from the Solar and Stellar X-Ray Group (SSXG) and the Solar, Stellar, and Planetary Group (SSP) at the Harvard-Smithsonian Center for Astrophysics (CfA).&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2231-0886</setSpec>
+      <setName>British Microbiology Research Journal</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p&gt;&#13;
+	British Microbiology Research Journal (ISSN: 2231-0886) is dedicated to publish research papers, reviews, and short communications in all areas of Microbiology such as virology, mycology, parasitology, bacteriology, clinical microbiology, phycology, parasitology, protozoology, microbial physiology, immunology, microbial genetics, medical microbiology, microbial pathogenesis and epidemiology disease pathology and immunology, probiotics and prebiotics, veterinary microbiology, environmental microbiology, microbial ecology, microbially-mediated nutrient cycling, geomicrobiology, microbial diversity and bioremediation, evolutionary microbiology, enzymology, industrial microbiology, aeromicrobiology, food microbiology, molecular and cellular microbiology, entomology, biomedical sciences, pharmaceutical microbiology, agricultural microbiology, soil microbiology, zoology, endocrinology, toxicology, water microbiology, generation microbiology and nano microbiology. This is a quality controlled, peer-reviewed, open access INTERNATIONAL journal.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	British Microbiology Research Journal will have 4 issues per year. Each issue will be running issue and all officially accepted manuscripts will be immediately published online. State-of-the-art running issue concept gives authors the benefit of &amp;#39;Zero Waiting Time&amp;#39; for the officially accepted manuscripts to be published.&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&#13;
+	&lt;strong&gt;Disclaimer:&lt;/strong&gt; This international journal has no connection with any scholarly society or association or any specific geographic location or any country. This is an independent journal run by SCIENCEDOMAIN international.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-2278-098x</setSpec>
+      <setName>British Journal of Economics, Management &amp; Trade</setName>
+      <setDescription>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:description>&lt;p style="text-align: justify;"&gt;&#13;
+	British Journal of Economics, Management &amp;amp; Trade (BJEMT) (ISSN: 2278 &amp;ndash; 098X), previously known as &lt;a href="http://www.sciencedomain.org/journal-home.php?id=20"&gt;British Journal of Management &amp;amp; Economics&lt;/a&gt; (ISSN: 2249 &amp;ndash; 4413), publishes manuscripts with valuable insight to research, ideas and strategies of economics, management and trade. The journal also encourages the submission of useful reports of negative results. This is a quality controlled, &lt;a href="http://www.sciencedomain.org/page.php?id=sdi-general-editorial-policy#SDI_Peer_review_mechanism"&gt;OPEN&amp;nbsp;peer reviewed&lt;/a&gt;, open access INTERNATIONAL journal. &lt;span style="font-size: 10pt; line-height: 115%; font-family: Arial,sans-serif;"&gt;This journal aims to publish &lt;/span&gt;&lt;span style="font-size: 10pt; line-height: 115%; font-family: Arial,sans-serif;"&gt;high quality papers (&lt;a href="http://www.sciencedomain.org/page.php?id=general-guideline-for-authors#Type_of_papers"&gt;Click here for Types of paper&lt;/a&gt;) in all below mentioned areas. &lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	&lt;br /&gt;&#13;
+	Study areas include:&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - policies and strategies of economics, macro and microeconomics, fiscal policies and regulations, international economics, econometrics and experimental economics, philosophy of economics, law and economics, political economy and natural resource economics.&lt;br /&gt;&#13;
+	&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - emerging trends in the areas of general business management, accounting management, communication management, cost and financial management, disaster management, customer relationship, public administration, human resource management and social entrepreneurship, statistics and econometrics, organizational studies, leadership and team building, personnel and corporate relations, marketing theory and applications, management information systems, international management and operational research.&lt;br /&gt;&#13;
+	&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - International trade, role of different national and international economic organisations in the global economy, Interaction between global markets and trade, execution options, liquidity issues, trading platforms, Implications of globalisation on markets and trade, multilateral, regional, and bilateral trade negotiations, anti-dumping and unfair trade practices issues, WTO and its policies, FDI and the international economics, exchange Rates and Currency fluctuations, the impact of government policies on international trade and management issues.&lt;br /&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	British Journal of Economics, Management &amp;amp; Trade (BJEMT) will have 4 issues per year. Each issue will be running issue and all officially accepted manuscripts will be immediately published online. State-of-the-art running issue concept gives authors the benefit of &amp;#39;Zero Waiting Time&amp;#39; for the officially accepted manuscripts to be published.&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	Publication history: previously known as &lt;a href="http://www.sciencedomain.org/journal-home.php?id=20"&gt;British Journal of Management &amp;amp; Economics&lt;/a&gt;, continued as &lt;a href="http://www.sciencedomain.org/journal-home.php?id=20"&gt;British Journal of Economics, Management &amp;amp; Trade&lt;/a&gt; (BJEMT).&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p style="text-align: justify;"&gt;&#13;
+	&lt;strong&gt;Disclaimer:&lt;/strong&gt; This international journal has no connection with any scholarly society or association or any specific geographic location or any country. This is an independent journal run by SCIENCEDOMAIN international.&lt;/p&gt;&#13;
+</dc:description>
+        </oai_dc:dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>user-epfl</setSpec>
+      <setName>EPFL - Ecole Polytechnique Federale de Lausanne</setName>
+    </set>
+    <resumptionToken expirationDate="2018-07-18T17:02:29Z" cursor="0" completeListSize="3387">eyJzZWVkIjowLjM1NDEyMDY4NzMyMDM5OTE0LCJwYWdlIjoyLCJrd2FyZ3MiOnt9fQ.DjEDrQ._BOEQF1lS4BJcw9nl6uEcEdOCfk</resumptionToken>
+  </ListSets>
+</OAI-PMH>

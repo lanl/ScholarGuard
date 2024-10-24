@@ -1,0 +1,227 @@
+{
+    "count": 167,
+    "next": "http://publons.com/api/v2/academic/review/?academic=634082&page=2&pre=true",
+    "previous": null,
+    "results": [
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/mqjeKdoj/",
+                    "id": "mqjeKdoj",
+                    "url": "https://publons.com/author/review/mqjeKdoj/"
+                }
+            },
+            "date_reviewed": "2013",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "MDPI",
+                "ids": {
+                    "id": 411,
+                    "url": "https://publons.com/publisher/411/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/0gGhhlTK/",
+                    "id": "0gGhhlTK",
+                    "url": "https://publons.com/author/review/0gGhhlTK/"
+                }
+            },
+            "date_reviewed": "2018",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "Oxford University Press",
+                "ids": {
+                    "id": 26,
+                    "url": "https://publons.com/publisher/26/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/dmlaAMOD/",
+                    "id": "dmlaAMOD",
+                    "url": "https://publons.com/author/review/dmlaAMOD/"
+                }
+            },
+            "date_reviewed": "2015",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "SAGE Publishing",
+                "ids": {
+                    "id": 64,
+                    "url": "https://publons.com/publisher/64/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/Jj8AILTR/",
+                    "id": "Jj8AILTR",
+                    "url": "https://publons.com/author/review/Jj8AILTR/"
+                }
+            },
+            "date_reviewed": "2015",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "SAGE Publishing",
+                "ids": {
+                    "id": 64,
+                    "url": "https://publons.com/publisher/64/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/PzT5pXus/",
+                    "id": "PzT5pXus",
+                    "url": "https://publons.com/author/review/PzT5pXus/"
+                }
+            },
+            "date_reviewed": "2017",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "Cambridge University Press",
+                "ids": {
+                    "id": 50,
+                    "url": "https://publons.com/publisher/50/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/ERG4sq4e/",
+                    "id": "ERG4sq4e",
+                    "url": "https://publons.com/author/review/ERG4sq4e/"
+                }
+            },
+            "date_reviewed": "2017",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "Taylor & Francis",
+                "ids": {
+                    "id": 24,
+                    "url": "https://publons.com/publisher/24/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/arCWOumi/",
+                    "id": "arCWOumi",
+                    "url": "https://publons.com/author/review/arCWOumi/"
+                }
+            },
+            "date_reviewed": "2018",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "Oxford University Press",
+                "ids": {
+                    "id": 26,
+                    "url": "https://publons.com/publisher/26/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/a4xsveOM/",
+                    "id": "a4xsveOM",
+                    "url": "https://publons.com/author/review/a4xsveOM/"
+                }
+            },
+            "date_reviewed": "2018",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "Cambridge University Press",
+                "ids": {
+                    "id": 50,
+                    "url": "https://publons.com/publisher/50/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/XKhjMRwN/",
+                    "id": "XKhjMRwN",
+                    "url": "https://publons.com/author/review/XKhjMRwN/"
+                }
+            },
+            "date_reviewed": "2018",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "University of Chicago Press",
+                "ids": {
+                    "id": 35,
+                    "url": "https://publons.com/publisher/35/"
+                }
+            },
+            "journal": null,
+            "article": null
+        },
+        {
+            "ids": {
+                "academic": {
+                    "api": "https://publons.com/api/v2/academic/review/BynFXrmF/",
+                    "id": "BynFXrmF",
+                    "url": "https://publons.com/author/review/BynFXrmF/"
+                }
+            },
+            "date_reviewed": "2018",
+            "verification": {
+                "verified": true
+            },
+            "publisher": {
+                "name": "Cambridge University Press",
+                "ids": {
+                    "id": 50,
+                    "url": "https://publons.com/publisher/50/"
+                }
+            },
+            "journal": null,
+            "article": null
+        }
+    ]
+}

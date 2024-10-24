@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8">
+        {% if not profile %}
+        <form method="POST" action="{{ url_for('twitter_portal.get_profile') }}">
+        <b>Successfully authenticated with Twitter.</b>
+            <br/>
+            <br/>
+            Provide Twitter username:
+            <input type="text" size="20" value="" id="username" name="username" />
+            <br/>
+            <br/>
+        <input type="submit" value="Submit" />
+
+        </form>
+        {% else %}
+
+        <h2>{{ profile['full_name'] }}'s Twitter Profile</h2>
+      <ul>
+  {% for prop, value in profile.items() %}
+        <li><b>{{ prop }}</b>:&nbsp; &nbsp; &nbsp; <i>{{ value }}</i></li>
+  {% endfor %}
+      </ul>
+        {% endif %}
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}

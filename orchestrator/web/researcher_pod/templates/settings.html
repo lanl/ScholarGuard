@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+  <h2>Pod Settings</h2>
+  <div class="row">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="ctx-bg bg-success">
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+    <div class="col-md-8">
+      {% if available_portals | length == 0 %}
+      Please verify and add information about at least one of the portals below
+       to login and use the Pod.
+      {% else %}
+      This page allows you to review and edit the settings for the Pod.
+      {% endif %}
+      {% if current_user.is_authenticated %}
+      <h3><a href="{{ url_for('user_profile_page.on_user_profile', _external=True) }}">User Profile</a></h3>
+      {% endif %}
+        <h3>Portals</h3>
+      <p>Please complete details for the portals below so that they can be used to
+        authenticate in to the Pod.</p>
+      <ul>
+      {% for portal in portal_names %}
+        <li>
+        <a href="{{ url_for('settings_page.on_settings_portal',
+         portal_name=portal, _external=True) }}">
+          {{ portal.title() }}
+        </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

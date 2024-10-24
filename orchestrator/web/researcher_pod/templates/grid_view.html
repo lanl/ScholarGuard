@@ -1,0 +1,37 @@
+<div class="grid-content">
+    {% for event in activities %}
+    {% set row_end = False %}
+    {% if loop.index == 1 %}
+        <div class="grid-row">
+    {% elif loop.index % 10 == 0 %}
+        {% set row_end = True %}
+    {% endif %}
+
+    <a class="event-card-href" href="/event/{{ event.event_id }}/">
+        <div data-toggle="tooltip" title="{{ event.published }}">
+            {% if route == "researchers" %}
+                {% if event.user.profile_image %}
+                    <img class="activity_obj" src="/tracker/static/img/user/{{ event.user.profile_image }}.png" />
+                {% else %}
+                    <img class="activity_obj" src="/tracker/static/img/user/user_icon.png" />
+                {% endif %}
+            {% elif route == "portals" %}
+                <img class="activity_obj" src="/tracker/static/img/{{ event.tracker_name }}_logo.png" />
+            {% elif route == "activities" %}
+                <img class="activity_obj" src="/tracker/static/img/event_type/{{ event.event_type }}.png" />
+            {% elif route == "artifacts" %}
+                <img class="activity_obj" src="/tracker/static/img/artifact_type/{{ event.artifact_type }}.png" />
+            {% endif %}
+        </div>
+    </a>
+
+    {% if row_end or loop.index % 10 == 0 %}
+        </div>
+        <div class="grid-row">
+    {% endif %}
+    {% if loop.index == activities | length %}
+        </div>
+    {% endif %}
+
+    {% endfor %}
+</div>

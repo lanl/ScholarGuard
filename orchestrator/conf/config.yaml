@@ -1,0 +1,233 @@
+# This is the config used by the production instance running in docker 
+# containers. 
+
+# options for the main orchestrator application; the UI, LDN inbox, etc.
+pod:
+  
+  # the domain name of the server that will host the orchestrator
+  server_name: "myresearch.institute"
+
+  # the name of the project that should appear in the HTML pages. 
+  organization_full_name: "My Research Institute"
+  organization_short_name: "MRI"
+  
+  # the LDN inbox end points of the various components that the orchestrator 
+  # will send AS2 notifications to.
+  component_inbox_endpoint: "https://myresearch.institute/{}/inbox/"
+  
+  # the receiving LDN inbox endpoint of the orchestrator that the various 
+  # components will send events to. This endpoint will be included by the orchestrator 
+  # in all its messages to these components so that these components know 
+  # where to respond to. 
+  orchestrator_inbox_endpoint: "https://myresearch.institute/orchestrator/{}/inbox/"
+  
+  # the endpoint to view the raw as2 message for various component events.
+  orchestrator_event_base_url: "https://myresearch.institute/{}/event/"
+  
+  # the starting date time from which the tracker/orchestrator should start
+  # tracking events from.
+  disallow_events_before: "2018-08-01T00:00:00Z"
+  
+  # the protocol of the domain name; http/https
+  preferred_url_scheme: "https"
+  
+  # the app logs detailed messages.
+  debug: true
+  log_level: debug
+
+# options for the databases
+db:
+  # the SQlite database file path. Please check the 
+  # docker-compose.yml file for the corresponding volume that has been loaded.
+  #sqlalchemy_database_uri: "mysql+pymysql://%s:%s@%s/researcher_pod"
+  sqlalchemy_database_uri: "sqlite+pysqlite:////app/data/sql/users_portals.db"
+  
+  # elasticsearch host and port
+  es:
+    host: "pod-es"
+    port: 9200
+
+tracker:
+  celery:
+    broker_url: "redis://tracker-db:6379/0"
+    backend_url: ""
+    import:
+      - "researcher_pod.tracker.github"
+      - "researcher_pod.tracker.slideshare"
+      - "researcher_pod.tracker.stackoverflow"
+      - "researcher_pod.tracker.hypothesis"
+      - "researcher_pod.tracker.wikipedia"
+      - "researcher_pod.tracker.publons"
+      - "researcher_pod.tracker.medium"
+      - "researcher_pod.tracker.blogger"
+      - "researcher_pod.tracker.figshare"
+      - "researcher_pod.tracker.wordpress"
+      - "researcher_pod.tracker.personal_website"
+      # - "researcher_pod.tracker.twitter"
+      # Out of date:
+      # - "researcher_pod.tracker.orcid"
+      # - "researcher_pod.tracker.dbpl"
+      # - "researcher_pod.tracker.crossref"
+      # - "researcher_pod.tracker.ms_academic"
+
+security:
+  registerable: true
+  trackable: true
+  send_register_email: false
+  password_hash: "pbkdf2_sha512"
+
+portals:
+  github:
+    tracker_frequency_in_secs: 3600
+    allow_login: false
+    auth_type: oauth2
+    portal_url: "https://www.github.com/"
+    client_id: ""
+    client_secret: ""
+    base_authorization_url: "https://github.com/login/oauth/authorize"
+    access_token_url: "https://github.com/login/oauth/access_token"
+    user_profile_url: "https://api.github.com/user"
+    event_urls:
+      user_events_url: "https://api.github.com/users/%s/events"
+      user_received_events_url: "https://api.github.com/users/%s/received_events"
+
+  wikipedia:
+    tracker_frequency_in_secs: 86400
+    portal_url: "https://www.wikipedia.org/"
+    allow_login: false
+    auth_type: none
+    event_urls:
+      contributions_url: "https://en.wikipedia.org/w/api.php?action=query&format=json&list=usercontribs&formatversion=latest&uclimit=500&ucuser=%s&ucdir=older"
+
+  twitter:
+    tracker_frequency_in_secs: 3600
+    allow_login: false
+    auth_type: oauth1
+    portal_url: "https://www.twitter.com"
+    client_id: ""
+    client_secret: ""
+    request_token_url: "https://api.twitter.com/oauth/request_token"
+    base_authorization_url: "https://api.twitter.com/oauth/authorize"
+    access_token_url: "https://api.twitter.com/oauth/access_token"
+    user_profile_url:  "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=1&skip_status=1"
+    event_urls:
+      user_timeline_url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=%s&count=200&exclude_replies=0&include_rts=1"
+
+  orcid:
+    tracker_frequency_in_secs: 86400
+    allow_login: true
+    auth_type: oauth2
+    portal_url: "https://orcid.org/"
+    client_id: ""
+    client_secret: ""
+    base_authorization_url: "https://orcid.org/oauth/authorize"
+    access_token_url: "https://pub.orcid.org/oauth/token"
+    scope: "/authenticate"
+    event_urls:
+      user_timeline_url: "https://pub.orcid.org/v2.0/%s/record"
+      user_activities_url: "https://pub.orcid.org/v2.0/%s/activities"
+
+  slideshare:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    portal_url: "https://www.slideshare.net/"
+    auth_type: apikey_ts_hash
+    api_key: "61KWSBpM"
+    api_secret: "aeAz1cPD"
+    event_urls:
+      user_slides_url: "https://www.slideshare.net/api/2/get_slideshows_by_user"
+
+  stackoverflow:
+    tracker_frequency_in_secs: 86400
+    portal_url: "https://stackoverflow.com/"
+    allow_login: false
+    auth_type: none
+    event_urls:
+      user_posts_url: "https://api.stackexchange.com/2.2/users/%s/posts?order=desc&sort=activity&site=stackoverflow"
+
+  figshare:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    auth_type: oauth2
+    portal_url: "https://figshare.com/"
+    client_id: ""
+    client_secret: ""
+    base_authorization_url: "https://figshare.com/account/applications/authorize"
+    access_token_url: "https://api.figshare.com/v2/token"
+    event_urls:
+      articles_search_url: "https://api.figshare.com/v2/account/articles/search"
+      author_details_url: "https://api.figshare.com/v2/account/authors/%s"
+      oai_pmh_url: "https://api.figshare.com/v2/oai"
+
+  hypothesis:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    portal_url: "https://hypothes.is/"
+    auth_type: apikey_ts_hash
+    client_id: ""
+    client_secret: ""
+    event_urls:
+      user_search_url: "https://hypothes.is/api/search?user=%s&limit=200&offset=0"
+
+  publons:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    portal_url: "https://publons.com/"
+    auth_type: apikey_ts_hash
+    client_id: ""
+    client_secret: ""
+    event_urls:
+      user_search_url: "https://publons.com/api/v2/academic/review/?academic=%s&pre=true"
+
+  medium:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    portal_url: "https://medium.com/"
+    auth_type: none
+    event_urls:
+      posts_feed_url: "https://medium.com/feed/@%s"
+      recommended_feed_url: "https://medium.com/feed/@%s/has-recommended"
+
+  wordpress:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    portal_url: "https://wordpress.com/"
+    auth_type: none
+
+  personal_website:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    auth_type: none
+
+  blogger:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    portal_url: "https://blogger.com/"
+    auth_type: apikey_ts_hash
+    client_id: ""
+    client_secret: ""
+    event_urls:
+      blog_domain_url: https://www.googleapis.com/blogger/v3/blogs/byurl?url={}&key={}
+      blog_posts_url: "https://www.googleapis.com/blogger/v3/blogs/{}/posts?maxResults=50&fields=etag%2Citems(author%2Cblog%2CcustomMetaData%2Cetag%2Cid%2Cimages%2Ckind%2Cpublished%2Cstatus%2Ctitle%2CtitleLink%2Cupdated%2Curl)%2Ckind%2CnextPageToken&key={}"
+
+  dblp:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    auth_type: none
+    event_urls:
+      publication_url: "http://dblp.org/search/publ/api?format=json&h=1000&q=%s"
+      author_url: "http://dblp.org/search/author/api?format=json&q=%s"
+
+  crossref:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    auth_type: none
+    event_urls:
+      publication_events_url: 'http://api.eventdata.crossref.org/v1/events?obj-id:"%s"'
+
+  ms_academic:
+    tracker_frequency_in_secs: 86400
+    allow_login: false
+    auth_type: apikey_ts_hash
+    event_urls:
+      publication_cc_url: "https://westus.api.cognitive.microsoft.com/academic/v1.0/evaluate?expr=Composite(AA.AuId=%s)&model=latest&count=1000&offset=0&attributes=Ti,CC,E"

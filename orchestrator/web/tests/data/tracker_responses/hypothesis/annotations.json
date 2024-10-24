@@ -1,0 +1,199 @@
+{
+    "rows": [
+        {
+            "updated": "2018-06-11T16:51:18.020103+00:00",
+            "group": "__world__",
+            "target": [
+                {
+                    "source": "http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html",
+                    "selector": [
+                        {
+                            "endContainer": "/div[2]/div[1]/div[1]/article[1]/p[40]",
+                            "startContainer": "/div[2]/div[1]/div[1]/article[1]/p[40]",
+                            "type": "RangeSelector",
+                            "startOffset": 0,
+                            "endOffset": 129
+                        },
+                        {
+                            "type": "TextPositionSelector",
+                            "end": 11668,
+                            "start": 11539
+                        },
+                        {
+                            "exact": "And writing a test. For brevity, I’m truncating the two tests I included earlier, but keeping the setUp() and tearDown() methods.",
+                            "prefix": "at(trial.name, trial.mongo_id)\n\n",
+                            "type": "TextQuoteSelector",
+                            "suffix": "\n\nfrom flask import request\nimpo"
+                        }
+                    ]
+                }
+            ],
+            "links": {
+                "json": "https://hypothes.is/api/annotations/qT3MqG2XEei8k-98Jl140A",
+                "html": "https://hypothes.is/a/qT3MqG2XEei8k-98Jl140A",
+                "incontext": "https://hyp.is/qT3MqG2XEei8k-98Jl140A/kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html"
+            },
+            "tags": [],
+            "text": "Testing notes",
+            "created": "2018-06-11T16:51:18.020103+00:00",
+            "uri": "http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html",
+            "flagged": false,
+            "user_info": {
+                "display_name": "grantat"
+            },
+            "user": "acct:grantat@hypothes.is",
+            "hidden": false,
+            "document": {
+                "title": [
+                    "Understanding Contexts in Flask"
+                ]
+            },
+            "id": "qT3MqG2XEei8k-98Jl140A",
+            "permissions": {
+                "read": [
+                    "group:__world__"
+                ],
+                "admin": [
+                    "acct:grantat@hypothes.is"
+                ],
+                "update": [
+                    "acct:grantat@hypothes.is"
+                ],
+                "delete": [
+                    "acct:grantat@hypothes.is"
+                ]
+            }
+        },
+        {
+            "updated": "2018-06-11T16:50:27.314581+00:00",
+            "group": "__world__",
+            "target": [
+                {
+                    "source": "https://developer.github.com/v3/activity/events/",
+                    "selector": [
+                        {
+                            "endContainer": "/div[1]/section[1]/div[1]/p[4]",
+                            "startContainer": "/div[1]/section[1]/div[1]/p[4]",
+                            "type": "RangeSelector",
+                            "startOffset": 0,
+                            "endOffset": 192
+                        },
+                        {
+                            "type": "TextPositionSelector",
+                            "end": 4292,
+                            "start": 4100
+                        },
+                        {
+                            "exact": "Only events created within the past 90 days will be included in timelines. Events\nolder than 90 days will not be included (even if the total number of events\nin the timeline is less than 300).",
+                            "prefix": "ed, for a total of 300 events.\n\n",
+                            "type": "TextQuoteSelector",
+                            "suffix": "\n\nAll Events have the same respo"
+                        }
+                    ]
+                }
+            ],
+            "links": {
+                "json": "https://hypothes.is/api/annotations/iwnqHm2XEeikY89zgWw4WA",
+                "html": "https://hypothes.is/a/iwnqHm2XEeikY89zgWw4WA",
+                "incontext": "https://hyp.is/iwnqHm2XEeikY89zgWw4WA/developer.github.com/v3/activity/events/"
+            },
+            "tags": [],
+            "text": "Timeline notes",
+            "created": "2018-06-11T16:50:27.314581+00:00",
+            "uri": "https://developer.github.com/v3/activity/events/",
+            "flagged": false,
+            "user_info": {
+                "display_name": "grantat"
+            },
+            "user": "acct:grantat@hypothes.is",
+            "hidden": false,
+            "document": {
+                "title": [
+                    "Events | GitHub Developer Guide"
+                ]
+            },
+            "id": "iwnqHm2XEeikY89zgWw4WA",
+            "permissions": {
+                "read": [
+                    "group:__world__"
+                ],
+                "admin": [
+                    "acct:grantat@hypothes.is"
+                ],
+                "update": [
+                    "acct:grantat@hypothes.is"
+                ],
+                "delete": [
+                    "acct:grantat@hypothes.is"
+                ]
+            }
+        },
+        {
+            "updated": "2018-06-08T16:19:10.784063+00:00",
+            "group": "__world__",
+            "target": [
+                {
+                    "source": "http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html",
+                    "selector": [
+                        {
+                            "endContainer": "/div[2]/div[1]/div[1]/article[1]/p[64]",
+                            "startContainer": "/div[2]/div[1]/div[1]/article[1]/p[64]",
+                            "type": "RangeSelector",
+                            "startOffset": 0,
+                            "endOffset": 162
+                        },
+                        {
+                            "type": "TextPositionSelector",
+                            "end": 16747,
+                            "start": 16585
+                        },
+                        {
+                            "exact": "Hmm. Definitely more http:// and a little more / than there needs to be. It seems like SERVER_NAME should be set to something more like localhost:5000. Let’s try.",
+                            "prefix": "http://localhost:5000//trials'\n\n",
+                            "type": "TextQuoteSelector",
+                            "suffix": "\n\nWorks. Go bears.\n\n  \n\n  \n    \n"
+                        }
+                    ]
+                }
+            ],
+            "links": {
+                "json": "https://hypothes.is/api/annotations/rTh0lms3EeioCD8F_QTDQA",
+                "html": "https://hypothes.is/a/rTh0lms3EeioCD8F_QTDQA",
+                "incontext": "https://hyp.is/rTh0lms3EeioCD8F_QTDQA/kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html"
+            },
+            "tags": [
+                "Flask"
+            ],
+            "text": "Still having issues when it comes to multi application routing.",
+            "created": "2018-06-08T16:19:10.784063+00:00",
+            "uri": "http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html",
+            "flagged": false,
+            "user_info": {
+                "display_name": "grantat"
+            },
+            "user": "acct:grantat@hypothes.is",
+            "hidden": false,
+            "document": {
+                "title": [
+                    "Understanding Contexts in Flask"
+                ]
+            },
+            "id": "rTh0lms3EeioCD8F_QTDQA",
+            "permissions": {
+                "read": [
+                    "group:__world__"
+                ],
+                "admin": [
+                    "acct:grantat@hypothes.is"
+                ],
+                "update": [
+                    "acct:grantat@hypothes.is"
+                ],
+                "delete": [
+                    "acct:grantat@hypothes.is"
+                ]
+            }
+        }
+    ],
+    "total": 3
+}

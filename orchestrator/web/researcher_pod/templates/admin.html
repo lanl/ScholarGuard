@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link href="/tracker/static/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    {{ super() }}
+    <link href="/tracker/static/css/calendar-heatmap.css" rel="stylesheet">
+    <link href="/tracker/static/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="/tracker/static/css/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="/tracker/static/css/jquery-ui.theme.min.css" rel="stylesheet">
+    <style>
+    .navbar {
+        margin-bottom: 0;
+    }
+    </style>
+{% endblock styles %}
+
+{% block content %}
+
+{% if is_admin %}
+<div id="tracker-admin-panel" class="navbar navbar-default options-container admin-panel top-options">
+    <div style="margin-top: 8px; margin-bottom: 8px;">
+        <div class="option">
+            <select class="form-control" id="tracker-user-select">
+                <option value="None">Choose Researcher</option>
+                {% if tracked_users %}
+                {% for t_user in tracked_users %}
+                    <option value="{{ t_user.id }}">{{ t_user.full_name }}</option>
+                {% endfor %}
+                {% endif %}
+            </select>
+        </div>
+        <div class="option">
+            <select disabled class="form-control" id="tracker-portal-select">
+                <option value="None">Choose Portal</option>
+                {% if tracked_users %}
+                {% for t_user in tracked_users %}
+                    <option value="{{ t_user.id }}">{{ t_user.full_name }}</option>
+                {% endfor %}
+                {% endif %}
+            </select>
+        </div>
+        <div class="option">
+            <button id="tracker-submit" disabled class="btn btn-default" type="submit">Trigger Tracker</button>
+        </div>
+    </div>
+    <p id="tracker-submit-text"></p>
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block page_scripts %}
+    {% if is_admin %}
+    <script>
+        $("#hide-admin-options").on('click', function(){
+            let display = $("#tracker-admin-panel");
+            if (display.is(":hidden")){
+                $("#tracker-admin-panel").show();
+                $("#hide-admin-options").text("Hide Admin Options");
+            } else {
+                $("#tracker-admin-panel").hide();
+                $("#hide-admin-options").text("Show Admin Options");
+            }
+        });
+
+        $('#tracker-user-select').on('change', function() {
+            let user_id = this.value;
+            if( this.value == "None") {
+                $("#tracker-portal-select").prop('disabled', true);
+                $("#tracker-submit").prop('disabled', true);
+                return
+            }
+            $.ajax({
+                url: "/"+ user_id +"/portals-list/",
+                type: "GET",
+                success: function(data, textStatus, jqXHR) {
+                    if (data) {
+                        out_html = '<option value="None">Choose Portal</option>'
+                        for (i in data) {
+                            title_portal = data[i].charAt(0).toUpperCase() + data[i].substr(1);
+                            out_html += '<option value="'+data[i]+'">'+title_portal+'</option>'
+                        }
+                        $("#tracker-portal-select").html(out_html);
+                        $("#tracker-portal-select").prop('disabled', false);
+                    } else{
+                        $("#tracker-portal-select").prop('disabled', true);
+                    }
+                }
+            });
+        });
+
+        $('#tracker-portal-select').on('change', function() {
+            if( this.value == "None") {
+                $("#tracker-submit").prop('disabled', true);
+                return
+            }
+            $("#tracker-submit").prop('disabled', false);
+        });
+
+        $("#tracker-submit").on('click', function(){
+            let user_id = $("#tracker-user-select").val();
+            let portal = $("#tracker-portal-select").val();
+            $("#tracker-submit").prop('disabled', true);
+            $("#tracker-submit").text("Working");
+            $("#tracker-submit-text").text("");
+            $.ajax({
+                url: "/"+ user_id +"/trigger-tracker/",
+                data: {"portal": portal},
+                type: "POST",
+                success: function(data, textStatus, jqXHR) {
+                    if (data["success"]) {
+                        console.log(data);
+                        $("#tracker-submit").prop('disabled', false);
+                        $("#tracker-submit").text("Trigger Tracker");
+                        $("#tracker-submit-text").text("Completed!");
+                    } else{
+                        $("#tracker-portal-select").prop('disabled', true);
+                    }
+                }
+            });
+        });
+    </script>
+    {% endif %}
+{% endblock %}

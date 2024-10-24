@@ -1,0 +1,110 @@
+{% block doc -%}
+<!DOCTYPE html>
+<html lang="en">
+{%- block html %}
+<head>
+  {%- block head %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% if current_user.is_authenticated %}
+  <title>{{ default_menu_name }}</title>
+  {% endif %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/tracker/static/img/favicon/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/tracker/static/img/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/tracker/static/img/favicon/favicon-16x16.png"/>
+  <link rel="manifest" href="/tracker/static/img/favicon/site.webmanifest"/>
+  <link rel="mask-icon" href="/tracker/static/img/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+  <meta name="msapplication-TileColor" content="#da532c"/>
+  <meta name="theme-color" content="#ffffff"/>
+
+  {%- block metas %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- endblock metas %}
+
+  {%- block styles %}
+  <!-- Bootstrap -->
+  <link href="/tracker/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/tracker/static/css/main.css" rel="stylesheet">
+  {%- endblock styles %}
+  {%- endblock head %}
+</head>
+<body {% block body_attribs %}{% endblock body_attribs %} style="border: 0; width: 100%; height: 99%;">
+{% block body -%}
+
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/tracker/static/img/myresearchinstitute.png"> {{default_menu_name}}</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="navbar-form navbar-right">
+          <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                {% if base_route == "all" %}
+                  All Researchers
+                {% elif user %}
+                  {{ user.full_name }}
+                {% endif %}
+                <i class="fa fa-user" aria-hidden="true"><span class="caret"></span></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="/all/{{ args_str }}">All Researchers</a></li>
+                {% if tracked_users %}
+                  <li role="separator" class="divider"></li>
+                  {% for t_user in tracked_users %}
+                    {% if route == "researchers" or route == "portals" %}
+                      <li><a href="/{{ t_user.id }}/portals/{{ args_str }}">{{ t_user.full_name }}</a></li>
+                    {% else %}
+                      <li><a href="/{{ t_user.id }}/{{ route }}/{{ args_str }}">{{ t_user.full_name }}</a></li>
+                    {% endif  %}
+                  {% endfor %}
+                {% endif %}
+              </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="content-wrapper">
+{% block content -%}
+{%- endblock content %}
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <img class="icon" src="/tracker/static/img/myresearchinstitute.png" />
+    <div class="text-center">
+        <p><a href="/about/">About</a></p>
+          <ul>
+            <li>Powered By:</li>
+            <li><img class="reference-icon" src="/tracker/static/img/references/memento_logo.svg"/><a href="http://mementoweb.org/about/">Memento</a></li>
+            <li><img class="reference-icon" src="/tracker/static/img/references/mementotracer_logo.png"/><a href="http://tracer.mementoweb.org/">Memento Tracer</a></li>
+            <li><img class="reference-icon" src="/tracker/static/img/references/robustlinks_logo.png"/><a href="http://robustlinks.mementoweb.org/about/">Robust Links</a></li>
+            <li><img class="reference-icon" src="/tracker/static/img/references/signposting_logo.png"/><a href="http://signposting.org/">Signposting</a></li>
+          </ul>
+    </div>
+  </div>
+</footer>
+
+{% block scripts %}
+<script src="/tracker/static/js/jquery-3.2.1.min.js"></script>
+<script src="/tracker/static/js/bootstrap.min.js"></script>
+{%- endblock scripts %}
+
+{% block page_scripts -%}
+{%- endblock page_scripts %}
+
+{%- endblock body %}
+</body>
+{%- endblock html %}
+</html>
+{% endblock doc -%}

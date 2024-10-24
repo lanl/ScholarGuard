@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "security/_macros.html" import render_field_with_errors, render_field %}
+{% include "security/_messages.html" %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Login using:</h3>
+            <div class="row">
+                <ul>
+                {% for portal in available_portals %}
+                    <li><a href="{{ portal[1] }}">{{ portal[0].portal_name.title() }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+    {% if available_portals | length == 0 %}
+    $(function() {
+        window.location.replace("{{ url_for('settings_page.on_settings', _external=True) }}");
+    });
+    {% endif %}
+</script>
+{% endblock %}

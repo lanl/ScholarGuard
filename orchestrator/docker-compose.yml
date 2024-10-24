@@ -1,0 +1,108 @@
+version: "3"
+
+services:
+
+  pod-es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+    container_name: pod-es
+    environment:
+      - cluster.name=pod-es-cluster
+      - cluster.routing.allocation.disk.watermark.low=20gb
+      - cluster.routing.allocation.disk.watermark.high=3gb
+      - cluster.routing.allocation.disk.watermark.flood_stage=1gb
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+       soft: 65536
+       hard: 65536
+    volumes:
+      - ./data/es:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - pod
+  pod-es2:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+    container_name: pod-es2
+    environment:
+    - cluster.name=pod-es-cluster
+    - bootstrap.memory_lock=true
+    - xpack.security.enabled=false
+    - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    - "discovery.zen.ping.unicast.hosts=pod-es"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+    - ./data/es2:/usr/share/elasticsearch/data
+    networks:
+    - pod
+
+  pod-app:
+    build: ./web/
+    ports:
+      - "6001:80"
+    volumes:
+      - ./conf:/app/conf
+      - ./secrets:/app/secrets
+      - ./data/sql:/app/data/sql
+      - ./uwsgi.ini:/app/uwsgi.ini
+    environment:
+      FLASK_APP: "researcher_pod"
+      FLASK_DEBUG: "true"
+      FLASK_THREADED: "true"
+    #command: "flask run --host=0.0.0.0 --port=80"
+    command: "uwsgi /app/uwsgi.ini"
+    depends_on:
+      - pod-es
+    networks:
+      - pod
+
+  tracker-worker:
+    image: orchestrator_pod-app:latest
+    command: "celery -A researcher_pod.celery worker --loglevel=debug"
+    volumes:
+      - ./conf:/app/conf
+      - ./secrets:/app/secrets
+      - ./data/sql:/app/data/sql
+    user: nobody
+    links:
+      - tracker-db
+      - pod-app
+    depends_on:
+      - tracker-db
+    networks:
+      - pod
+
+  tracker-beat:
+    image: orchestrator_pod-app:latest
+    command: "celery -A researcher_pod.celery beat --loglevel=debug"
+    volumes:
+      - ./conf:/app/conf
+      - ./secrets:/app/secrets
+      - ./data/sql:/app/data/sql
+    links:
+      - tracker-db
+      - pod-app
+    depends_on:
+      - tracker-db
+    networks:
+      - pod
+
+  tracker-db:
+    image: redis:5
+    hostname: "researcher_pod_redis"
+    networks:
+      - pod
+
+networks:
+  pod:

@@ -1,0 +1,87 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+    <p>The Scholarly Orphans project explores an institution driven approach to discover,
+        capture, and archive scholarly artifacts that researchers deposit in productivity web portals as a means to
+        collaborate and
+        communicate with their peers. The project is funded by the
+        <a href="https://mellon.org">Andrew W. Mellon Foundation</a> and is a collaboration between
+        the <a href="http://int.lanl.gov/library/about/research-prototyping.shtml">Prototyping Team</a>
+        of the <a href="https://www.lanl.gov">Los Alamos National Laboratory</a> and the
+        <a href="https://ws-dl.cs.odu.edu/">Web Science and Digital Library Research Group</a>
+        at <a href="https://odu.edu">Old Dominion University</a>.
+    </p>
+    <p><a href="http://myresearch.institute/">myresearch.institute</a> and <a href="http://scholarlyorphans.org/memento/">scholarlyorphans.org</a>
+        are components in a limited-term experiment conducted as part of the Scholarly Orphans project.
+        The experiment is set up as an automated pipeline that is coordinated by an
+        institutional orchestrator process, as depicted below.
+        It was started on August 1 2018 and will be terminated on March 31 2020.
+        It is the intention to maintain the metadata that was collected in the course of the experiment, in which case
+        it will be openly shared
+        via platforms such as <a href="https://osf.io">OSF</a>,
+        <a href="https://zenodo.org">zenodo</a>, or <a href="https://figshare.com">FigShare</a>.
+        It is the intention to discard the
+        content that was collected during the experiment (WARC files and Mementos, see below).</p>
+    <p><img class="center-img" src="/tracker/static/img/pipeline.png" /></p>
+    <p>The modules in the pipeline are as follows:
+        <ul>
+            <li>Discovery of new artifacts deposited by a researcher in a portal is achieved by a Tracker that
+                recurrently polls the portal's API using the identity of the researcher in each portal as an access
+                key.
+                If a new artifact is discovered, its URI is passed on to the capture process.</li>
+            <li>Capturing an artifact is achieved by using web archiving techniques that pay special attention to
+                generating representative high fidelity captures. A major project finding in this realm is the use of
+                <a href="http://tracer.mementoweb.org">Traces</a> that
+                abstractly describe how a web crawler should capture a certain class of web resources. A Trace is
+                recorded by a curator
+                through interaction with a web resource that is an instance of that class. The result of capturing a
+                new artifact is a <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000236.shtml">WARC
+                    file</a>
+                in an institutional archive. The file encompasses all web resources that are an essential part of the
+                artifact, according to the curator who recorded the Trace that was used to guide the capture process.</li>
+            <li>Archiving is achieved by ingesting WARC files from various institutions into a cross-institutional web
+                archive that
+                supports the <a href="http://mementoweb.org/guide/quick-intro/">Memento "Time Travel for the Web"
+                    protocol</a>. As such, the
+                Mementos in this web archive integrate seamlessly with those in other web archives.</li>
+        </ul>
+    </p>
+    <p><a href="http://myresearch.institute/">myresearch.institute</a> is a fictive research institution that was
+        created to
+        illustrate the process described above.
+        The researchers that fictively work at myresearch.institute are actual researchers that work at real
+        institutions
+        and were selected because they have a diverse and active web presence. We hope these researchers do not take
+        issue with being
+        selected for this limited-term experiment but rather will enjoy the integrated view of their web activities as
+        presented
+        by the <a href="http://myresearch.institute/">myresearch.institute</a> portal. Once the experiment is
+        terminated the portal will be discontinued.
+        It is the intention to maintain and publicly share the metadata that it presented.</p>
+    <p><a href="http://scholarlyorphans.org/memento/">scholarlyorphans.org</a> is an experimental web archive in which
+        all artifacts that are captured
+        in the course of the experiment are ingested and from which they can be replayed using a web browser. We hope
+        that the web portals from which these artifacts are captured
+        will not take issue with being included in this limited-term experiment but rather will appreciate the advances
+        in web archiving that the project made
+        as a result of their inclusion, see the
+        <a href="http://tracer.mementoweb.org">Memento Tracer</a> framework. Once the experiment is terminated, the web
+        archive will be
+        discontinued. It is the intention to discard the WARC files that were ingested into the web archive as well as
+        the Mementos that resulted from ingestion.</p>
+    <p>Contributors to the experiment are:</p>
+    <ul>
+        <li>Los Alamos National Laboratory: Lyudmila Balakireva, Martin Klein, James Powell, Harihar Shankar, Herbert
+            Van de Sompel</li>
+        <li>Old Dominion University: Sawood Alam, Grant Atkins, Shawn Jones, Mat Kelly, Michael L. Nelson</li>
+        <li>All researchers listed in the <a href="http://myresearch.institute/">myresearch.institute</a> portal</li>
+    </ul>
+    </p>
+    <div class="iframe-block">
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/H8IWH8TjA6ctuk" width="427" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+            allowfullscreen> </iframe>
+        <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/martinklein0815/a-webcentric-pipeline-for-archiving-scholarly-artifacts"
+                    title="A Web-Centric Pipeline for Archiving Scholarly Artifacts" target="_blank"></div>
+    </div>
+</div>
+{% endblock %} {% block page_scripts %} {% endblock %}

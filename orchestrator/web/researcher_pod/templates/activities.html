@@ -1,0 +1,45 @@
+<div class="row">
+    {% if activities | length == 0 %} No activities were found yet. If you haven't already, please authorize and add
+    <a href="{{ url_for('settings_page.on_settings', _external=True) }}">Web Portals</a> for the pod to track.
+    {% else %}
+    <h3>Showing {{ activities | length }} activities.</h3>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <br/> {% for activity in activities %}
+        <div class="activity_abs">
+            <span class="col-lg-1">
+                {{ activity[2] | safe }}
+            </span>
+            <div class="col-lg-offset-1">
+                {{ activity[0] | safe }}
+                <div style="margin: 10px 0;">
+                    <a href="/event/{{ activity[3] }}">
+                        <object data="/tracker/static/img/tracker_icon.png" type="image/png" class='actor_img'>
+                            <img class='actor_img' src="/tracker/static/img/activity_logo.svg" />
+                        </object>
+                    </a>
+                    &raquo;
+                    <a data-toggle="collapse" href="#activity{{ loop.index0 }}">
+                        Raw ActivityStream Message
+                    </a>
+                    <div id="activity{{ loop.index0 }}" class="collapse">
+                        <pre class="as2_message"> {{ activity[1] }}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %} {% endif %}
+    </div>
+    <div class="col-lg-5">
+            <div class="activity_container">
+            {% for activity in activities %}
+                <a href="/event/{{ activity[3] }}">
+                    <div class="activity_obj">
+                        {{ activity[2] | safe }}
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

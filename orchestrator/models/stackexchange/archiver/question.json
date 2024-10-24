@@ -1,0 +1,117 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams#",
+    "http://mementoweb.org/test-ns#",
+    {
+      "schema": "https://schema.org/",
+      "tracker": "http://tracker.mementoweb.org/ns#",
+      "prov": "http://www.w3.org/ns/prov#",
+
+      "prov:used": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasInformedBy": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasGeneratedBy": {
+        "@type": "@id"
+      },
+      "prov:softwareAgent": {
+        "@type": "@id"
+      },
+      "prov:generatedAtTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "event": {
+    "@id": "http://myresearch.institute/archiver/event/arc89d48796c34a8589d9b3a276ad189",
+    "published": "2018-05-24T15:20:33Z",
+
+    "prov:wasGeneratedBy": "http://myresearch.institute/archiver/event/arc89d48796c34a8589d9b3a276ad189#activity",
+    "prov:generatedAtTime": "2018-05-24T15:20:33Z",
+    "prov:wasInformedBy": [
+      {
+        "id": "http://myresearch.institute/capture/event/capba89d48796c34a8589d9b3a276ad189",
+        "type": "tracker:Capture"
+      },
+      {
+        "id": "https://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276ad1897",
+        "type": "tracker:Tracker"
+      }
+    ],
+
+    "type": [
+      "Add",
+      "tracker:ArtifactArchiving",
+      "tracker:Archiver"
+    ],
+
+    "actor": {
+      "type": [
+        "Application"
+      ],
+      "id": "http://myresearch.institute/archive/",
+      "name": "My Research Institute's Memento Archiving Process"
+    },
+    "object": {
+      "type": "Collection",
+      "totalItems": 1,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "schema:MediaObject"
+          ],
+          "href": "http://myresearch.institute/capture/warc/sdf3sf3344422fdfdssfaeefsfasa.warc"
+        }
+      ]
+    },
+    "result": {
+      "type": "Collection",
+      "totalItems": 1,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "Note",
+            "schema:Question"
+          ],
+          "href": "http://myresearch.institute/mementos/20180404181933/https://cs.stackexchange.com/q/2331124243",
+          "OriginalResource": "https://cs.stackexchange.com/q/2331124243",
+          "Memento": "http://myresearch.institute/mementos/20180404181933/https://cs.stackexchange.com/q/2331124243",
+          "mementoDatetime": "2018-05-24T15:20:33Z",
+          "location": "urn:ipfs/QmNkt4JbkTemhUDmua7JW5NaTQWCrVZbk2EvUvhhPm9NJP/QmQr2uoXCbmC5c1vLngeE9HU1CHfF7BVG2z98JR6DQNFoU"
+        }
+      ]
+    }
+  },
+  "activity": {
+    "@id": "http://myresearch.institute/archiver/event/arc89d48796c34a8589d9b3a276ad189#activity",
+    "type": [
+      "prov:Activity",
+      "prov:SoftwareAgent"
+    ],
+    "prov:used": [
+      {
+        "id": "http://myresearch.institute/archive/",
+        "type": "prov:softwareAgent",
+        "prov:used": [
+          {
+            "id": "http://myresearch.institute/ingest/"
+          },
+          {
+            "id": "https://github.com/oduwsdl/ipwb",
+            "schema:version": "v0.2018.07.10.1504"
+          }
+        ]
+      },
+      {
+        "id": "http://myresearch.institute/capture/warc/sdf3sf3344422fdfdssfaeefsfasa.warc",
+        "type": "schema:MediaObject"
+      }
+    ]
+  }
+}

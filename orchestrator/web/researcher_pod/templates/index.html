@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link href="/tracker/static/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    {{ super() }}
+    <link href="/tracker/static/css/calendar-heatmap.css" rel="stylesheet">
+    <link href="/tracker/static/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="/tracker/static/css/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="/tracker/static/css/jquery-ui.theme.min.css" rel="stylesheet">
+    <style>
+    .navbar {
+        margin-bottom: 0;
+    }
+    </style>
+{% endblock styles %}
+
+{% block content %}
+<div class="navbar navbar-default options-container top-options">
+    <div class="">
+            <ul class="nav nav-pills nav-justified">
+                    {% if base_route == "all" %}
+                    <li class="{% if route == "researchers" %}active{% endif %}">
+                        <a href="/{{ base_route }}/researchers/{{ args_str }}">Researchers</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a style="color: #000;">
+                            {% if user.full_name | length >= 14 %}
+                                {{ user.full_name[:-3] }}...
+                            {% else %}
+                                {{ user.full_name }}
+                            {% endif %}
+                            </a>
+                    </li>
+                    {% endif %}
+                    <li class="{% if route == "portals" %}active{% endif %}">
+                        <a href="/{{ base_route }}/portals/{{ args_str }}">Portals</a>
+                    </li>
+                    <li class="{% if route == "artifacts" %}active{% endif %}">
+                        <a href="/{{ base_route }}/artifacts/{{ args_str }}">Artifacts</a>
+                    </li>
+                    <li class="{% if route == "activities" %}active{% endif %}">
+                        <a href="/{{ base_route }}/activities/{{ args_str }}">Activities</a>
+                    </li>
+                </ul>
+    </div>
+</div>
+<div class="navbar navbar-default options-container bottom-options">
+        <form autocomplete="off" id="options-form" class="navbar-form" role="search" method="get" action="/{{ base_route }}/{{ route }}/">
+            <div class="option">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    <input name="date" id="datepicker" type="text" class="form-control" value="{{ args.date | safe }}" />
+                </div>
+            </div>
+            <div class="option">
+                <button type="button" id="view-grid" class="view-btn btn {% if view_type == "grid" %}active{% endif %}"><i class="fa fa-th-large"></i> Grid</button>
+                <button type="button" id="view-list" class="view-btn btn {% if view_type == "list" %}active{% endif %}"><i class="fa fa-bars"></i> List</button>
+                <input name="view" id="view-input" type="text" value="{% if view_type == "grid" %}grid{% else %}list{% endif %}" style="display:none"/>
+            </div>
+            <div class="option">
+                <div class="input-group">
+                    <input name="count" type="text" placeholder="100" class="form-control" value="{{ args.count | safe }}"/>
+                    <span class="input-group-addon"><span class="fa fa-list-ol"></span></span>
+                </div>
+            </div>
+            <input type="submit" class="options-submit" style="height: 0;width: 0;margin: 0;padding: 0;visibility: hidden;"/>
+        </form>
+</div>
+<!-- Summary message -->
+<div class="container">
+    <div style="padding-top: 20px;display: block;margin: 0 auto;text-align: center;">
+    {% if error_msg %}
+        <p>{{ error_msg }}</p>
+    {% elif activities | length == 0 %}
+        <p>No events were found{% if args.date %} on {{ args.date }}{% if user %} for {{ user.full_name }}{% endif %}{% endif %}.
+        </p>
+    {% else %}
+        <p>Viewing {{ activities | length }} most recent {% if route == "researchers" %} events for all {{ route }}{% elif base_route == "all" %} {{ route }} for all researchers{% endif %}{% if user %} {{ route }} for {{ user.full_name }}{% endif %}{% if args.date %} starting on {{ args.date }}.{% else %}.{% endif %} </p>
+    {% endif %}
+    </div>
+    <div class="activity-wrapper">
+    {% if view_type == "list" %}
+        {% include "list_view.html" %}
+    {% elif view_type == "grid" %}
+        {% include "grid_view.html" %}
+    {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+<script src="/tracker/static/js/d3.v3.min.js"></script>
+<script src="/tracker/static/js/moment.min.js"></script>
+<script src="/tracker/static/js/jquery-ui.min.js"></script>
+<script>
+    function addZ(n){return n<10? '0'+n:''+n;}
+    $( function() {
+        let today = new Date();
+        var day = addZ(today.getDate());
+        var monthIndex = addZ(today.getUTCMonth() + 1);
+        var year = today.getFullYear();
+        var formattedDate = year+""+monthIndex+""+day;
+        $( "#datepicker" ).datepicker({
+            onSelect: function(date) {
+                $("#datepicker").attr("value", date);
+                document.getElementById("options-form").submit();
+            },
+            dateFormat: "yymmdd",
+            maxDate: formattedDate
+        });
+    });
+
+    $(function() {
+        $(".view-btn").on('click', function(){
+            var view_type = $(this).attr("id");
+            view_type = view_type.split("-")[1]
+            $("#view-input").attr("value", view_type);
+            document.getElementById("options-form").submit();
+        });
+    });
+</script>
+{% endblock %}

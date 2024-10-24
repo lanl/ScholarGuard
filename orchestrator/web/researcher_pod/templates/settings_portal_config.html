@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+  <h1>{{ portal_name.title() }} Portal Settings</h1>
+
+  {% include "config_instr/" + portal_name + "_portal_config_instr.html"
+      ignore missing %}
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <div class="ctx-bg bg-warning">
+    {% for message in messages %}
+    <p>{{ message }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endwith %}
+
+  <div class="row">
+    <div class="col-md-8">
+      <form method="POST" class="form-horizontal"
+            action="{{ url_for('settings_page.on_settings_portal',
+            portal_name=portal_name, _external=True) }}">
+
+        {% if form.errors %}
+        <div class="ctx-bg">
+          {% for error in form.errors %}
+            <p class="bg-danger">Error: {{ error.replace("_", " ").title() }}
+              cannot be blank.</p>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {{ form.hidden_tag() }}
+          {% for field in form %}
+            {% if field.type == "HiddenField" %}
+              {{ field }}
+            {% elif field.type != "CSRFTokenField" %}
+                <div class="form-group">
+                  {{ field.label(class="col-sm-4 control-label") }}
+                  <div class="col-sm-8">
+                  {{ field(class="form-control") }}
+                  </div>
+                </div>
+            {% endif %}
+          {% endfor %}
+        <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-8">
+            <input class="btn btn-default" type="submit" value="Save" />
+            <button class="btn btn-default" id="cancel">Cancel</button>
+          </div>
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+
+    $("#cancel").click(function(event) {
+        event.preventDefault();
+       window.location.replace("{{ url_for('settings_page.on_settings', _external=True) }}");
+    });
+
+    {% if form.errors %}
+    {% for error in form.errors %}
+
+      $({{ error }}).parent().parent().addClass("has-error");
+
+    {% endfor %}
+    {% endif %}
+
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+</script>
+
+
+{% endblock %}

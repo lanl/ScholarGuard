@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-8">
+        <form action="{{ url_for('portals_page.on_portals') }}" method="POST" name="portals_form">
+            {{ form.hidden_tag() }}
+            <p>{{ form.name.label }} {{form.name(size=30, class_="form-control") }}</p>
+            <p>{{ form.url.label }} {{form.url(size=50, class_="form-control") }}</p>
+            <input type="submit" value="Save" class="btn btn-default"/>
+        </form>
+    </div>
+</div>
+</div>

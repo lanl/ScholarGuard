@@ -1,0 +1,2 @@
+recursive-include researcher_pod/templates *
+recursive-include researcher_pod/static *

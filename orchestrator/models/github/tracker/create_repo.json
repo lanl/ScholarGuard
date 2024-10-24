@@ -1,0 +1,100 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams#",
+    "http://mementoweb.org/test-ns#",
+    {
+      "schema": "https://schema.org/",
+      "tracker": "http://tracker.mementoweb.org/ns#",
+      "prov": "http://www.w3.org/ns/prov#",
+
+      "prov:used": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasInformedBy": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasGeneratedBy": {
+        "@type": "@id"
+      },
+      "prov:softwareAgent": {
+        "@type": "@id"
+      },
+      "prov:generatedAtTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "event": {
+    "@id": "https://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276ad1897",
+    "published": "2016-12-11T15:20:33Z",
+
+    "prov:wasGeneratedBy": "https://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276ad1897#activity",
+    "prov:generatedAtTime": "2018-07-25T17:08:09Z",
+
+    "type": [
+      "Create",
+      "tracker:ArtifactCreation",
+      "tracker:Tracker"
+    ],
+
+    "actor": {
+      "type": "Person",
+      "id": "https://orcid.org/1234-5678-8765-4321",
+      "name": "Alice",
+      "url": "https://github.com/alice"
+    },
+    "object": {
+      "type": "Collection",
+      "totalItems": 1,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "Document",
+            "schema:SoftwareSourceCode"
+          ],
+          "href": "https://github.com/alice/new-repo"
+        }
+      ]
+    },
+    "target": {
+      "id": "https://github.com/alice/",
+      "type": ["Collection"],
+      "name": "Alice's code repository"
+    }
+  },
+  "activity": {
+    "@id": "https://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276ad1897#activity",
+    "type": [
+      "prov:Activity",
+      "prov:SoftwareAgent"
+    ],
+    "prov:used": [
+      {
+        "@id": "http://github.com/scholarlyorphans/trackers/github_tracker",
+        "type": "schema:SoftwareApplication",
+        "schema:version": "v0.3",
+        "prov:used": [
+          {
+            "id": "https://github.com/pallets/flask/",
+            "schema:version": "0.12.4"
+          },
+          {
+            "id": "http://www.celeryproject.org/",
+            "schema:version": "4.2"
+          },
+          {
+            "id": "https://www.elastic.co/",
+            "schema:version": "5.0"
+          }
+        ]
+      },
+      {
+        "@id": "http://github.com/api/",
+        "schema:version": "v1.0"
+      }
+    ]
+  }
+}

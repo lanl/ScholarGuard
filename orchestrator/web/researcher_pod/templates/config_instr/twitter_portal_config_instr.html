@@ -1,0 +1,40 @@
+<p>
+    For the pod to track events in Twitter, it must be registered with Twitter and
+    the Client ID and Client Secret that Twitter assigns after registration must be
+    saved in the pod.
+
+    The following steps will help you through the process of registering the Pod with Twitter:
+</p>
+<h3>1. Register your pod with Twitter</h3>
+<p>
+    Please visit the <a href="https://apps.twitter.com/" target="_blank">Twitter Apps Page</a>
+    and register your Pod as a Twitter App by clicking on the "Create New App" button on the
+    top right corner of the page.
+
+    The application details required to fill out the form to create the new app in Twitter is provided below:
+</p>
+
+<ul>
+    <li><strong>Website</strong>
+        <a href="#" data-toggle="tooltip" title="This is the domain name of the pod as a URL">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>:
+    <strong>{{ url_for("index_page.on_index", _external=True) }}</strong></li>
+        <li><strong>Callback URL</strong>
+            <a href="#" data-toggle="tooltip" title="
+            This is the URL of the resource in the Pod that will handle
+the login and authorization credentials received from Twitter. Twitter will redirect you
+to this resource in the pod after you successfully login. The Callback URL is:
+            ">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            </a>:
+    <strong>{{ url_for("oauth1_portal.get_authorization", portal_name="twitter", _external=True)}}</strong></li>
+</ul>
+
+<h3>2. Save Client ID and Client Secret</h3>
+<p>
+    Upon successful registration of the app, click on the menu item that says <strong>"Keys and Access Tokens"</strong>
+    in the resulting page. This page should show the API key and API Secret under the section called
+    "Application Settings". Please copy and paste the API key in the field <strong>Client ID</strong> and
+    API Secret in the field <strong>Client Secret</strong> in the form below and hit "Save".
+</p>

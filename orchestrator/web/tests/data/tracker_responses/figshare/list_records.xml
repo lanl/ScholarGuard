@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="/v2/static/oai2.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2018-07-18T19:48:44Z</responseDate>
+  <request metadataPrefix="oai_dc" until="2010-08-18T08:33:01Z" verb="ListRecords">https://api.figshare.com/v2/oai</request>
+  <ListRecords>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/144959</identifier>
+        <datestamp>2015-04-12T17:44:38Z</datestamp>
+        <setSpec>category_6</setSpec>
+        <setSpec>category_7</setSpec>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_4</setSpec>
+        <setSpec>month_year_04_2015</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>The Relationship between Anti-merozoite Antibodies and Incidence of &lt;em&gt;Plasmodium falciparum&lt;/em&gt; Malaria: A Systematic Review and Meta-analysis</dc:title>
+          <dc:creator>Freya J. I. Fowkes (136816)</dc:creator>
+          <dc:creator>Jack S. Richards (136808)</dc:creator>
+          <dc:creator>Julie A. Simpson (242873)</dc:creator>
+          <dc:creator>James G. Beeson (136856)</dc:creator>
+          <dc:subject>Physics</dc:subject>
+          <dc:subject>Medicine</dc:subject>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>anti-merozoite</dc:subject>
+          <dc:subject>antibodies</dc:subject>
+          <dc:subject>incidence</dc:subject>
+          <dc:subject>systematic</dc:subject>
+          <dc:subject>meta-analysis</dc:subject>
+          <dc:description>&lt;div&gt;&lt;h3&gt;Background&lt;/h3&gt;&lt;p&gt;One of the criteria to objectively prioritize merozoite antigens for malaria vaccine development is the demonstration that naturally acquired antibodies are associated with protection from malaria. However, published evidence of the protective effect of these antibodies is conflicting.&lt;/p&gt;&lt;h3&gt;Methods and Findings&lt;/h3&gt;&lt;p&gt;We performed a systematic review with meta-analysis of prospective cohort studies examining the association between anti-merozoite immunoglobin (Ig) G responses and incidence of &lt;em&gt;Plasmodium falciparum&lt;/em&gt; malaria. Two independent researchers searched six databases and identified 33 studies that met predefined inclusion and quality criteria, including a rigorous definition of symptomatic malaria. We found that only five studies were performed outside sub-Saharan Africa and that there was a deficiency in studies investigating antibodies to leading vaccine candidates merozoite surface protein (MSP)-1&lt;sub&gt;42&lt;/sub&gt; and erythrocyte binding antigen (EBA)-175. Meta-analyses of most-studied antigens were conducted to obtain summary estimates of the association between antibodies and incidence of &lt;em&gt;P. falciparum&lt;/em&gt; malaria. The largest effect was observed with IgG to MSP-3 C terminus and MSP-1&lt;sub&gt;19&lt;/sub&gt; (responders versus nonresponders, 54%, 95% confidence interval [CI] [33%–68%] and 18% [4%–30%] relative reduction in risk, respectively) and there was evidence of a dose-response relationship. A tendency towards protective risk ratios (RR&amp;lt;1) was also observed for individual study estimates for apical membrane antigen (AMA)-1 and glutamate-rich protein (GLURP)-R0. Pooled estimates showed limited evidence of a protective effect for antibodies to MSP-1 N-terminal regions or MSP-1-EGF (epidermal growth factor-like modules). There was no significant evidence for the protective effect for MSP-2 (responders versus nonresponders pooled RR, MSP-2&lt;sub&gt;FC27&lt;/sub&gt; 0.82, 95% CI 0.62–1.08, &lt;em&gt;p&lt;/em&gt; = 0.16 and MSP-2&lt;sub&gt;3D7&lt;/sub&gt; 0.92, 95% CI 0.75–1.13, &lt;em&gt;p&lt;/em&gt; = 0.43). Heterogeneity, in terms of clinical and methodological diversity between studies, was an important issue in the meta-analysis of IgG responses to merozoite antigens.&lt;/p&gt;&lt;h3&gt;Conclusions&lt;/h3&gt;&lt;p&gt;These findings are valuable for advancing vaccine development by providing evidence supporting merozoite antigens as targets of protective immunity in humans, and to help identify antigens that confer protection from malaria. Further prospective cohort studies that include a larger number of lead antigens and populations outside Africa are greatly needed to ensure generalizability of results. The reporting of results needs to be standardized to maximize comparability of studies. We therefore propose a set of guidelines to facilitate the uniform reporting of malaria immuno-epidemiology observational studies.&lt;/p&gt;&lt;h3&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;Please see later in the article for the Editors' Summary&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;</dc:description>
+          <dc:date>2015-04-12T17:44:38Z</dc:date>
+          <dc:type>Dataset</dc:type>
+          <dc:type>Fileset</dc:type>
+          <dc:identifier>10.1371/journal.pmed.1000218</dc:identifier>
+          <dc:relation>https://figshare.com/articles/The_Relationship_between_Anti_merozoite_Antibodies_and_Incidence_of_em_Plasmodium_falciparum_em_Malaria_A_Systematic_Review_and_Meta_analysis/144959</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506852</identifier>
+        <datestamp>2010-08-12T01:54:12Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_3</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Data collection and refinement statistics.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Test User (123456)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>refinement</dc:subject>
+          <dc:description>a&lt;p&gt;R&lt;sub&gt;merge&lt;/sub&gt; = Σ|I&lt;sub&gt;hkl&lt;/sub&gt;−hkl&amp;gt;|/ΣI&lt;sub&gt;hkl&lt;/sub&gt;.&lt;/p&gt;b&lt;p&gt;R&lt;sub&gt;factor&lt;/sub&gt; = Σ&lt;sub&gt;hkl&lt;/sub&gt;| |F&lt;sub&gt;o&lt;/sub&gt;|−|F&lt;sub&gt;c&lt;/sub&gt;| |/Σ&lt;sub&gt;hkl&lt;/sub&gt;|F&lt;sub&gt;o&lt;/sub&gt;| for all data except ≈5% which were used for R&lt;sub&gt;free&lt;/sub&gt; calculation. Values in parentheses are for the bin of highest resolution (approximate interval = 0.5 Å).&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:54:12Z</dc:date>
+          <dc:type>Dataset</dc:type>
+          <dc:type>Dataset</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.t001</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Data_collection_and_refinement_statistics_/506852</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506812</identifier>
+        <datestamp>2010-08-12T01:53:32Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_3</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Frequency of TCRβ clonotypes in D&lt;sup&gt;b&lt;/sup&gt;NPN3A&lt;sup&gt;+&lt;/sup&gt; Vβ8.3&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; T cells after 1&lt;sup&gt;0&lt;/sup&gt; (M1, M2) and 2&lt;sup&gt;0&lt;/sup&gt; (M3 to M7) mutant HK-NPN3A infection detected with either the D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt;</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>clonotypes</dc:subject>
+          <dc:subject>cells</dc:subject>
+          <dc:subject>mutant</dc:subject>
+          <dc:subject>hk-npn3a</dc:subject>
+          <dc:description>&lt;p&gt;M: individual mouse; NP: D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt; tetramer; N3A: D&lt;sup&gt;b&lt;/sup&gt;NPN3A tetramer.&lt;/p&gt;&lt;p&gt;1&lt;sup&gt;0&lt;/sup&gt; responses were generated by i.n. HK-NPN3A infection of mice; 2&lt;sup&gt;0&lt;/sup&gt; responses were generated by priming mice with i.p. PR8-NPN3A virus then challenging with i.n. HK-NPN3A virus; D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;: complex of H2D&lt;sup&gt;b&lt;/sup&gt; and NP&lt;sub&gt;366–374&lt;/sub&gt; peptide; D&lt;sup&gt;b&lt;/sup&gt;NPN3A: complex of H2D&lt;sup&gt;b&lt;/sup&gt; and NPN3A&lt;sub&gt;366–374&lt;/sub&gt; peptide.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:53:32Z</dc:date>
+          <dc:type>Dataset</dc:type>
+          <dc:type>Dataset</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.t002</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Frequency_of_TCR_clonotypes_in_D_sup_b_sup_NPN3A_sup_sup_V_8_3_sup_sup_CD8_sup_sup_T_cells_after_1_sup_0_sup_M1_M2_and_2_sup_0_sup_M3_to_M7_mutant_HK_NPN3A_infection_detected_with_either_the_D_sup_b_sup_NP_sub_366_sub_sup_sup_or_D_sup_b_sup_NPN3A_sup_sup_/506812</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506765</identifier>
+        <datestamp>2010-08-12T01:52:45Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_3</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Frequency of TCRβ clonotypes in D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt;Vβ8.3&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; T cells after 1&lt;sup&gt;0&lt;/sup&gt; (M8–M10) and 2&lt;sup&gt;0&lt;/sup&gt; (M11–M13) wt influenza virus infection detected with either the D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;&lt;</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>clonotypes</dc:subject>
+          <dc:subject>cells</dc:subject>
+          <dc:subject>wt</dc:subject>
+          <dc:subject>influenza</dc:subject>
+          <dc:description>&lt;p&gt;M: individual mouse; NP: D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt; tetramer; N3A: D&lt;sup&gt;b&lt;/sup&gt;NPN3A tetramer;&lt;/p&gt;&lt;p&gt;1&lt;sup&gt;0&lt;/sup&gt; responses were generated by i.n. HK infection of mice; 2&lt;sup&gt;0&lt;/sup&gt; responses were generated by priming mice with i.p. PR8 viruses then challenging i.n. with the HK virus; D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;: complex of H2D&lt;sup&gt;b&lt;/sup&gt; and NP&lt;sub&gt;366–374&lt;/sub&gt; peptide; D&lt;sup&gt;b&lt;/sup&gt;NPN3A: complex of H2D&lt;sup&gt;b&lt;/sup&gt; and NPN3A&lt;sub&gt;366–374&lt;/sub&gt; peptide.&lt;/p&gt;&lt;p&gt;*Predominant: ≥15%, &lt;sup&gt;#&lt;/sup&gt;Common: present in all mice sampled.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:52:45Z</dc:date>
+          <dc:type>Dataset</dc:type>
+          <dc:type>Dataset</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.t003</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Frequency_of_TCR_clonotypes_in_D_sup_b_sup_NP_sub_366_sub_sup_sup_V_8_3_sup_sup_CD8_sup_sup_T_cells_after_1_sup_0_sup_M8_M10_and_2_sup_0_sup_M11_M13_wt_influenza_virus_infection_detected_with_either_the_D_sup_b_sup_NP_sub_366_sub_sup_sup_or_D_sup_b_sup_NP/506765</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506638</identifier>
+        <datestamp>2010-08-12T01:50:38Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_1</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Decreased pMHC avidity and CD8β-independence for functional avidity of D&lt;sup&gt;b&lt;/sup&gt;NPN3A-primed T cells for D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>pmhc</dc:subject>
+          <dc:subject>avidity</dc:subject>
+          <dc:subject>cells</dc:subject>
+          <dc:description>&lt;p&gt;pMHC-TCR avidity was assessed by three measures: (A–C) the overall pMHC avidity (tetramer “on” and “off” rates) by tetramer dilution, (D–F) tetramer “off”-rate by tetramer dissociation and (G–I) CD8β-dependence by anti-CD8β blocking combined with ICS. Splenocytes were obtained from mice 2&lt;sup&gt;o&lt;/sup&gt;-challenged with wt or NPN3A viruses. (A–C) D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt; CD8&lt;sup&gt;+&lt;/sup&gt; and D&lt;sup&gt;b&lt;/sup&gt;NPN3A CD8&lt;sup&gt;+&lt;/sup&gt; T cells were stained with 2-fold dilutions of PE-conjugated tetramers, followed by anti-CD8 staining. (D–F) Cells were stained with either the D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;336&lt;/sub&gt; or D&lt;sup&gt;b&lt;/sup&gt;NPN3A tetramers at the saturating concentration, then incubated at 37&lt;sup&gt;o&lt;/sup&gt;C with a mAb to H2D&lt;sup&gt;b&lt;/sup&gt; to prevent rebinding of dissociated tetramer. The progressive diminution in tetramer staining was measured by flow cytometric analysis. (G–I) Lymphocytes were pre-cultured in the presence or absence of anti-CD8β antibody (53.5-8) (10 µg/ml). Cells were then stimulated for 5 h with peptide, IL-2 and GolgiStop also in the presence or absence of anti-CD8β antibody (5 µg/ml). Following stimulation, cells were analysed for CD8 and IFNγ expression. Shown is (G) the percentage of CD8&lt;sup&gt;+&lt;/sup&gt; T cells producing IFN-γ in the presence or absence of anti-CD8β blocking mAb, (H) mean fluorescence intensity (MFI) of IFN-γ staining, (I) the percentage of CD8&lt;sup&gt;+&lt;/sup&gt; cells dependent on anti-CD8β for IFN-γ production. Tetramer staining was performed in the presence of NaAz, then washed and incubated with anti-CD8 mAb. The progressive diminution in tetramer staining was measured. The Td50 value defining the time to 50% tetramer loss. Data represent mean±SD (n = 4–5 mice per group), *p&amp;lt;0.01; &lt;sup&gt;#&lt;/sup&gt;p&amp;lt;0.05.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:50:38Z</dc:date>
+          <dc:type>Image</dc:type>
+          <dc:type>Figure</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.g007</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Decreased_pMHC_avidity_and_CD8_independence_for_functional_avidity_of_D_sup_b_sup_NPN3A_primed_T_cells_for_D_sup_b_sup_NP_sub_366_sub_/506638</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506549</identifier>
+        <datestamp>2010-08-12T01:49:09Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_1</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Decreased TCR functional avidity of D&lt;sup&gt;b&lt;/sup&gt;NPN3A-primed T cells for D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>tcr</dc:subject>
+          <dc:subject>avidity</dc:subject>
+          <dc:subject>cells</dc:subject>
+          <dc:description>&lt;p&gt;(A–C) Responsiveness of CD8&lt;sup&gt;+&lt;/sup&gt; T cells to varying peptide concentrations was determined as a measure of functional TCR avidity for the cognate pMHCI complex. (A,B) D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt; CD8&lt;sup&gt;+&lt;/sup&gt; and (A,C) D&lt;sup&gt;b&lt;/sup&gt;NPN3A CD8&lt;sup&gt;+&lt;/sup&gt; T cells recovered from mice 2&lt;sup&gt;o&lt;/sup&gt;-challenged with wt or NPN3A viruses were assessed for functional TCR avidity using the ICS assay. The enriched splenocytes analysed by IFN-γ ICS were stimulated &lt;i&gt;in vitro&lt;/i&gt; with 4-fold dilutions of the NP&lt;sub&gt;366&lt;/sub&gt;, or NPN3A peptide. Data represent mean±SD (n = 4), * = p&amp;lt;0.01. (D,E) The response profiles of monoclonal D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;-specific LacZ-inducible (22) T cell hybridomas (3 distinct lines all with the “public” SGGGNTGQL CDR3β sequence) to peptide-pulsed H-2D&lt;sup&gt;b&lt;/sup&gt; splenocytes presenting the (D) wt D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt; or (E) D&lt;sup&gt;b&lt;/sup&gt;NPN3A epitopes were assessed in LacZ assay &lt;a href="http://www.plospathogens.org/article/info:doi/10.1371/journal.ppat.1001039#ppat.1001039-Kedzierska2" target="_blank"&gt;[22]&lt;/a&gt;.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:49:09Z</dc:date>
+          <dc:type>Image</dc:type>
+          <dc:type>Figure</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.g006</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Decreased_TCR_functional_avidity_of_D_sup_b_sup_NPN3A_primed_T_cells_for_D_sup_b_sup_NP_sub_366_sub_/506549</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506410</identifier>
+        <datestamp>2010-08-12T01:46:50Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_1</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Heterologous 2&lt;sup&gt;o&lt;/sup&gt; challenge with the wt HK and mutant HK-NPN3A viruses.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>wt</dc:subject>
+          <dc:subject>hk</dc:subject>
+          <dc:subject>mutant</dc:subject>
+          <dc:subject>hk-npn3a</dc:subject>
+          <dc:description>&lt;p&gt;Naïve (A) B6 or (B) μMT mice were primed i.p with the mutant PR8-NPN3A and challenged i.n. 6 weeks later with 1×10&lt;sup&gt;4&lt;/sup&gt; p.f.u. of either the wt HK or the mutant HK-NPN3A virus. Alternatively, naïve mice were primed i.p. with the wt PR8 virus and challenged i.n. 6 weeks later with 1×10&lt;sup&gt;4&lt;/sup&gt; p.f.u. of the wt HK or the mutant HK-NPN3A virus. (A) The magnitude of the CD8&lt;sup&gt;+&lt;/sup&gt; T cell response measured 8d after 2&lt;sup&gt;0&lt;/sup&gt; infection was determined by the ICS assay for IFN-γ. Data represent mean±SD (n = 5) (B) Viral clearance after the secondary homologous (PR8-&amp;gt;X31 and PR8-NP-N3A&amp;gt;X31-NPN3A) or heterologous (PR8-&amp;gt;X31-NPN3A and PR8-NP-N3A&amp;gt;X31) challenge. Lungs were sampled at days 5 and 6 after secondary infection and homogenized for virus titration by plaque assay on MDCK cell monolayers. Data represent the mean and n = 3–5 mice per group. * = p&amp;lt;0.01 # = p&amp;lt;0.05.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:46:50Z</dc:date>
+          <dc:type>Image</dc:type>
+          <dc:type>Figure</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.g005</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Heterologous_2_sup_o_sup_challenge_with_the_wt_HK_and_mutant_HK_NPN3A_viruses_/506410</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506301</identifier>
+        <datestamp>2010-08-12T01:45:01Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_1</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>TCR repertoire of naïve D&lt;sup&gt;b&lt;/sup&gt;NPN3A&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; T cells.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>repertoire</dc:subject>
+          <dc:description>&lt;p&gt;Effects of the N3A substitution within NP&lt;sub&gt;366–374&lt;/sub&gt; on (A) naïve T cell precursor frequency, (B) Vβ8.3 bias and (C) naïve TCRβ repertoire within the D&lt;sup&gt;b&lt;/sup&gt;NPN3A&lt;sup&gt;+&lt;/sup&gt;Vβ8.3&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; set. (A) Naïve D&lt;sup&gt;b&lt;/sup&gt;NPN3A&lt;sup&gt;+&lt;/sup&gt; and D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; T cell precursors within lymph nodes and spleens were identified with the D&lt;sup&gt;b&lt;/sup&gt;NPN3A-PE and D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;-PE tetramers using an established tetramer enrichment protocol &lt;a href="http://www.plospathogens.org/article/info:doi/10.1371/journal.ppat.1001039#ppat.1001039-Moon1" target="_blank"&gt;[53]&lt;/a&gt;. (B) Naïve D&lt;sup&gt;b&lt;/sup&gt;NPN3A&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; T cells were assessed for the conservancy of Vβ8.3 bias. (C) a CDR3β sequences within the naïve D&lt;sup&gt;b&lt;/sup&gt;NPN3A&lt;sup&gt;+&lt;/sup&gt;Vβ8.3&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt; T cells were determined by a single-cell PCR, amplification of Vβ8.3 transcripts and sequencing.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:45:01Z</dc:date>
+          <dc:type>Image</dc:type>
+          <dc:type>Figure</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.g004</dc:identifier>
+          <dc:relation>https://figshare.com/articles/TCR_repertoire_of_na_ve_D_sup_b_sup_NPN3A_sup_sup_CD8_sup_sup_T_cells_/506301</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506209</identifier>
+        <datestamp>2010-08-12T01:43:29Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_1</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Structure of the D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366–374&lt;/sub&gt; and D&lt;sup&gt;b&lt;/sup&gt;NPN3A complexes.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>immunology/immune response</dc:subject>
+          <dc:subject>immunology/immunity to infections</dc:subject>
+          <dc:description>&lt;p&gt;The H2D&lt;sup&gt;b&lt;/sup&gt; molecule is in a cartoon representation with the α1-helix on the back and the α2-helix removed for better clarity. The peptide is represented in stick conformation with the C terminus on the right. (A) The NPN3A is in purple and (B) the NP&lt;sub&gt;366&lt;/sub&gt; in blue, with the p3 mutation in yellow. (B) Overlay of the peptide-binding cleft for H2D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt; and H2D&lt;sup&gt;b&lt;/sup&gt;NPN3A with the α1-helix on top and the α2-helix on the bottom. (C) Contacts with the H-2D&lt;sup&gt;b&lt;/sup&gt; molecule by (C) P3N in NP&lt;sub&gt;366&lt;/sub&gt; and (D) P3A in NPN3A. The Asn3 mutation to alanine abolishes contacts between the P3 residue of the peptide with His155 and the Tyr156 of the H-2D&lt;sup&gt;b&lt;/sup&gt;.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:43:29Z</dc:date>
+          <dc:type>Image</dc:type>
+          <dc:type>Figure</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.g003</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Structure_of_the_D_sup_b_sup_NP_sub_366_374_sub_and_D_sup_b_sup_NPN3A_complexes_/506209</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:figshare.com:article/506063</identifier>
+        <datestamp>2010-08-12T01:41:03Z</datestamp>
+        <setSpec>category_46</setSpec>
+        <setSpec>portal_5</setSpec>
+        <setSpec>item_type_1</setSpec>
+        <setSpec>month_year_08_2010</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Acute and recall CD8&lt;sup&gt;+&lt;/sup&gt; T cell responses to D&lt;sup&gt;b&lt;/sup&gt;N3A and D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;.</dc:title>
+          <dc:creator>Sophie A. Valkenburg (176257)</dc:creator>
+          <dc:creator>Stephanie Gras (170037)</dc:creator>
+          <dc:creator>Carole Guillonneau (170044)</dc:creator>
+          <dc:creator>Nicole L. La Gruta (243911)</dc:creator>
+          <dc:creator>Paul G. Thomas (194304)</dc:creator>
+          <dc:creator>Anthony W. Purcell (105036)</dc:creator>
+          <dc:creator>Jamie Rossjohn (127997)</dc:creator>
+          <dc:creator>Peter C. Doherty (176276)</dc:creator>
+          <dc:creator>Stephen J. Turner (104373)</dc:creator>
+          <dc:creator>Katherine Kedzierska (176243)</dc:creator>
+          <dc:subject>Immunology</dc:subject>
+          <dc:subject>responses</dc:subject>
+          <dc:description>&lt;p&gt;The magnitude of CD8&lt;sup&gt;+&lt;/sup&gt; T cell responses at the peak (d10 1&lt;sup&gt;o&lt;/sup&gt; A,B; d8 2&lt;sup&gt;o&lt;/sup&gt; D,E) or memory (d28, CF) phases following 1&lt;sup&gt;o&lt;/sup&gt; (A–C) or 2&lt;sup&gt;o&lt;/sup&gt; (D–F) infection. Cells were stained with the D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt;-PE, D&lt;sup&gt;b&lt;/sup&gt;NPN3A-PE or D&lt;sup&gt;b&lt;/sup&gt;PA&lt;sub&gt;224&lt;/sub&gt;-PE tetramers and anti-CD8-PerCPCy5.5 mAb. The numbers of epitope specific CD8&lt;sup&gt;+&lt;/sup&gt; T cells were calculated from the % cells staining and the total cell counts. The wt HK or HK-NPN3A viruses were used for 1&lt;sup&gt;o&lt;/sup&gt; i.n. infection and 2&lt;sup&gt;o&lt;/sup&gt; i.n. challenge of i.p.-primed (PR8 or PR8-NPN3A i.p. &amp;gt;30d previously) B6 mice. Data are mean±SD n = 5 mice per group, * = p&amp;lt;0.01. Memory T cell numbers were also analysed on d60, and the tetramer analysis was replicated using the ICS assay (data not shown). (G, H) Representative dot plots are shown for (G) D&lt;sup&gt;b&lt;/sup&gt;NP&lt;sub&gt;366&lt;/sub&gt; or NPN3A tetramer staining and (H) intracellular cytokine assay after infection with either HK or HK-NPN3A for the same individual mouse.&lt;/p&gt;</dc:description>
+          <dc:date>2010-08-12T01:41:03Z</dc:date>
+          <dc:type>Image</dc:type>
+          <dc:type>Figure</dc:type>
+          <dc:identifier>10.1371/journal.ppat.1001039.g002</dc:identifier>
+          <dc:relation>https://figshare.com/articles/Acute_and_recall_CD8_sup_sup_T_cell_responses_to_D_sup_b_sup_N3A_and_D_sup_b_sup_NP_sub_366_sub_/506063</dc:relation>
+          <dc:rights>CC BY 4.0</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <resumptionToken expirationDate="2018-07-18T20:48:44Z">c2Nyb2xsVG9rZW49RG5GMVpYSjVWR2hsYmtabGRHTm9CUUFBQUFBRjJqWm1Ga05vVkUxNmJYRkxVbWhEVnpnM1RtWXRURmRmVkVFQUFBQUFCekJVTEJZNVMwMTRjR2MyVEZSQmJYUjFURk5wZDE5TU9FRjNBQUFBQUFYYU5tY1dRMmhVVFhwdGNVdFNhRU5YT0RkT1ppMU1WMTlVUVFBQUFBQUhNRlF0RmpsTFRYaHdaelpNVkVGdGRIVk1VMmwzWDB3NFFYY0FBQUFBQnpCVUxoWTVTMDE0Y0djMlRGUkJiWFIxVEZOcGQxOU1PRUYzJm1ldGFkYXRhUHJlZml4PW9haV9kYyZwYWdlPTImdmVyYj1MaXN0UmVjb3JkcyZleHBpcmF0aW9uPTIwMTgtMDctMTglMjAyMCUzQTQ4JTNBNDQmdW50aWw9MjAxMC0wOC0xOFQwOCUzQTMzJTNBMDFa</resumptionToken>
+  </ListRecords>
+</OAI-PMH>

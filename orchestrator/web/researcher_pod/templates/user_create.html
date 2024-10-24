@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <div class="ctx-bg bg-warning">
+    {% for message in messages %}
+    <p>{{ message }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endwith %}
+
+  <h2>Create User Profile</h2>
+  <p>Please verify and edit the information below.</p>
+
+  <div class="row">
+    <div class="col-md-8">
+      {% if form.errors %}
+      <div class="ctx-bg">
+        {% for error in form.errors %}
+        <p class="bg-danger">Error: {{ error.replace("_", " ").title() }}
+          is either blank or invalid.</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <form method="POST" action="{{ url_for('user_profile_page.on_user_profile', _external=True) }}">
+        <h3>Your Pod Profile</h3>
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+      <ul>
+        {% for user in form %}
+          {%
+          if user.type != "HiddenField"
+            and user.type != "CSRFTokenField"
+            and user.type != "FieldList"
+          %}
+          <li><b>{{ user.label }}</b>:&nbsp; &nbsp; &nbsp;
+            <i>{{ user }}</i></li>
+        {% if user.errors %}
+        <ul class="ctx-bg bg-warning">
+          {% for error in user.errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        </ul>
+
+        {% for portal in form.portals %}
+        <h3>Your {{ portal_titles[loop.index]["title"] }} Profile</h3>
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+          {% if portal_titles[loop.index]["notes"] %}
+          <div class="ctx-bg">
+            <p class="bg-info">Note: {{ portal_titles[loop.index]["notes"] }}</p>
+          </div>
+          {% endif %}
+          <ul>
+          {% for field in portal %}
+            {% if field.type == "HiddenField" %}
+            {{ field }}
+            {% elif field.type != "CSRFTokenField" %}
+            <li>{{ field.label }} {{ field }}</li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endfor %}
+        <input type="submit" value="Save" />
+        </form>
+    </div>
+  </div>
+
+{% endblock %}

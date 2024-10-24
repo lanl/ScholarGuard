@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import os
+
+#base_dir = "/Users/harihar/dropbox/Projects/researcher_pod/"
+base_dir = "/data/web/orchestrator/"
+
+os.environ["RESEARCHER_POD_CONFIG"] = base_dir + "/conf/config_standalone.yaml"
+os.environ["RESEARCHER_POD_SECRETS"] = base_dir + "/secrets/secrets"
+
+
+from researcher_pod.pod.utils import resend_missed_events_to_archiver
+
+
+if __name__ == "__main__":
+    resend_missed_events_to_archiver()
+

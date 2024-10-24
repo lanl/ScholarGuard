@@ -1,0 +1,495 @@
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/?pretty=&size=0"
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=1&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "user_id": {
+                        "value": "https://orcid.org/0000-0002-7585-5009"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "activity.event.@id": {
+                        "value": "http://0.0.0.0:5000/tracker/event/d08f4d76aacf4f1d87606b51593772e0"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_delete_by_query" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "user_id": {
+                        "value": "https://orcid.org/0000-0002-7585-5009"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_delete_by_query" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "activity.event.type": {
+                        "value": "tracker:Capture"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_delete_by_query" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "tracker_parent_id": {
+                        "value": "02fee3e1e1ce481fb632fec85b8dfe80"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_delete_by_query" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "range": {
+                    "activity.event.prov:generatedAtTime": {
+                        "gte": "20181101",
+                        "lte": "20181109",
+                        "format": "yyyyMMdd"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                    "term": {
+                        "activity.event.object.id": {
+                            "value": "https://hypothes.is/a/rTh0lms3EeioCD8F_QTDQA"
+                        }
+                    }
+                },
+                {
+                    "term": {
+                        "activity.event.published": {
+                            "value": "2018-06-08T16:19:10Z"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=1" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "_id": {
+                        "value": "capba89d48796c34a8589d9b3a276ad189"
+                    }
+                }
+            }, {
+                "term": {
+                    "activity.event.type": {
+                        "value": "tracker:Capture"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "range": {
+                    "activity.event.published": {
+                        "gte": "20181101",
+                        "lte": "20181109",
+                        "format": "yyyyMMdd"
+                    }
+                }
+                },
+                {
+                "term": {
+                    "activity.event.type": {
+                        "value": "tracker:Capture"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "range": {
+                    "activity.event.published": {
+                        "gte": "20181106",
+                        "lte": "20181106",
+                        "format": "yyyyMMdd"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "range": {
+                    "activity.event.published": {
+                        "gte": "now-1y/d",
+                        "lte": "now/d"
+                    }
+                }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                    "term": {
+                        "user_id": {
+                            "value": "https://orcid.org/0000-0002-4372-870X"
+                        }
+                    }
+                },
+                {
+                    "bool": {
+                        "should": [
+                            {"term": {"tracker_name": "wikipedia"}}
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "should": [
+                {"term": {"_id": "4c34ffb3be704209a92317f6adc45bbd"}},
+                {"term": {"tracker_parent_id": "4c34ffb3be704209a92317f6adc45bbd"}}
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_search?pretty=&size=0&sort=msg_published_at%3Adesc" -d '{
+    "aggs" : {
+        "activity.event.published" : {
+            "date_histogram" : {
+                "field" : "activity.event.published",
+                "interval" : "1y",
+                "format" : "yyyy"
+            }
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                    "term": {
+                        "activity.event.published": {
+                            "value": "2018-11-10T12:05:00Z"
+                        }
+                    }
+                },
+                {
+                    "nested": {
+                        "path": "activity.event.object.items",
+                        "query": {
+                            "bool": {
+                                "must": [{
+                                    "match": {
+                                        "activity.event.object.items.href": "https://www.shawnmjones.org/"
+                                    }
+                                }]
+                            }
+                        }
+                }
+                }]
+            }
+        }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+    "query": {
+        "bool": {
+            "should": [
+                {"term": {"_id": "4c34ffb3be704209a92317f6adc45bbd"}},
+                {"term": {"tracker_parent_id": "4c34ffb3be704209a92317f6adc45bbd"}},
+                {"wildcard": {"activity.event.id": "*4c34ffb3be704209a92317f6adc45bbd"}}
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=0" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "activity.event.type": {
+                        "value": "tracker:Archiver"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=0" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "activity.event.type": {
+                        "value": "tracker:Capture"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "tracker_parent_id": {
+                        "value": "02fee3e1e1ce481fb632fec85b8dfe80"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=10000&sort=msg_published_at%3Adesc" -d '{
+        "query": {
+            "nested": {
+                "path": "activity.event.object.items",
+                "query": {
+                    "bool": {
+                        "must": [{
+                            "match": {
+                                "activity.event.object.items.href": "https://wikipedia.org/w/index.php?title=User:Shawnmjones"
+                            }
+                        }]
+                    }
+                }
+            }
+        }
+}'
+
+
+
+{
+    "scripted_upsert":true,
+    "script" : {
+        "id": "my_web_session_summariser",
+        "params" : {
+            "pageViewEvent" : {
+                "url":"foo.com/bar",
+                "response":404,
+                "time":"2014-01-01 12:32"
+            }
+        }
+    },
+    "upsert" : {}
+}
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_update_by_query" -d '{
+  "script": {
+    "source": "ctx._source.likes++",
+    "lang": "painless"
+  },
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "_id": {
+                        "value": "capba89d48796c34a8589d9b3a276ad189"
+                    }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=&size=0" -d '{
+    "query": {
+        "nested": {
+            "path": "activity.event.result.items",
+            "query": {
+                "exists" : { "field" : "activity.event.result.items.mementoDatetime" }
+            }
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X POST "http://0.0.0.0:9200/pod/_update_by_query?pretty=" -d '{
+    "script": {
+        "source": "for (int i = 0; i < ctx._source[\"activity\"][\"event\"][\"result\"][\"items\"].size(); i++) {ctx._source[\"activity\"][\"event\"][\"result\"][\"items\"][i].mementoDatetime = ctx._source[\"activity\"][\"event\"][\"result\"][\"items\"][i].remove(\"mementoDateTime\")}"
+    },
+    "query": {
+        "nested": {
+            "path": "activity.event.result.items",
+            "query": {
+                "exists" : { "field" : "activity.event.result.items.mementoDateTime" }
+            }
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X GET "http://0.0.0.0:9200/pod/_search?pretty=" -d '{
+    "query": {
+        "bool": {
+            "must": [{
+                "term": {
+                    "tracker_parent_id": {
+                        "value": "02fee3e1e1ce481fb632fec85b8dfe80"
+                    }
+                }
+            },
+            {
+                "script" : {
+                    "script" : {
+                        "source": "doc[\"tracker_parent_id\"].value ==  doc[\"_id\"].value",
+                        "lang": "painless"
+                     }
+                }
+            }
+            ]
+        }
+    }
+}'
+
+curl -H 'Content-Type: application/json' -X PUT "http://0.0.0.0:9200/pod/_settings?pretty=" -d '{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "activity_join": {
+          "type": "join",
+          "relations": {
+            "_id": "tracker_parent_id"
+          }
+        }
+      }
+    }
+  }
+}'
+
+body = {
+    ...:         "query": {
+    ...:             "bool": {
+    ...:                 "must": [{
+    ...:                     "term": {
+    ...:                         "activity.event.type": {
+    ...:                             "value": "tracker:Tracker"
+    ...:                         }
+    ...:                     }
+    ...:                 }
+    ...:                 ]
+    ...:             }
+    ...:         }
+    ...:  }
+res = es.search(index="pod", body=body, size=10000)
+
+from collections import defaultdict
+schema = defaultdict(int)
+    ...: action = defaultdict(int)
+    ...: researcher = defaultdict(int)
+    ...:
+    ...: for r in res["hits"]["hits"]:
+    ...:     act = r["_source"]["activity"]["event"]
+    ...:     if "Add" in act["type"]:
+    ...:         action["Add"] += 1
+    ...:     elif "Update" in act["type"]:
+    ...:         action["Update"] += 1
+    ...:     elif "Create" in act["type"]:
+    ...:         action["Create"] += 1
+    ...:     elif "Like" in act["type"]:
+    ...:         action["Like"] += 1
+    ...:     elif "Accept" in act["type"]:
+    ...:         action["Accept"] += 1
+    ...:     elif "TentativeReject" in act["type"]:
+    ...:         action["TentativeReject"] += 1
+    ...:     elif "Offer" in act["type"]:
+    ...:         action["Offer"] += 1
+    ...:     else:
+    ...:         action[act["type"]] += 1
+    ...:
+    ...:     for items in act["object"]["items"]:
+    ...:         sc = [ty for ty in items["type"] if ty.startswith("schema:")][0]
+    ...:         schema[sc] += 1
+    ...:
+    ...:     oid = act["actor"]["id"]
+    ...:     researcher[oid] += 1
+
+
+body = {"query": { "bool": { "must": [{ "term": { "tracker_name": { "value": "wordpress" }}}]}}}
+res = es.search(index="pod", body=body, size=10000)
+res["hits"]["total"]

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+
+    <h2>{{ user.full_name }} - {{ user.id }}</h2>
+
+    {% include "activities.html" %}
+</div>
+
+{% endblock %}
+{% block page_scripts %}
+<script>
+    $(".collapse").on("show.bs.collapse", function (e) {
+        ele_id = "#" + e.target.id + " .as2_message";
+        json = JSON.parse($(ele_id).text());
+        indent_js = JSON.stringify(json, undefined, 2);
+        $(ele_id).html(indent_js);
+    });
+</script>
+{% endblock %}

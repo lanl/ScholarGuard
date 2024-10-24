@@ -1,0 +1,38 @@
+<p>
+    For the pod to track events in FigShare, the pod app must be registered with FigShare. After registration,
+    the Client ID and Client Secret that FigShare assigns must be saved in the pod.
+
+    The following steps will help you through the process of registering the Pod with FigShare:
+</p>
+<h3>1. Register your pod with FigShare</h3>
+<p>
+    Please visit the <a href="https://figshare.com/account/applications" target="_blank">FigShare Settings Page</a> and
+    click on <strong>Create Application</strong>.
+
+    The information required to fill out the form is provided below:
+</p>
+
+<ul>
+    <li><strong>Application URL</strong>
+        <a href="#" data-toggle="tooltip" title="This is the domain name of the pod as a URL">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>:
+    <strong>{{ url_for("index_page.on_index", _external=True) }}</strong></li>
+    <li><strong>Callback URL:</strong>
+        <a href="#" data-toggle="tooltip" title="This is the URL of the resource in the Pod that will handle
+the login and authorization credentials received from FigShare. FigShare will redirect you
+to this resource after you successfully login. Please enter this Callback URL in the form:
+">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>:
+    <strong>{{ url_for("oauth2_portal.get_authorization", portal_name="figshare", _external=True)}}</strong></li>
+</ul>
+
+<h3>2. Save Client ID and Client Secret</h3>
+<p>
+    Upon successful registration of the app, you should see a page which shows what
+    the <strong>Consumer ID</strong> and <strong>Consumer Secret</strong> are.
+    Please copy that information and paste it in the
+    fields <strong>Client ID</strong> and <strong>Client Secret</strong> in the form below and hit "Save".
+</p>
+

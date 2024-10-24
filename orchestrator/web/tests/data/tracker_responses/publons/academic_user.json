@@ -1,0 +1,66 @@
+{
+    "ids": {
+        "id": 634082,
+        "url": "https://publons.com/author/634082/",
+        "api": "https://publons.com/api/v2/academic/634082/",
+        "orcid": "0000-0003-4097-6326"
+    },
+    "publishing_name": "Thomas J. Leeper",
+    "bio": "Associate Professor in Political Behaviour at the London School of Economics and Political Science. Interested in public opinion, political psychology, survey and experimental methods, open science, cloud computing, and R.",
+    "merit": 497,
+    "editor_merit": 0,
+    "affiliations": {
+        "institutions": [
+            {
+                "ids": {
+                    "id": 8037,
+                    "url": "https://publons.com/institution/8037/"
+                },
+                "name": "London School of Economics and Political Science, University of London"
+            },
+            {
+                "ids": {
+                    "id": 8037,
+                    "url": "https://publons.com/institution/8037/"
+                },
+                "name": "London School of Economics and Political Science, University of London"
+            }
+        ],
+        "other": [
+            {
+                "name": "Twitter",
+                "url": "https://twitter.com/thosjleeper"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/thomasjleeper/"
+            },
+            {
+                "name": "ORCiD",
+                "url": "http://orcid.org/0000-0003-4097-6326"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/leeper"
+            }
+        ]
+    },
+    "reviews": {
+        "pre": {
+            "count": 167,
+            "url": "https://publons.com/api/v2/academic/review/?academic=634082&pre=true"
+        },
+        "post": {
+            "count": 0,
+            "url": "https://publons.com/api/v2/academic/review/?academic=634082&pre=false"
+        }
+    },
+    "editorial_boards": {
+        "count": 4,
+        "url": "https://publons.com/api/v2/academic/editorial-board/?academic=634082"
+    },
+    "handling_editor_records": {
+        "count": 0,
+        "url": "https://publons.com/api/v2/academic/handling-editor/?academic=634082"
+    }
+}

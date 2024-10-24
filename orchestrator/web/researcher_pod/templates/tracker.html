@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <!-- RobustLinks CSS -->
+    <link rel="stylesheet" type="text/css" href="/tracker/static/css/robustlinks.css" />
+    <link rel="stylesheet" type="text/css" href="/tracker/static/css/jquery-ui.min.css" />
+    <!-- RobustLinks Javascript -->
+    <script type="text/javascript" src="/tracker/static/js/robustlinks-min.js"></script>
+    <script type="text/javascript" src="/tracker/static/js/robustlinks-uri-exclude-list.js"></script>
+{% endblock head %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                {% if user.profile_image %}
+                    <img data-toggle="tooltip" title="{{ user.full_name }}" alt="profile image" class="img-fluid tracker_actor_img" src="/tracker/static/img/user/{{ user.profile_image }}.png" />
+                {% else %}
+                    <img data-toggle="tooltip" title="{{ user.full_name }}" alt="profile image" class="img-fluid tracker_actor_img" src="/tracker/static/img/user/user_icon.png" />
+                {% endif %}
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img data-toggle="tooltip" title="{{ event_info.tracker_name }}" alt="" class="img-fluid tracker_actor_img" src="/tracker/static/img/{{ event_info.tracker_name }}_logo.png" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img data-toggle="tooltip" title="{{ event_info.artifact_type }}" alt="" class="img-fluid tracker_actor_img" src="/tracker/static/img/artifact_type/{{ event_info.artifact_type }}.png" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img data-toggle="tooltip" title="{{ event_info.event_type }}" alt="" class="img-fluid tracker_actor_img" src="/tracker/static/img/event_type/{{ event_info.event_type }}.png" />
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Artifact</h3>
+            <div class="container">
+                {% if is_admin %}
+                <div class="admin-panel">
+                    {% if not as2_strs.capture%}
+                    <button id="{{ event_info.event_id }}" type="button" class="resend-capture btn btn-primary">Resend to Capture</button><span class="resend-capture-error"></span>
+                    {% endif %}
+                </div>
+                {% endif %}
+                <p>Artifact URLs:</p>
+                    {% for item in tracker_as2.event.object["items"] %}
+                        {% if archiver_as2 %}
+                            <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#rl_embed_{{ loop.index0 }}">Embed</button>
+                            &nbsp;
+                            <a href="{{ item.href }}" target="_blank">{{ item.href }}</a>
+                            <br/>
+                            <br/>
+
+                            {% set arc_item = archiver_as2.event.result["items"][loop.index0] %}
+                            <div class="modal fade" id="rl_embed_{{ loop.index0 }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Embed as HTML via RobustLinks</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <textarea id='rl_text' rows='6' cols='65' readonly>
+<a href="{{ arc_item.OriginalResource }}"
+    data-versionurl="{{ arc_item.href }}"
+    data-versiondate="{{ arc_item.mementoDatetime }}">
+Robust Link for {{ arc_item.Memento }}
+</a>
+                       </textarea>
+                                <br/>
+                                <br/>
+                                <p>Copy and paste the HTML code above to decorate the Memento URL: <br/><i>{{ arc_item.Memento }}</i>.</p>
+                                <a href=\"http://robustlinks.mementoweb.org\" style='font-size: 0.7em; color: gray;'>Powered by Robust Links.</a>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                        {% else %}
+                            <ul>
+                            {% for item in tracker_as2.event.object["items"] %}
+                                <li>
+                                <a href="{{ item.href }}" target="_blank">{{ item.href }}</a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+
+                    {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <!-- Artifact attributes table -->
+            <div class="">
+                <table class="table artifact-table">
+                    <tbody>
+                        <tr>
+                            <td>Published</td>
+                            <td>{{ tracker_as2.event.published }}</td>
+                        </tr>
+                        <tr>
+                            <td>Researcher</td>
+                            <td>{{ user.full_name }}</td>
+                        </tr>
+                        <tr>
+                            <td>ORCID</td>
+                            <td><a target="_blank" href="{{ user.id }}">{{ user.id }}</a></td>
+                        </tr>
+                        <tr>
+                            <td>Portal</td>
+                            <td><a target="_blank" href="{{ event_info.portal_url }}">{{ event_info.tracker_name|title }}</a></td>
+                        </tr>
+                        <tr>
+                            <td>User</td>
+                            <td><a target="_blank" href="{{ tracker_as2.event.actor.url }}">
+                            {% if tracker_as2.event.actor.name %}
+                                {{ tracker_as2.event.actor.name }}
+                            {% elif portal.portal_username %}
+                                {{ portal.portal_username }}
+                            {% else %}
+                                {{ user.full_name }}
+                            {% endif %}
+                            </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <!-- Mementoembed if available -->
+            <div class="memento-card-div">
+            </div>
+        </div>
+    </div>
+    <!-- Links Captured: WARCs, Mementos -->
+    <div class="row">
+        <div class="col-lg-12">
+            {% if archiver_as2 or capture_as2 %}
+            <h3>Resources Captured</h3>
+            {% endif %}
+            <div class="container">
+                {% if archiver_as2 %}
+                <div class="">
+                    <p>Mementos:</p>
+                    <ul>
+                    {% for item in archiver_as2.event.result["items"] %}
+                        <li>
+                            <a href="{{ item.href }}"
+                            target="_blank"
+                            {% if item.OriginalResource %}
+                            data-originalurl="{{ item.OriginalResource }}"
+                            {% else %}
+                            data-originalurl="{{ item.href }}"
+                            {% endif %}
+                            data-versionurl="{{ item.Memento }}"
+                            data-versiondate="{{ item.mementoDatetime }}"
+                            >{{ item.href }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% if capture_as2 %}
+                <div class="">
+                    <p>WARCs:</p>
+                    <ul>
+                    {% for item in capture_as2.event.result["items"] %}
+                        <li>
+                            <a href="{{ item.href }}"
+                            target="_blank"
+                            >{{ item.href }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- Activity Stream Messages -->
+    <div class="row as2-section">
+        <div class="col-lg-12">
+            <h3>Events</h3>
+            <ul>
+                <li>
+                    <a target="_blank"  href="/tracker/event/{{ event_info.event_id }}/">Tracker - {{ event_info.event_id }} - {{ tracker_as2.event["prov:generatedAtTime"] }}</a>
+                </li>
+                <li>
+                    {% if capture_as2 %}
+                    <a target="_blank"  href="/capture/event/{{ event_info.capture_id }}/">Capture - {{ event_info.capture_id }} - {{ capture_as2.event["prov:generatedAtTime"] }}</a>
+                    {% else %}
+                    <span>Capture - Processing</span>
+                    {% endif %}
+                </li>
+                <li>
+                    {% if archiver_as2 %}
+                    <a target="_blank"  href="/archiver/event/{{ event_info.archiver_id }}/">Archiver - {{ event_info.archiver_id }} - {{ archiver_as2.event["prov:generatedAtTime"] }}</a>
+                    {% else %}
+                    <span>Archiver - Processing</span>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    {% endblock %}
+
+    {% block page_scripts %}
+        <script src="/tracker/static/js/tracker-trigger.js"></script>
+        {% if archiver_as2 %}
+        <script id="mementoembed-script" data-memento="{{ archiver_as2.event.result['items'][0].href }}">
+        $( function() {
+            let memento = document.getElementById("mementoembed-script").getAttribute("data-memento");
+            $.ajax({
+                url: "https://mementoembed.myresearch.institute/services/product/socialcard/" + memento,
+                type: "GET",
+                success: function (data, textStatus, jqXHR) {
+                    if (data) {
+                        $(".memento-card-div").html(data);
+                        console.log("Completed card generation");
+                    }
+                }
+            });
+        });
+        </script>
+        {% endif %}
+    {% endblock %}

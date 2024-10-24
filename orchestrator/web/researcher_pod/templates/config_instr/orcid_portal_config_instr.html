@@ -1,0 +1,39 @@
+<p>
+    For the pod to track events in ORCiD, the pod app must be registered with ORCiD. After registration,
+    the Client ID and Client Secret that ORCiD assigns must be saved in the pod.
+
+    The following steps will help you through the process of registering the Pod with ORCiD:
+</p>
+<h3>1. Register your pod with ORCiD</h3>
+<p>
+    Please visit the <a href="https://orcid.org/developer-tools" target="_blank">ORCiD Developer Page</a>
+    and register your Pod as an ORCiD App.
+
+    The information required to fill out the App registration form is provided below:
+</p>
+
+<ul>
+    <li><strong>Homepage URL:</strong>
+        <a href="#" data-toggle="tooltip" title="This is the domain name of the pod as a URL">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>:
+    <strong>{{ url_for("index_page.on_index", _external=True) }}</strong></li>
+    <li><strong>Authorization Callback URL</strong>
+        <a href="#" data-toggle="tooltip" title="
+        This is the URL of the resource in the Pod that will handle
+the login and authorization credentials received from ORCiD. ORCiD will redirect you
+to this resource after you successfully login. Please enter this Callback URL in the ORCiD form:
+        ">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>:
+    <strong>{{ url_for("oauth2_portal.get_authorization", portal_name="orcid", _external=True)}}</strong></li>
+</ul>
+
+<h3>2. Save Client ID and Client Secret</h3>
+<p>
+    Upon successful registration of the app, you should see a page which shows what
+    the <strong>Client ID</strong> and <strong>Client Secret</strong> are.
+    Please copy that information and paste it in the
+    corresponding fields in the form below and hit "Save".
+</p>
+
