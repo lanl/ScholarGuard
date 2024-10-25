@@ -1,0 +1,53 @@
+{
+  "com.digitalpebble.stormcrawler.protocol.selenium.NavigationFilters": [
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "gitissues",
+       "params": {
+       "portalFile": "githubissue.json"
+      }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "git",
+      "params": {
+         "portalFile": "github.json"  
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "slideshare",
+      "params": {
+        "portalFile": "slideshare.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "youtube",
+      "params": {
+        "portalFile": "figshare.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "twittermoments",
+      "params": {
+        "portalFile": "twitter_moments.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "usnews",
+      "params": {
+        "portalFile": "usnews.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "robottxt",
+      "params": {
+        "portalFile": "robot.json" 
+       }
+    }
+  ]
+}

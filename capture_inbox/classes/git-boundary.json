@@ -1,0 +1,28 @@
+{
+  "com.digitalpebble.stormcrawler.protocol.selenium.NavigationFilters": [
+    {
+      "class": "gov.lanl.crawler.boundary.PortalFilter",
+      "name": "FigshareFilter",
+       "params": {
+       "portalHostname": "figshare.com",      
+        "queryElementsByCSS": [
+            "a.normal-link.download-button.shallow-button"
+         ]
+      }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.PortalFilter",
+      "name": "GitFilter",
+      "params": {
+        "portalHostname": "github.com",
+         "clickElements": {
+            "summary.btn.btn-sm.btn-primary":"CSSSelector",
+            "id(\"js-repo-pjax-container\")/div[2]/div[1]/div[5]/details[1]/div[1]/div[1]/div[1]/div[2]/a[2]":"XPath"
+          
+         }
+        
+       }
+    }
+     
+ ]
+}

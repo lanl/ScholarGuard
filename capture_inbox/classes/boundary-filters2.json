@@ -1,0 +1,11 @@
+{
+  "com.digitalpebble.stormcrawler.protocol.selenium.NavigationFilters": [
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "robottxt",
+      "params": {
+        "portalFile": "robot.json" 
+       }
+    }
+  ]
+}

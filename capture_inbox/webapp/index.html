@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <title>Time Travel</title>
+    <meta name="viewport" content="" />
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.min.css">
+    <link rel="stylesheet" href="css/timetravel.css">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/mementoutils.js"></script>
+    <script src="js/mementoweb.js"></script>
+    <script>
+        /*
+        $( function() {
+            $( "#tag_line_tooptip" ).tooltip({
+                show: {
+                    effect: "slideDown",
+                    delay: 250
+                },
+                content: function() {
+                    return "<ul>" +
+                        "<li>UK National Archives</li>" +
+                        "<li>Icelandic Web Archives</li>" +
+                        "<li>DbPedia</li>" +
+                        "<li>All native Memento implementations</li>" +
+                        "</ul>";
+                },
+                position: {
+                    my: "center bottom-20",
+                    at: "center top",
+                    using: function( position, feedback ) {
+                        $( this ).css( position );
+                        $( "<div>" )
+                        .addClass( "arrow" )
+                        .addClass( feedback.vertical )
+                        .addClass( feedback.horizontal )
+                        .appendTo( this );
+                    }
+                }
+            });
+        });
+        */
+/*
+        function loadHtml(url, elementId) {
+            var data = "";
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                if (ajax.status == 200 && ajax.readyState == 4) {
+                    document.getElementById(elementId).innerHTML = ajax.responseText;
+                }
+            };
+            ajax.open("GET", url, true);
+            ajax.send();
+        }
+        window.onload = function() {
+            loadHtml("menu_top.html", "menu_top");
+            loadHtml("menu_bottom.html", "menu_bottom");
+        }
+        */
+    </script>
+    <style>
+        html, body {
+            width: 980px;
+            padding: 0;
+            margin: 0 auto -4em;
+            height: 100%;
+        }
+        .wrapper {
+            width: 980px;
+            margin: 0 auto -4em;
+            /* padding-left: 15px; */
+        }
+        #memento_img {
+            width: 80px;
+            height: 80px;
+        }
+        #mw_header {
+            background: #ddd;
+            padding: 10px 10px 0 10px;
+            margin-top: 10px;
+        }
+        #mw_header input {
+            padding: 5px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        /*
+        .ui-tooltip, .arrow:after {
+            background: #ddd;
+        }
+        .ui-tooltip {
+            color: #525252;
+            font: bold 13px "Helvetica Neue", Sans-Serif;
+        }
+        .arrow {
+            width: 70px;
+            height: 16px;
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            bottom: -16px;
+        }
+        .arrow.top {
+            top: -16px;
+            bottom: auto;
+        }
+        .arrow.left {
+            left: 20%;
+        }
+        .arrow:after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: -20px;
+            width: 25px;
+            height: 25px;
+            box-shadow: 6px 5px 9px -9px black;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .arrow.top:after {
+            bottom: -20px;
+            top: auto;
+        }
+        */
+    </style>
+</head>
+<body>
+    <div id="menu_top" style="/*padding-top: 10px;*/">
+        <iframe src="/menu_top.html" frameBorder="0" width="980" height="102"></iframe>
+    </div>
+    <div class="wrapper">
+        <div id='logo'>
+            <!--
+            <a href="/index.html"><img id='timetravel_img' style="width: 180px; height: 180px;" src='css/images/timetravel_logo.png'/></a>
+            -->
+            <div style="font-family: EB Garamond, Georgia, serif; font-size: 70px;"><font color="red">t</font>im<font color="grey">e</font> <font color="red">t</font>rav<font color="grey">e</font>l</div>
+        </div>
+        <div id="mw_header">
+            <input type="text" id="url" class='start_page ui-corner-all' value='http://' />
+            <input type="text" id="datepicker" class='start_input ui-corner-all' title='YYYY-MM-DD' />
+            <input type="text" id="timepicker" class='start_input ui-corner-all' title='HH:mm:ss' />
+            <button id='search' name='search'>Time Travel</button>
+            <button id='nostalgic' name='nostalgic'>I'm Feeling Nostalgic</button>
+        </div>
+        <div id="tag_line">
+            Find Mementos in Internet Archive, Archive-It, British Library, archive.today, Wikipedia and <a id="tag_line_tooptip" href="http://timetravel.mementoweb.org/about/" title="">many more!</a>
+        </div>
+        <!--
+        <div id='metadata'>
+            <div id='timeline' name='timeline'></div>
+            <div class='chart_infobox' style='display:none;'></div>
+        </div>
+        -->
+    </div>
+    <!--
+    <div id="menu_bottom" style="background: #ddd; height: 60px; bottom: 0; position: absolute; width: 980px;">
+        <iframe src="/menu_bottom.html" frameBorder="0" width="980" height="55"></iframe>
+    </div>
+    -->
+    <!-- Piwik -->
+    <script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+ var u="//timetravel.mementoweb.org/traffic/";
+ _paq.push(['setTrackerUrl', u+'piwik.php']);
+ _paq.push(['setSiteId', 1]);
+ var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+ g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+ })();
+    </script>
+    <noscript><p><img src="//timetravel.mementoweb.org/traffic/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+    </body>
+    </html>
+
+

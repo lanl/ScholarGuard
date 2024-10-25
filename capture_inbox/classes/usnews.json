@@ -1,0 +1,15 @@
+ {  
+ "portal_url_match": "(usnews.com)",
+ "actions": [{
+		"action": "repeated_click",
+		"action_order": 1,
+		"repeat_until": {
+			"condition": "not_exists",
+			"type": "XPath",
+			"value": ["id(\"resultsMain\")/div[2]/a[contains(.,\"Next\")]"]
+		},
+		"type": "XPath",
+		"value": "id(\"resultsMain\")/div[2]/a[contains(.,\"Next\")]"
+	}]   
+                 
+  }

@@ -1,0 +1,7 @@
+{"portal_url_match": "(slideshare.net)\/([^\/]+)\/([^\/]+)",
+ "actions":[{"action_order":"1","value":"div.j-next-btn.arrow-right","type":"CSSSelector","action":"repeated_click","repeat_until":{"condition":"changes","type":"resource_url"}},
+            {"action_order":"2","value":"div.notranslate.transcript.add-padding-right.j-transcript a","type":"CSSSelector","action":"click"}
+         ],
+   "resource_url": "https://www.slideshare.net/hvdsomp/paul-evan-peters-lecture",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3417.0 Safari/537.36"      
+  }   

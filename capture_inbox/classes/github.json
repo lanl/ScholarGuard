@@ -1,0 +1,7 @@
+{"portal_url_match": "(github.com)\/([^\/]+)\/([^\/]+)",
+"actions": [
+           { "action_order":"1","value":"summary.btn.btn-sm.btn-primary" ,"type":"CSSSelector","action":"click"},
+           { "action_order":"2","value":"id(\"js-repo-pjax-container\")/div[2]/div[1]/div[5]/details[1]/div[1]/div[1]/div[1]/div[2]/a[2]","type":"XPath","action":"click"},
+           { "action_order":"3","value":"table.files.js-navigation-container.js-active-navigation-container a","type":"CSSSelector","action":"click"}
+           ]
+}           

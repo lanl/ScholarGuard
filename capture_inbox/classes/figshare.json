@@ -1,0 +1,36 @@
+ {  
+ "portal_url_match": "(figshare.com)\/articles\/([^\/]+)\/([^\/]+)",   
+         "actions": [
+           {
+	 	    "action": "click",
+		    "action_order": 1,
+		    "action_apply": "once",
+		    "type": "CSSSelector",
+		    "value": "span.file-size"
+	       },
+	       {
+		"action": "click",
+		"action_order": 2,
+		"action_apply": "all",
+		"type": "CSSSelector",
+		"value": "div.fv-loader a"
+	       },
+	      {
+		"action": "click",
+		"action_order": 4,
+		"action_apply": "once",
+		"type": "CSSSelector",
+		"value": "button.fv-file-view"
+	   },
+	     {
+		 "action": "repeated_click",
+		 "action_order":5,
+		 "repeat_until": {
+			"condition": "exists",
+			"type": "CSSSelector",
+			"value": ["button.fs-next-page[disabled],button.fs-next-page.disabled"]
+		},
+		"type": "CSSSelector",
+		"value": "button.fs-next-page"
+	    }]           
+  }

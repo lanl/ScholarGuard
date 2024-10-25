@@ -1,0 +1,85 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams#",
+    {
+      "schema": "https://schema.org/",
+      "tracker": "http://tracker.mementoweb.org/ns#",
+      "prov": "http://www.w3.org/ns/prov#",
+ 
+      "prov:used": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:softwareAgent": {"@type": "@id"},
+      "prov:generatedAtTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "event": {
+    "@id": "http://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276a",
+    "prov:used": [
+      {
+        "@id": "http://github.com/scholarlyorphans/trackers/hypothesis_tracker",
+        "type": "prov:softwareAgent",
+        "schema:version": "v0.3",
+        "prov:used": [
+          {
+            "id": "https://github.com/pallets/flask/",
+            "schema:version": "0.12.4"
+          },
+          {
+            "id": "http://www.celeryproject.org/",
+            "schema:version": "4.2"
+          },
+          {
+            "id": "https://www.elastic.co/",
+            "schema:version": "5.0"
+          }
+        ]
+      },
+      {
+        "@id": "http://hypothesis.org/api/",
+        "schema:version": "v1.0"
+      }
+    ],
+ 
+    "prov:generatedAtTime": "2018-04-04T18:20:33Z",
+    "published": "2016-12-10T15:20:33Z",
+ 
+    "type": [
+      "Add",
+      "tracker:ArtifactInteraction",
+      "prov:Activity"
+    ],
+ 
+    "actor": {
+      "type": "Person",
+      "id": "https://orcid.org/1234-5678",
+      "name": "Alice",
+      "url": "http://hypothes.is/alice"
+    },
+ 
+    "object": {
+      "totalItems": 1,
+      "items": [
+        {
+          "type": "Link",
+          "href": "https://github.com/mementoweb/timegate"
+        }
+      ],
+      "type": [
+        "Note",
+        "schema:Comment"
+      ]
+    },
+ 
+    "target": {
+      "id": "https://hypothes.is",
+      "name": "Hypothes.is Annotation Service",
+      "type": [
+        "Collection"
+      ]
+    }
+  }
+}

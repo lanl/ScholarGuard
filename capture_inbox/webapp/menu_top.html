@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+body {
+    font-family: Helvetica;
+}
+select {
+    position: absolute;
+    top: 40px;
+    background: transparent;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+}
+#logo {
+    /*position: absolute;*/
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+</style>
+<script>
+var apps = {
+    "http://mementoweb.org/about/": {
+        "title": "Memento Project",
+        "logo": "/css/images/memento_logo.svg",
+        "menu_items": {
+            "http://mementoweb.org/about/": "About",
+            "http://mementoweb.org/demo/": "Demos",
+            "http://mementoweb.org/depot/": "Depot",
+            "http://mementoweb.org/guide/": "Guide",
+            "http://mementoweb.org/tools/": "Tools"
+        }
+    },
+    "http://robustlinks.mementoweb.org/": {
+        "title": "Robust Links",
+        "logo": "/css/images/robustlinks.png"
+    },
+    "http://timetravel.mementoweb.org/": {
+        "title": "Time Travel",
+        "logo": "/css/images/timetravel_logo.png",
+        "menu_items": {
+            "http://timetravel.mementoweb.org/about/": "About",
+            "http://timetravel.mementoweb.org/api/": "API",
+            "http://timetravel.mementoweb.org/privacy-policy/": "Privacy",
+            "http://timetravel.mementoweb.org/terms-of-service/": "Terms"
+        }
+    },
+    "http://whatdiditlooklike.mementoweb.org/": {
+        "title": "What Did It Look Like",
+        "logo": "/css/images/whatdiditlooklike.png"
+    }
+}
+window.onload = function() {
+    var req = window.location.href;
+    //var appselect = document.getElementById("app_select");
+    var applogo = document.getElementById("app_logo");
+    var applogoimg = document.getElementById("app_logo_img");
+
+    var appselect = document.createElement("select");
+    appselect.id = "app_select";
+    appselect.onchange = function() {
+        window.top.location = this.options[this.selectedIndex].value;
+    }
+    applogo.appendChild(appselect);
+
+    for (appUrl in apps) {
+        var option = document.createElement("option");
+        option.value = appUrl;
+        option.text = apps[appUrl]['title'];
+        if (req.search(appUrl) == 0) {
+            option.selected = "selected";
+            applogoimg.src = apps[appUrl]['logo'];
+            if (apps[appUrl]['menu_items'] != null) {
+                var items = apps[appUrl]['menu_items'];
+                var appmenu = document.getElementById("app_menu");
+                for (itemUrl in items) {
+                    var item = document.createElement("a");
+                    item.href = itemUrl;
+                    item.target = "_parent";
+                    item.innerText = items[itemUrl];
+                    appmenu.appendChild(item);
+                    appmenu.appendChild(document.createTextNode(" "));
+                }
+            }
+        }
+        appselect.appendChild(option);
+    }
+}
+</script>
+
+</head>
+<body style="">
+<div style="">
+    <div style="border-bottom: 1px solid #ddd; height: 1px; position: absolute; width: 50%; padding-top: 38px; z-index: -10;margin-left: 280px;"></div>
+    <span id="app_logo">
+                <a href="http://timetravel.mementoweb.org/index.html" target="_parent">
+                    <img id="app_logo_img" src="/css/images/timetravel_logo.png" style="width: 80px; height: 80px;"/>
+                </a>
+                <!--
+                <select id="app_select" onchange="window.top.location = this.options[this.selectedIndex].value;">
+                    <option value="http://mementoweb.org/about/">Memento Project</option>
+                    <option value="http://robustlinks.mementoweb.org/">Robust Links</option>
+                    <option value="http://timetravel.mementoweb.org/">Time Travel</option>
+                    <option value="http://whatdiditlooklike.mementoweb.org/">What Did It Look Like</option>
+                </select>
+                -->
+    </span>
+    <span id="app_menu" style="float: right; padding-top: 30px; padding-left: 10px; background: #fff;">
+        <!--
+        Memento Project:
+        <a href='http://mementoweb.org/about/' target="_parent">About</a>
+        <a href='http://mementoweb.org/demo/' target="_parent">Demos</a>
+        <a href='http://mementoweb.org/guide/' target="_parent">Guide</a>
+        <a href='http://mementoweb.org/tools/' target="_parent">Tools</a>
+        <a href='http://mementoweb.org/depot/' target="_parent">Depot</a>
+        -->
+    </span>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+	"action_count": 2,
+	"actions": [{
+		"action": "click",
+		"action_apply": "all",
+		"action_order": 1,
+		"type": "CSSSelector",
+		"value": "div.MomentGuideNavigation a"
+	}, {
+		"action": "click",
+		"action_apply": "all",
+		"action_order": 2,
+		"type": "CSSSelector",
+		"value": "div.MomentsGuidePage-content a"
+	}],
+	"portal_url_match": "(twitter.com)\/i\/moments(/?.*)$",
+	"resource_url": "https://twitter.com/i/moments",
+	"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3431.0 Safari/537.36"
+}
