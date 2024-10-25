@@ -41,16 +41,5 @@ Or
 
 `$> docker-compose down`
 
-# Collaborators
 
-Scholarly Orphans Trackers is a collaboration between the Prototyping Team of the Research Library of the Los Alamos National Laboratory and the Computer Science Department of Old Dominion University.
 
-The Scholary Orphans tracker models are based on the analysis and design of:
-
-- Harihar Shankar (@hariharshankar)
-- Martin Klein (@martinklein0815)
-- Herbert Van de Sompel (@hvdsomp)
-
-# License
-
-This repository is licensed under the Apache 2.0 license.
