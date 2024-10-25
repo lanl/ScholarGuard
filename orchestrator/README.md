@@ -1,7 +1,3 @@
-# Scholarly Oprhans Trackers
-
-For more details about this and other components in the pipeline, please 
-check the [pipeline documentation](https://bitbucket.org/lanlprototeam/pipeline/src/master/).
 
 ## Build
 
@@ -32,7 +28,6 @@ The steps involved to set up this dev environment are:
 
 * Clone the repository.
     * `$> cd <work/projects folder>`
-	* `$> git clone https://hariharshankar@bitbucket.org/lanlprototeam/orchestrator.git`
 	* `$> cd orchestrator`
 * Comment out all the lines corresponding to the orchestrator app in the `docker-compose.yml` file. The 
   orchestrator app service is called `pod-app` in this file and that entire section will have to be commented out. 
@@ -41,9 +36,9 @@ The steps involved to set up this dev environment are:
 	* Typically, a copy of the docker-compose file for production can be made and these changes can be 
 	  applied on the copy.
 * Copy the data from the live system to the local dev environment.
-    * The elasticsearch and sqlite data is in the fodler `/data/web/orchestrator/data` in the live server. 
+    * The elasticsearch and sqlite data is in the fodler `/data/web/ScholarGuard/orchestrator/data` in the live server. 
 	  This folder can be zipped/tarred and scp'ed over to the local machine.
-	  `tar cvzf orc_data_20190711.tar.gz /data/web/orchestrator/data` is the command I typically use to tar. 
+	  `tar cvzf orc_data_20190711.tar.gz /data/web/ScholarGuard/orchestrator/data` is the command I typically use to tar. 
 	* Both elasticsearch and sqlite will pick up the data and the indexes in the local machine without 
 	  having to re-index. 
 	* This tarred data can be copied over to the local orchestrator directory and extracted in the `data` folder.
@@ -94,16 +89,3 @@ The RDF conversion and visualization helps keep the model and the graph simple a
 complex very fast when working with JSON alone.
 All of the existing models have been validated by performing the steps above, so any existing model can be used for comparison when creating any new model.
 
-# Collaborators
-
-Scholarly Orphans Trackers is a collaboration between the Prototyping Team of the Research Library of the Los Alamos National Laboratory and the Computer Science Department of Old Dominion University.
-
-The Scholary Orphans tracker models are based on the analysis and design of:
-
-- Harihar Shankar (@hariharshankar)
-- Martin Klein (@martinklein0815)
-- Herbert Van de Sompel (@hvdsomp)
-
-# License
-
-This repository is licensed under the Apache 2.0 license.
