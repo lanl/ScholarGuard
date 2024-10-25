@@ -1,0 +1,99 @@
+{
+"traceName": "Elastic Stack Documents",
+"uriPattern": "https://www.elastic.co/guide/index.html",
+"uriRegex": "https://www.elastic.co/guide/index.html$","actions": {
+  "1896663a939bb7": {
+    "id": "1896663a939bb7",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1896663a939bb7",
+    "locationUrl": "https://www.elastic.co/guide/index.html",
+    "children": {
+      "33d8c59f7f797b": {
+        "id": "33d8c59f7f797b",
+        "name": "ES All",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "a.ulink",
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"guide\")/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[text()=\"Installation and Upgrade Guide [6.5]\"]",
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          },
+          {
+            "selector": "id(\"guide\")/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+            "selectorOrder": 2,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1896663a939bb7",
+        "children": {
+          "6a4f30446b80b": {
+            "id": "6a4f30446b80b",
+            "name": "Event 2",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "div.book a",
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"guide\")/DIV[1]/DIV[1]/DIV[1]/DIV[2]//a",
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "33d8c59f7f797b",
+            "locationUrl": "https://www.elastic.co/guide/en/elastic-stack/current/index.html",
+            "children": {},
+            "eventOrder": 6,
+            "repeat": {},
+            "frameIndex": ""
+          }
+        },
+        "eventOrder": 3,
+        "repeat": {},
+        "frameIndex": "root"
+      },
+      "1458bbc1315a853": {
+        "id": "1458bbc1315a853",
+        "name": "menu",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "div.collapse.navbar-collapse.mobile-inner-nav a",
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "BODY/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/DIV[2]//a",
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1896663a939bb7",
+        "children": {},
+        "eventOrder": 14,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

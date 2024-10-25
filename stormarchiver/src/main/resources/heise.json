@@ -1,0 +1,53 @@
+{
+"traceName": "heise.de",
+"uriPattern": "https://www.heise.de/",
+"uriRegex": "https://www.heise.de/$","actions": {
+ "1b6197d0081ae5": {
+    "id": "1b6197d0081ae5",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1b6197d0081ae5",
+    "locationUrl": "https://www.heise.de/",
+    "children": {
+      "24647557638496": {
+        "id": "24647557638496",
+        "default_name_set": true,
+        "name": "Event 2 (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "svg.pagination__arrow--right",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred":true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[text()=\"\n\n            \n              Ältere Beiträge\n            \n            \n\n  Pfeil nach rechts\n  \n\n          \"],id(\"bottum-up\")/DIV[2]/DIV[1]/DIV[1]/NAV[1]/OL[1]/LI[2]/A[1]/svg[1]",
+            "selectorMatches": 0,
+            "selectorOrder": 1,
+            "selectorPreferred":false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1b6197d0081ae5",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {
+          "until": {
+            "selectorType": "new_resource_count",
+            "selectorCondition": "equals",
+            "selectorValue": 5
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

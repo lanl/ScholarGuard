@@ -1,0 +1,39 @@
+{
+	"traceName": "chemconnector",
+	"uriPattern": "http://www.chemconnector.com/",
+	"uriRegex": "http://www.chemconnector.com",
+	"actions": {
+		"1437618ec6a69e": {
+			"id": "1437618ec6a69e",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1437618ec6a69e",
+			"locationURL": "http://www.chemconnector.com/",
+			"children": {
+				"27817bb5b9edad": {
+					"id": "27817bb5b9edad",
+					"name": "All pages in the site",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div#nav a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"nav\")//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1437618ec6a69e",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

@@ -1,0 +1,119 @@
+{
+"traceName": "gitlabtest","uriPattern": "https://gitlab.com/occam-archive/occam/-/issues","uriRegex": "https://gitlab.com/occam-archive/occam/-/issues$","actions": {
+  "191245d11be9a8": {
+    "id": "191245d11be9a8",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "191245d11be9a8",
+    "locationUrl": "https://gitlab.com/occam-archive/occam/-/issues/",
+    "children": {
+      "130531c6ba10e81": {
+        "id": "130531c6ba10e81",
+        "default_name_set": true,
+        "name": "issues_tab (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span#js-onboarding-issues-link",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "span.nav-item-name",
+            "selectorMatches": 11,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"js-onboarding-issues-link\")",
+            "selectorMatches": 1,
+            "selectorOrder": 2,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "191245d11be9a8",
+        "children": {
+          "170cd9522e5367e": {
+            "id": "170cd9522e5367e",
+            "default_name_set": true,
+            "name": "Event 17 (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "div.issuable-info",
+                "selectorMatches": 20,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"issuable_111214457\")/DIV[1]/DIV[2]",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "130531c6ba10e81",
+            "children": {},
+            "eventOrder": 17,
+            "repeat": {
+              "along_with": {
+                "exit_cond": "click-back-button",
+                "selectorType": "built-in",
+                "selectorCondition": "browserback"
+              }
+            },
+            "frameIndex": "root"
+          },
+          "18b2c1055246602": {
+            "id": "18b2c1055246602",
+            "default_name_set": true,
+            "name": "Event 18",
+            "actionName": "click all links in an area",
+            "selectors": [
+              {
+                "selector": "div.issue-title.title a",
+                "selectorMatches": 20,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"issuable_113028201\")/DIV[1]/DIV[1]//a",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "130531c6ba10e81",
+            "children": {},
+            "eventOrder": 18,
+            "repeat": {},
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 13,
+        "repeat": {
+          "along_with": {
+            "exit_cond": "click-back-button",
+            "selectorType": "built-in",
+            "selectorCondition": "browserback"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

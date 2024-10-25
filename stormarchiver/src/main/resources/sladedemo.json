@@ -1,0 +1,47 @@
+{
+"traceName": "","uriPattern": "https://www.slideshare.net/martinklein0815/the-memento-tracer-framework-balancing-quality-and-scalability-for-web-archiving",
+"uriRegex": "https://www.slideshare.net/martinklein0815/the-memento-tracer-framework-balancing-quality-and-scalability-for-web-archiving$","actions": {
+  "15db1d264e6d38": {
+    "id": "15db1d264e6d38",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "15db1d264e6d38",
+    "locationUrl": "https://www.slideshare.net/martinklein0815/the-memento-tracer-framework-balancing-quality-and-scalability-for-web-archiving",
+    "children": {
+      "2d7e65748c88ca": {
+        "id": "2d7e65748c88ca",
+        "name": "Event 2",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "div.j-next-btn.arrow-right",
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"btnNext\")/DIV[1]",
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "15db1d264e6d38",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {
+          "until": {
+            "selectorType": "resource_url",
+            "selectorCondition": "changes"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

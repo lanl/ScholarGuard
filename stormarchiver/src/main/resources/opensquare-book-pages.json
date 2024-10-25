@@ -1,0 +1,86 @@
+{
+"traceName": "opensquare-book","uriPattern": "http://opensquare.nyupress.org/books/[9781479899982]",
+"uriRegex": "http://opensquare.nyupress.org/books/([^\/]+)/","actions": {
+  "1580dafd532ea5": {
+    "id": "1580dafd532ea5",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1580dafd532ea5",
+    "locationUrl": "http://opensquare.nyupress.org/books/9781479899982",
+    "children": {
+      "2bc18d4dfd85a1": {
+        "id": "2bc18d4dfd85a1",
+        "default_name_set": false,
+        "name": "click-to-read (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "a.thumb-link",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[@class='thumb-link']",
+            "selectorMatches": 0,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          },
+          {
+            "selector": "id(\"main-content\")/article/div/div[1]/a",
+            "selectorMatches": 1,
+            "selectorOrder": 2,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1580dafd532ea5",
+        "locationUrl": "http://opensquare.nyupress.org/books/9781479899982/",
+        "children": {
+          "6272ef0b6a5b45": {
+            "id": "6272ef0b6a5b45",
+            "default_name_set": true,
+            "name": "paginate (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "button#right-page-btn",
+                "selectorMatches": 1,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },{
+                "selector": "id(\"right-page-btn\")/SPAN[1]",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "2bc18d4dfd85a1",
+            "children": {},
+            "eventOrder": 6,
+            "repeat": {
+              "until": {
+                "selectorType": "selectorPreferred",
+                "selectorCondition": "default"
+              }
+            },
+            "frameIndex": "root:0"
+          }
+        },
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": ""
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

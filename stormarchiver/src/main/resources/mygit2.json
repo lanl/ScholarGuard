@@ -1,0 +1,107 @@
+{
+"traceName": "mygit2.json","uriPattern": "https://github.com/lanl/bloomfiltersforwebarchives","uriRegex": "https://github.com/lanl/bloomfiltersforwebarchives$","actions": {
+  "14920f2e54010a": {
+    "id": "14920f2e54010a",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "14920f2e54010a",
+    "locationUrl": "https://github.com/lanl/bloomfiltersforwebarchives",
+    "children": {
+      "213c7c96346909": {
+        "id": "213c7c96346909",
+        "default_name_set": true,
+        "name": "Event 2 (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "summary.btn-primary.btn",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"repo-content-pjax-container\")/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SPAN[1]/GET-REPO[1]/DETAILS[1]/SUMMARY[1]",
+            "selectorMatches": 1,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "14920f2e54010a",
+        "children": {
+          "4006f61084573e": {
+            "id": "4006f61084573e",
+            "default_name_set": true,
+            "name": "Event 4 (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "a.d-flex.flex-items-center.color-fg-default.text-bold.no-underline",
+                "selectorMatches": 2,
+                "selectorOrder": 0,
+                "selectorPreferred": false,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "//A[text()=\"\n    \n    \n\n    Download ZIP\n\"]",
+                "selectorMatches": 0,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              },
+              {
+                "selector": "id(\"repo-content-pjax-container\")/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SPAN[1]/GET-REPO[1]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+                "selectorMatches": 1,
+                "selectorOrder": 2,
+                "selectorPreferred": true,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "213c7c96346909",
+            "children": {},
+            "eventOrder": 4,
+            "repeat": {},
+            "frameIndex": "root"
+          },
+          "6256086b3b0505": {
+            "id": "6256086b3b0505",
+            "default_name_set": true,
+            "name": "Event 6 (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "li.Box-row.Box-row--hover-gray.p-3.mt-0",
+                "selectorMatches": 2,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"repo-content-pjax-container\")/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SPAN[1]/GET-REPO[1]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "213c7c96346909",
+            "children": {},
+            "eventOrder": 6,
+            "repeat": {},
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

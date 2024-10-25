@@ -1,0 +1,77 @@
+{
+"traceName": "mar","uriPattern": "https://www.marquette.edu/admissions/","uriRegex": "https://www.marquette.edu/.*$","actions": {
+  "18510d6e684bb1": {
+    "id": "18510d6e684bb1",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "18510d6e684bb1",
+    "locationUrl": "https://www.marquette.edu/admissions/",
+    "children": {
+      "240dbfd349c803": {
+        "id": "240dbfd349c803",
+        "name": "Event 2",
+        "actionName": "hover",
+        "selectors": [
+          {
+            "selector": "a.mainItem",
+            "selectorMatches": 7,
+            "selectorOrder": 0,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[text()=\"Admissions\"]",
+            "selectorMatches": 3,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          },
+          {
+            "selector": "id(\"navOne\")/A[1]",
+            "selectorMatches": 1,
+            "selectorOrder": 2,
+            "selectorPreferred": true,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "18510d6e684bb1",
+        "children": {
+          "3be2622f7dad7a": {
+            "id": "3be2622f7dad7a",
+            "name": "Event 3",
+            "actionName": "click all links in an area",
+            "selectors": [
+              {
+                "selector": "div.twoCol a",
+                "selectorMatches": 15,
+                "selectorOrder": 0,
+                "selectorPreferred": false,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"menuOne\")/DIV[1]/DIV[1]//a",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": true,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "240dbfd349c803",
+            "children": {},
+            "eventOrder": 3,
+            "repeat": {},
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

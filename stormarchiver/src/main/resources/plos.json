@@ -1,0 +1,59 @@
+{
+	"traceName": "Plos",
+	"uriPattern": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167475",
+	"uriRegex": "(journals.plos.org)\/plosone\/article\\?id=(.*)?(&|$)",
+	"actions": {
+		"10a4ac40086a2": {
+			"id": "10a4ac40086a2",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "10a4ac40086a2",
+			"locationURL": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167475",
+			"children": {
+				"2f677f6ba745c7": {
+					"id": "2f677f6ba745c7",
+					"name": "All Images",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.figure a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"section1\")/DIV[1]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "10a4ac40086a2",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				},
+				"41718e92274191": {
+					"id": "41718e92274191",
+					"name": "All References",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.toc-section a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"artText\")/DIV[12]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "10a4ac40086a2",
+					"children": {},
+					"eventOrder": 4,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

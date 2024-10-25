@@ -1,0 +1,39 @@
+{
+	"traceName": "Wordpress",
+	"uriPattern": "https://[zoteromusings].wordpress.com/[2014/09/25/quality-control-for-csl-styles/]",
+	"uriRegex": "https://([^/]+?).wordpress.com/([^/]+?)",
+	"actions": {
+		"16dce0e9c1a9b9": {
+			"id": "16dce0e9c1a9b9",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "16dce0e9c1a9b9",
+			"locationURL": "https://zoteromusings.wordpress.com/2014/09/25/quality-control-for-csl-styles/",
+			"children": {
+				"563385f003d8af": {
+					"id": "563385f003d8af",
+					"name": "All references",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.entry-content a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"post-169\")/DIV[1]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "16dce0e9c1a9b9",
+					"children": {},
+					"eventOrder": 5,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

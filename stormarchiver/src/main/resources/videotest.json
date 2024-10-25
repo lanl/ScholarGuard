@@ -1,0 +1,43 @@
+{
+"traceName": "youtube",
+"uriPattern": "https://www.youtube.com/watch?v=osLKue0RDxo",
+"uriRegex": "https://www.youtube.com/$","actions": {
+  "1e3286a14baade": {
+    "id": "1e3286a14baade",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1e3286a14baade",
+    "locationUrl": "https://www.heise.de/",
+    "children": {
+      "3295ab1c13b189": {
+        "id": "3295ab1c13b189",
+        "name": "Play Video ",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "//button[@class=\"ytp-play-button ytp-button\"]",
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1e3286a14baade",
+        "children": {},
+        "eventOrder": 3,
+        "wait": {
+          "until": {
+            "selectorType": "new_resource_count",
+            "selectorCondition": "equals",
+            "selectorValue": 5
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

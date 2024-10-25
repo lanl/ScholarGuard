@@ -1,0 +1,39 @@
+{
+	"traceName": "Archives Unleashed News",
+	"uriPattern": "https://news.archivesunleashed.org/[thumbnails-in-warclight-e155a0910c35]",
+	"uriRegex": "https://news.archivesunleashed.org/([^/]+)?(/$|$)",
+	"actions": {
+		"16715679a75631": {
+			"id": "16715679a75631",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "16715679a75631",
+			"locationURL": "https://news.archivesunleashed.org/thumbnails-in-warclight-e155a0910c35?source=rss-79051afd7852------2",
+			"children": {
+				"4a636c77922cec": {
+					"id": "4a636c77922cec",
+					"name": "All References",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.section-content a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"_obv.shell._surface_1534966765464\")/DIV[1]/MAIN[1]/ARTICLE[1]/DIV[1]/SECTION[1]/DIV[2]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "16715679a75631",
+					"children": {},
+					"eventOrder": 4,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+{
+"traceName": "Selenium Doc","uriPattern": "https://www.seleniumhq.org/docs/[00_Note_to-the-reader.jsp]",
+"uriRegex": "https://www.seleniumhq.org/docs/([^/]+?)?(/$|$)$","actions": {
+  "1020936893af12": {
+    "id": "1020936893af12",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1020936893af12",
+    "locationUrl": "https://www.seleniumhq.org/docs/00_Note_to-the-reader.jsp",
+    "children": {
+      "2185450ca174f7": {
+        "id": "2185450ca174f7",
+        "name": "Sponsors",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "div.selenium-sponsors a",
+            "selectorType": "CSSSelector",
+            "selectorOrder": 0,
+            "selectorPreferred": true
+          },
+          {
+            "selector": "id(\"side\")/DIV[3]/DIV[1]//a",
+            "selectorType": "XPath",
+            "selectorOrder": 1,
+            "selectorPreferred": false
+          }
+        ],
+        "parentId": "1020936893af12",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      },
+      "34591e4bf991fa": {
+        "id": "34591e4bf991fa",
+        "name": "Next pages",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "a",
+            "selectorType": "CSSSelector",
+            "selectorOrder": 0,
+            "selectorPreferred": false
+          },
+          {
+            "selector": "id(\"mainContent\")/DIV[4]/UL[1]/LI[2]/A[text()=\"next\"]",
+            "selectorType": "XPath",
+            "selectorOrder": 1,
+            "selectorPreferred": false
+          },
+          {
+            "selector": "id(\"mainContent\")/DIV[4]/UL[1]/LI[2]/A[1]",
+            "selectorType": "XPath",
+            "selectorOrder": 2,
+            "selectorPreferred": true
+          }
+        ],
+        "parentId": "1020936893af12",
+        "children": {
+          "2655f69b1bc72bb": {
+            "id": "2655f69b1bc72bb",
+            "name": "References",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "div#mainContent a",
+                "selectorType": "CSSSelector",
+                "selectorOrder": 0,
+                "selectorPreferred": true
+              },
+              {
+                "selector": "id(\"mainContent\")//a",
+                "selectorType": "XPath",
+                "selectorOrder": 1,
+                "selectorPreferred": false
+              }
+            ],
+            "parentId": "34591e4bf991fa",
+            "locationUrl": "https://www.seleniumhq.org/docs/01_introducing_selenium.jsp",
+            "children": {},
+            "eventOrder": 26,
+            "repeat": {},
+            "frameIndex": ""
+          },
+          "256fc3b7c1d1269": {
+            "id": "256fc3b7c1d1269",
+            "name": "Java eg",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "input",
+                "selectorType": "CSSSelector",
+                "selectorOrder": 0,
+                "selectorPreferred": false
+              },
+              {
+                "selector": "id(\"codeLanguagePreference\")/UL[1]/LI[1]/INPUT[1]",
+                "selectorType": "XPath",
+                "selectorOrder": 1,
+                "selectorPreferred": true
+              }
+            ],
+            "parentId": "34591e4bf991fa",
+            "locationUrl": "https://www.seleniumhq.org/docs/01_introducing_selenium.jsp",
+            "children": {},
+            "eventOrder": 25,
+            "repeat": {},
+            "frameIndex": ""
+          }
+        },
+        "eventOrder": 3,
+        "repeat": {
+         "until": {
+            "selectorType": "new_resource_count",
+            "selectorCondition": "equals",
+            "selectorValue": 5
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

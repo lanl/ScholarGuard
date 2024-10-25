@@ -1,0 +1,97 @@
+{
+"traceName": "in","uriPattern": "https://www.instagram.com/sezane/?hl=en",
+"uriRegex": "https://www.instagram.com/.*$","actions": {
+  "1bb1ff16ef60b9": {
+    "id": "1bb1ff16ef60b9",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1bb1ff16ef60b9",
+    "locationUrl": "https://www.instagram.com/p/B4Ngj35gjfE/",
+    "children": {
+      "20cf67eafbf54d": {
+        "id": "20cf67eafbf54d",
+        "name": "clicktile",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "ul.Ln-UN",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+           {
+            "selector": "span._1P1TY.coreSpriteSpeechBubbleSmall",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "div.eLAPa",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[text()=\"130\"],id(\"react-root\")/SECTION[1]/MAIN[1]/DIV[1]/DIV[3]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/DIV[2]/UL[1]",
+            "selectorMatches": 0,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1bb1ff16ef60b9",
+        "children": {
+          "3464879e3435ba": {
+            "id": "3464879e3435ba",
+            "name": "Pagination",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "a.HBoOv.coreSpriteRightPaginationArrow",
+                "selectorMatches": 1,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "//A[text()=\"Next\"]",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              },
+              {
+                "selector": "BODY/DIV[4]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+                "selectorMatches": 0,
+                "selectorOrder": 2,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "20cf67eafbf54d",
+            "children": {},
+            "eventOrder": 3,
+            "repeat": {
+              "until": {
+                "selectorType": "selectorPreferred",
+                "selectorCondition": "default"
+              }
+            },
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

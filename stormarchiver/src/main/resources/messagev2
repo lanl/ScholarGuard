@@ -1,0 +1,108 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams#",
+    "http://mementoweb.org/test-ns#",
+    {
+      "schema": "https://schema.org/",
+      "tracker": "http://tracker.mementoweb.org/ns#",
+      "prov": "http://www.w3.org/ns/prov#",
+
+      "prov:used": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasInformedBy": {
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "prov:wasGeneratedBy": {
+        "@type": "@id"
+      },
+      "prov:softwareAgent": {
+        "@type": "@id"
+      },
+      "prov:generatedAtTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "event": {
+    "@id": "https://myresearch.institute/capture/event/capba89d48796c34a8589d9b3a276ad189",
+    "published": "2018-04-06T18:20:33Z",
+
+    "prov:wasGeneratedBy": "https://myresearch.institute/capture/event/capba89d48796c34a8589d9b3a276ad189#activity",
+    "prov:generatedAtTime": "2018-04-06T18:20:33Z",
+    "prov:wasInformedBy": [
+      {
+        "id": "https://myresearch.institute/tracker/event/tra6a89d48796c34a8589d9b3a276ad1897",
+        "type": "tracker:Tracker"
+      }
+    ],
+
+    "type": [
+      "Offer",
+      "tracker:ArtifactCapture",
+      "tracker:Capture"
+    ],
+
+    "actor": {
+      "type": "Application",
+      "id": "https://myresearch.institute/tracer/",
+      "name": "My Research Institute's Tracer Capture Process"
+    },
+    "object": {
+      "type": "Collection",
+      "totalItems": 1,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "Note",
+            "schema:Comment"
+          ],
+          "href": "https://github.com/bob/repo/issues/4#issuecomment-310520835"
+        }
+      ]
+    },
+    "result": {
+      "type": "Collection",
+      "totalItems": 1,
+      "items": [
+        {
+          "type": [
+            "Link",
+            "schema:MediaObject"
+          ],
+          "href": "https://myresearch.institute/capture/warc/sdf3sf3344422fdfdssfaeefsfasa.warc"
+        }
+      ]
+    }
+  },
+  "activity": {
+    "@id": "https://myresearch.institute/capture/event/capba89d48796c34a8589d9b3a276ad189#activity",
+    "type": [
+      "prov:Activity",
+      "prov:SoftwareAgent"
+    ],
+    "prov:used": [
+      {
+        "id": "https://myresearch.institute/tracer/",
+        "type": "prov:softwareAgent",
+        "prov:used": [
+          {
+            "id": "https://github.com/internetarchive/warcprox",
+            "schema:version": "v2.2"
+          },
+          {
+            "id": "https://github.com/SeleniumHQ/docker-selenium",
+            "schema:version": "3.13.0-argon"
+          },
+          {
+            "id": "https://github.com/DigitalPebble/storm-crawler",
+            "schema:version": "1.10"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+"traceName": "test1","uriPattern": "https://manifold.umn.edu/projects/the-perversity-of-things",
+"uriRegex": "https://manifold.umn.edu/projects/([^/]+)","actions": {
+  "1182f343525013": {
+    "id": "1182f343525013",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1182f343525013",
+    "locationUrl": "https://manifold.umn.edu/projects/the-perversity-of-things",
+    "children": {
+      "2764a697269702": {
+        "id": "2764a697269702",
+        "name": "Event 2",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span.action-callout-list__button-text",
+            "selectorMatches": 4,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[text()=\"Read Online\"],id(\"skip-to-main\")/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/SECTION[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/A[1]/SPAN[1]",
+            "selectorMatches": 0,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1182f343525013",
+        "children": {
+          "3846d45d4105f7": {
+            "id": "3846d45d4105f7",
+            "name": "Event 3",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "svg.manicon-svg.section-pagination__icon.section-pagination__icon--next.svg-icon--circleArrowRight64",
+                "selectorMatches": 1,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "//A[text()=\"Next\"],id(\"skip-to-main\")/SPAN[1]/DIV[2]/NAV[1]/DIV[1]/A[1]/svg[1]",
+                "selectorMatches": 0,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "2764a697269702",
+            "children": {},
+            "eventOrder": 3,
+            "repeat": {
+              "until": {
+              "selectorType": "selectorPreferred",
+              "selectorCondition": "default"
+               
+              }
+            },
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

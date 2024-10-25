@@ -1,0 +1,39 @@
+{
+	"traceName": "Blogspot",
+	"uriPattern": "http://[ws-dl].blogspot.com/[2017/08/2017-08-11-where-can-we-post-stories.html]",
+	"uriRegex": "http://([^/]+?).blogspot.com/([^/]+?)",
+	"actions": {
+		"1d3ed24c637f61": {
+			"id": "1d3ed24c637f61",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1d3ed24c637f61",
+			"locationURL": "http://ws-dl.blogspot.com/2017/08/2017-08-11-where-can-we-post-stories.html",
+			"children": {
+				"260586c48182ea": {
+					"id": "260586c48182ea",
+					"name": "All references in the post",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div#post-body-5761894400533568344 a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"post-body-5761894400533568344\")//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1d3ed24c637f61",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

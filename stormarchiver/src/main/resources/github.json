@@ -1,0 +1,85 @@
+{
+	"traceName": "Github",
+	"uriPattern": "https://github.com/[gorilla]/[mux]",
+	"uriRegex": "https://github.com/([^/]+)/([^/]+)",
+	"actions": {
+		"1a4b721545754d": {
+			"id": "1a4b721545754d",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1a4b721545754d",
+			"locationURL": "https://github.com/gorilla/mux",
+			"children": {
+				"2d3ef8b4d7f36a": {
+					"id": "2d3ef8b4d7f36a",
+					"name": "Clone or Download Button",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "summary.btn.btn-sm.btn-primary",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[5]/DETAILS[1]/SUMMARY[1]",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1a4b721545754d",
+					"children": {
+						"36612af740adc1": {
+							"id": "36612af740adc1",
+							"name": "Download Zip",
+							"actionName": "click",
+							"selectors": [{
+								"selector": "a.btn.btn-outline.get-repo-btn",
+								"selectorType": "CSSSelector",
+								"selectorOrder": 0,
+								"selectorPreferred": true
+							}, {
+								"selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[5]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/A[text()=\"\n  Download ZIP\n\"]",
+								"selectorType": "XPath",
+								"selectorOrder": 1,
+								"selectorPreferred": false
+							}, {
+								"selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[5]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/A[2]",
+								"selectorType": "XPath",
+								"selectorOrder": 2,
+								"selectorPreferred": false
+							}],
+							"parentId": "2d3ef8b4d7f36a",
+							"children": {},
+							"eventOrder": 3,
+							"repeat": 0
+						}
+					},
+					"eventOrder": 2,
+					"repeat": 0
+				},
+				"492eefa057fb6f": {
+					"id": "492eefa057fb6f",
+					"name": "All Files in the Repo",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.file-wrap a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[7]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1a4b721545754d",
+					"children": {},
+					"eventOrder": 4,
+					"repeat": 0
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

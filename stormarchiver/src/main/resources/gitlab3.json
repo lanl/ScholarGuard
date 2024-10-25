@@ -1,0 +1,139 @@
+{
+"traceName": "gitlabtest","uriPattern": "https://gitlab.com/occam-archive/occam/-/issues","uriRegex": "https://gitlab.com/occam-archive/occam/-/issues$","actions": {
+  "191245d11be9a8": {
+    "id": "191245d11be9a8",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "191245d11be9a8",
+    "locationUrl": "https://gitlab.com/occam-archive/occam/-/issues/",
+    "children": {
+      "218f569fcc6fb98": {
+        "id": "218f569fcc6fb98",
+        "default_name_set": true,
+        "name": "open-closed-buttons (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span.badge.gl-tab-counter-badge.badge-muted.badge-pill.gl-badge.sm",
+            "selectorMatches": 3,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"__BVID__13___BV_tab_button__\")/SPAN[2]",
+            "selectorMatches": 1,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "191245d11be9a8",
+        "children": {
+          "222f215ad6b2d96": {
+            "id": "222f215ad6b2d96",
+            "default_name_set": true,
+            "name": "Next (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "div.gl-display-flex.gl-align-center",
+                "selectorMatches": 2,
+                "selectorOrder": 0,
+                "selectorPreferred": false,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"content-body\")/DIV[3]/DIV[1]/DIV[3]/DIV[1]/BUTTON[2]/SPAN[1]/DIV[1]",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": true,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "218f569fcc6fb98",
+            "children": {
+              "283843cba3098bc": {
+                "id": "283843cba3098bc",
+                "default_name_set": true,
+                "name": "Labels",
+                "actionName": "click all links in an area",
+                "selectors": [
+                  {
+                    "selector": "div.issuable-info a",
+                    "selectorMatches": 52,
+                    "selectorOrder": 0,
+                    "selectorPreferred": true,
+                    "selectorType": "CSSSelector"
+                  },
+                  {
+                    "selector": "id(\"issuable_34697487\")/DIV[1]/DIV[2]//a",
+                    "selectorMatches": 3,
+                    "selectorOrder": 1,
+                    "selectorPreferred": false,
+                    "selectorType": "XPath"
+                  }
+                ],
+                "parentId": "222f215ad6b2d96",
+                "children": {},
+                "eventOrder": 28,
+                "repeat": {},
+                "frameIndex": "root"
+              },
+              "30a29d22668adc6": {
+                "id": "30a29d22668adc6",
+                "default_name_set": true,
+                "name": "issues",
+                "actionName": "click all links in an area",
+                "selectors": [
+                  {
+                    "selector": "div.issue-title.title a",
+                    "selectorMatches": 20,
+                    "selectorOrder": 0,
+                    "selectorPreferred": true,
+                    "selectorType": "CSSSelector"
+                  },
+                  {
+                    "selector": "id(\"issuable_34697487\")/DIV[1]/DIV[1]//a",
+                    "selectorMatches": 1,
+                    "selectorOrder": 1,
+                    "selectorPreferred": false,
+                    "selectorType": "XPath"
+                  }
+                ],
+                "parentId": "222f215ad6b2d96",
+                "children": {},
+                "eventOrder": 30,
+                "repeat": {},
+                "frameIndex": "root"
+              }
+            },
+            "eventOrder": 22,
+            "repeat": {
+              "until": {
+                "selectorType": "selectorPreferred",
+                "selectorCondition": "default"
+              }
+            },
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 21,
+        "repeat": {
+          "along_with": {
+            "exit_cond": "click-back-button",
+            "selectorType": "built-in",
+            "selectorCondition": "browserback"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

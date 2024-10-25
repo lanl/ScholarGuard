@@ -1,0 +1,39 @@
+{
+	"traceName": "Publons",
+	"uriPattern": "https://publons.com/author/review/[7TYThBKz]/",
+	"uriRegex": "https://publons.com/author/review/([^/]+)?(/$|$)",
+	"actions": {
+		"1d1be51ebb9e71": {
+			"id": "1d1be51ebb9e71",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1d1be51ebb9e71",
+			"locationURL": "https://publons.com/author/review/7TYThBKz/",
+			"children": {
+				"26d13b91ad20e3": {
+					"id": "26d13b91ad20e3",
+					"name": "Review Content and Manuscript",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "li a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": false
+					}, {
+						"selector": "id(\"profile-navigation\")/DIV[2]/UL[1]/LI[3]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": true
+					}],
+					"parentId": "1d1be51ebb9e71",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+"traceName": "MIA","uriPattern": "http://mekosztaly.oszk.hu/mia/","uriRegex": "http://mekosztaly.oszk.hu/mia/$","actions": {
+  "14495fb694c2a5": {
+    "id": "14495fb694c2a5",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "14495fb694c2a5",
+    "locationUrl": "http://mekosztaly.oszk.hu/mia/",
+    "children": {
+      "2d95dc1a57ff2b": {
+        "id": "2d95dc1a57ff2b",
+        "name": "MIA",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "div#Layer4 a",
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"Layer4\")//a",
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "14495fb694c2a5",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

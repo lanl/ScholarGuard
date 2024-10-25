@@ -1,0 +1,52 @@
+{
+"traceName": "Manda_blog","uriPattern": "https://manda.blog.hu/","uriRegex": "https://manda.blog.hu/$","actions": {
+  "14306feebeeb7f": {
+    "id": "14306feebeeb7f",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "14306feebeeb7f",
+    "locationUrl": "https://manda.blog.hu/",
+    "children": {
+      "2175ec17d5754a": {
+        "id": "2175ec17d5754a",
+        "name": "MANDA_blog",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "a",
+            "selectorOrder": 0,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[text()=\"Következő oldal\"]",
+            "selectorOrder": 1,
+            "selectorPreferred": true,
+            "selectorType": "XPath"
+          },
+          {
+            "selector": "id(\"pager\")/DIV[1]/A[1]",
+            "selectorOrder": 2,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "14306feebeeb7f",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {
+          "until": {
+            "selectorType": "selectorPreferred",
+            "selectorCondition": "not_exists"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

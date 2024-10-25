@@ -1,0 +1,45 @@
+{
+"traceName": "all_children","uriPattern": "https://gitlab.com/occam-archive/occam/-/issues","uriRegex": "https://gitlab.com/occam-archive/occam/-/issues$","actions": {
+  "13483b2873ab91": {
+    "id": "13483b2873ab91",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "13483b2873ab91",
+    "locationUrl": "https://gitlab.com/occam-archive/occam/-/issues",
+    "children": {
+      "31c81d01dd5a38": {
+        "id": "31c81d01dd5a38",
+        "default_name_set": true,
+        "name": "Event 3",
+        "actionName": "click all links in an area",
+        "selectors": [
+          {
+            "selector": "div.container-fluid.container-limited.project-highlight-puc a",
+            "selectorMatches": 63,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "BODY/DIV[2]/DIV[1]/DIV[3]//a",
+            "selectorMatches": 0,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "13483b2873ab91",
+        "children": {},
+        "eventOrder": 3,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

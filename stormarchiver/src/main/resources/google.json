@@ -1,0 +1,49 @@
+{
+"traceName": "scholar","uriPattern": "https://scholar.google.com/citations?user=9H4a2UIAAAAJ&hl=en",
+"uriRegex": "https://scholar.google.com/citations\\?user=(.*)?(&|$)","actions": {
+  "1c55ee3ea95b83": {
+    "id": "1c55ee3ea95b83",
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1c55ee3ea95b83",
+    "locationUrl": "https://scholar.google.com/citations?user=9H4a2UIAAAAJ&hl=en",
+    "children": {
+      "3d2939fa7c3e91": {
+        "id": "3d2939fa7c3e91",
+        "name": "show more",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span.gs_lbl",
+            "selectorMatches": 65,
+            "selectorOrder": 0,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector":"id(\"gsc_bpf_more\")",
+            "selectorMatches": 1,
+            "selectorOrder": 1,
+            "selectorPreferred": true,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1c55ee3ea95b83",
+        "children": {},
+        "eventOrder": 3,
+        "repeat": {
+          "until": {
+             "selectorType": "selectorPreferred",
+            "selectorCondition": "default"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

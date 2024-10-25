@@ -1,0 +1,109 @@
+{
+	"traceName": "Figshare",
+	"uriPattern": "https://figshare.com/articles/[Beyond_Throughput_a_4G_LTE_Dataset_with_Channel_and_Context_Metrics]/[6153497]",
+	"uriRegex": "https://figshare.com/articles/([^/]+)/([^/]+)",
+	"actions": {
+		"1dad3641745c4c": {
+			"id": "1dad3641745c4c",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1dad3641745c4c",
+			"children": {
+				"587ef98ae7977b": {
+					"id": "587ef98ae7977b",
+					"name": "All Files in the Dataset",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.fv-loader a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"app-root\")/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1dad3641745c4c",
+					"children": {},
+					"eventOrder": 5,
+					"repeat": {}
+				},
+				"2b663013919a9f": {
+					"id": "2b663013919a9f",
+					"name": "Download All",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "a.normal-link.download-button.shallow-button",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"app-root\")/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[text()=\"Download all (6.17 MB)\"]",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}, {
+						"selector": "id(\"app-root\")/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+						"selectorType": "XPath",
+						"selectorOrder": 2,
+						"selectorPreferred": false
+					}],
+					"parentId": "1dad3641745c4c",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				},
+				"3b1347ba827c5d": {
+					"id": "3b1347ba827c5d",
+					"name": "File in the Dataset",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.fs-generic-preview",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"app-root\")/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1dad3641745c4c",
+					"children": {
+						"42bc7c7f23aa17": {
+							"id": "42bc7c7f23aa17",
+							"name": "Next Preview Buttons",
+							"actionName": "click",
+							"selectors": [{
+								"selector": "button.fs-next-page",
+								"selectorType": "CSSSelector",
+								"selectorOrder": 0,
+								"selectorPreferred": true
+							}, {
+								"selector": "id(\"app-root\")/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[2]",
+								"selectorType": "XPath",
+								"selectorOrder": 1,
+								"selectorPreferred": false
+							}],
+							"parentId": "3b1347ba827c5d",
+							"children": {},
+							"eventOrder": 4,
+							"repeat": {
+								"until": {
+									"selectorType": "selectorPreferred",
+									"selectorCondition": "default"
+								}
+							}
+						}
+					},
+					"eventOrder": 3,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

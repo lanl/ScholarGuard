@@ -1,0 +1,3 @@
+ { "uriRegex": "(github.com)\/([^\/]+)\/([^\/]+)\/(issues|pull|commits|wiki)",
+ "actions": {}
+                          }

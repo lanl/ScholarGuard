@@ -1,0 +1,230 @@
+{
+  "com.digitalpebble.stormcrawler.protocol.selenium.NavigationFilters": [
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "git",
+      "params": {
+         "portalFile": "github.json"  
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "gitissue",
+      "params": {
+         "portalFile": "githubissue.json"  
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "twitter",
+      "params": {
+         "portalFile": "twitter.json"  
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "manda",
+      "params": {
+         "portalFile": "manda.json"  
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "slideshare",
+      "params": {
+        "portalFile": "ngslideshare.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "figshare",
+      "params": {
+        "portalFile": "figsharetrace2.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "plos",
+      "params": {
+        "portalFile": "plos.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "fossils",
+      "params": {
+        "portalFile": "fossilsandshit.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "chemconnector",
+      "params": {
+        "portalFile": "chemconnector.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "blogspot",
+      "params": {
+        "portalFile": "blogspot.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "hypothes",
+      "params": {
+        "portalFile": "hypothes.is.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "newsarchive",
+      "params": {
+        "portalFile": "news.archivesunleashed.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "publons",
+      "params": {
+        "portalFile": "publons.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "via",
+      "params": {
+        "portalFile": "via.hypothes.is.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "stackque",
+      "params": {
+        "portalFile": "stackoverflow_que.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "stackans",
+      "params": {
+        "portalFile": "stackoverflow_ans.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "wikuser",
+      "params": {
+        "portalFile": "wikipedia_user.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "wikuserrev",
+      "params": {
+        "portalFile": "wikipedia_user_revision.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "wordpress",
+      "params": {
+        "portalFile": "wordpress.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "elastic",
+      "params": {
+        "portalFile": "elastic.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "usnews",
+      "params": {
+        "portalFile": "usnewstrace.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "nesttest",
+      "params": {
+        "portalFile": "selenium.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "heise",
+      "params": {
+        "portalFile": "heise.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "scholar",
+      "params": {
+        "portalFile": "google.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "manifoldsum",
+      "params": {
+        "portalFile": "minisota.json" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "manifoldbooks",
+      "params": {
+        "portalFile": "manifold.json" 
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "webgl",
+      "params": {
+        "portalFile": "webgl.json"  
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "manifold",
+      "params": {
+        "portalFile": "manifold-one-page-annotations.json"  
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "opensq",
+      "params": {
+        "portalFile": "opensquare-book-pages.json"  
+       }
+    },
+    {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "hover",
+      "params": {
+        "portalFile": "marquette.json",
+        "uriRegex": "https://www.marquette.edu/.*$" 
+       }
+    },
+     {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "insta",
+      "params": {
+        "portalFile": "insta.json"  
+       }
+    }
+   
+   , {
+      "class": "gov.lanl.crawler.boundary.RemotePortalFilter",
+      "name": "robottxt",
+      "params": {
+        "portalFile": "robot.json" 
+       }
+    }
+  ]
+}

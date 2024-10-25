@@ -1,0 +1,135 @@
+{
+"traceName": "","uriPattern": "https://github.com/lanl/bloomfiltersforwebarchives","uriRegex": "https://github.com/lanl/bloomfiltersforwebarchives$","actions": {
+  "13786c126ccd49": {
+    "id": "13786c126ccd49",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "13786c126ccd49",
+    "locationUrl": "https://github.com/lanl/bloomfiltersforwebarchives",
+    "children": {
+      "2b8af819007011": {
+        "id": "2b8af819007011",
+        "default_name_set": true,
+        "name": "all_links (click all links in an area)",
+        "actionName": "click all links in an area",
+        "selectors": [
+          {
+            "selector": "div.Box.mb-3 a",
+            "selectorMatches": 42,
+            "selectorOrder": 0,
+            "selectorPreferred": false,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"repo-content-pjax-container\")/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[2]//a",
+            "selectorMatches": 42,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "13786c126ccd49",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {},
+        "frameIndex": "root"
+      },
+      "354b85ad37b4bb": {
+        "id": "354b85ad37b4bb",
+        "default_name_set": true,
+        "name": "download_code (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span.dropdown-caret",
+            "selectorMatches": 2,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"repo-content-pjax-container\")/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SPAN[1]/GET-REPO[1]/DETAILS[1]/SUMMARY[1]/SPAN[1]",
+            "selectorMatches": 1,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "13786c126ccd49",
+        "children": {
+          "4f7ef1437f172d": {
+            "id": "4f7ef1437f172d",
+            "default_name_set": false,
+            "name": "download_zip (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "a.d-flex.flex-items-center.color-fg-default.text-bold.no-underline",
+                "selectorMatches": 2,
+                "selectorOrder": 0,
+                "selectorPreferred":false,
+                "selectorType": "CSSSelector"
+              },
+              {
+             
+                "selector": "//a[contains(text(),\"Download ZIP\"]",
+                "selectorMatches": 0,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              },
+              {
+                "selector": "id(\"repo-content-pjax-container\")/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SPAN[1]/GET-REPO[1]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+                "selectorMatches": 1,
+                "selectorOrder": 2,
+                "selectorPreferred":true,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "354b85ad37b4bb",
+            "children": {},
+            "eventOrder": 4,
+            "repeat": {},
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 3,
+        "repeat": {},
+        "frameIndex": "root"
+      },
+      "55cbffdffd1c51": {
+        "id": "55cbffdffd1c51",
+        "default_name_set": true,
+        "name": "Event 5 (click all links in an area)",
+        "actionName": "click all links in an area",
+        "selectors": [
+          {
+            "selector": "nav.js-repo-nav.js-sidenav-container-pjax.js-responsive-underlinenav.overflow-hidden.UnderlineNav.px-3.px-md-4.px-lg-5 a",
+            "selectorMatches": 14,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"repository-container-header\")/NAV[1]//a",
+            "selectorMatches": 14,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "13786c126ccd49",
+        "children": {},
+        "eventOrder": 5,
+        "repeat": {},
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}

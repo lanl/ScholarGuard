@@ -1,0 +1,39 @@
+{
+	"traceName": "fossilandshit.com",
+	"uriPattern": "http://fossilsandshit.com/",
+	"uriRegex": "http://fossilsandshit.com",
+	"actions": {
+		"1128dcc31faabf": {
+			"id": "1128dcc31faabf",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1128dcc31faabf",
+			"locationURL": "http://fossilsandshit.com/",
+			"children": {
+				"2334a0b2aee6c2": {
+					"id": "2334a0b2aee6c2",
+					"name": "All pages in the website",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "nav#mainnav a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"mainnav\")//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1128dcc31faabf",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

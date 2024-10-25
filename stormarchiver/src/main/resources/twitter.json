@@ -1,0 +1,35 @@
+{
+    "traceName": "twitter",
+    "uriPattern": "https://www.slideshare.net/[hvdsomp]/[perseverance-on-persistence]",
+    "uriRegex": "https://twitter.com/([^/]+)",
+    "actions": {
+        "1fb9e90a5ff07b": {
+            "id": "1fb9e90a5ff07b",
+            "name": "Starting Resource",
+            "actionName": "load",
+            "selectors": [],
+            "parentId": "1fb9e90a5ff07b",
+            "children": {
+                "0fe9834df99lp": {
+                    "id": "21d0fe98cb99cd",
+                    "name": "Scroll Page",
+                    "actionName": "scroll",
+                    "selectors": [],
+                    "parentId": "1fb9e90a5ff07b",
+                    "children": {},
+                    "eventOrder": 2,
+                    "repeat": {
+                        "until": {
+                            "selectorType": "Scroll",
+                            "selectorCondition": "scrollCount",
+                            "selectorValue": "all"
+                        }
+                    }
+                }
+            },
+            "eventOrder": 1,
+            "repeat": {}
+        }
+    }
+}
+

@@ -1,0 +1,6 @@
+ {  
+ "portal_url_match": "(google.com)",   
+         "actions": [
+           { "action_order":"1","value":"iframe" ,"type":"tagName","action":"switch_to_frame"}]
+                 
+  }

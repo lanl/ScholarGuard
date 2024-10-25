@@ -1,0 +1,39 @@
+{
+	"traceName": "Stack Overflow Answer",
+	"uriPattern": "https://stackoverflow.com/questions/[47037729]/[reclaiming-old-r-package]/[47059625#47059625]",
+	"uriRegex": "https://stackoverflow.com/questions/([^/]+?)/([^/]+?)/([^/]+?)?(/$|$)$",
+	"actions": {
+		"146c02cfe46486": {
+			"id": "146c02cfe46486",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "146c02cfe46486",
+			"locationURL": "https://stackoverflow.com/questions/47037729/reclaiming-old-r-package/47059625#47059625",
+			"children": {
+				"2a657ca8422b7e": {
+					"id": "2a657ca8422b7e",
+					"name": "References in the Answer",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "div.post-text a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": false
+					}, {
+						"selector": "id(\"answer-47059625\")/DIV[1]/DIV[2]/DIV[1]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": true
+					}],
+					"parentId": "146c02cfe46486",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

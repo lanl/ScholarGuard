@@ -1,0 +1,49 @@
+{
+	"traceName": "US News: Best Univ",
+	"uriPattern": "https://www.usnews.com/education/best-global-universities/rankings",
+	"uriRegex": "https://www.usnews.com/education/best-global-universities/rankings",
+	"actions": {
+		"1e033bb73a50c1": {
+			"id": "1e033bb73a50c1",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1e033bb73a50c1",
+			"locationURL": "https://www.usnews.com/education/best-global-universities/rankings",
+			"children": {
+				"2eb288399a9b14": {
+					"id": "2eb288399a9b14",
+					"name": "Next Pages",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "a.pager_link",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": false
+					}, {
+						"selector": "id(\"resultsMain\")/DIV[2]/A[text()=\"Next »\"]",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"resultsMain\")/DIV[2]/A[3]",
+						"selectorType": "XPath",
+						"selectorOrder": 2,
+						"selectorPreferred": false
+					}],
+					"parentId": "1e033bb73a50c1",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {
+						"until": {
+							"selectorType": "selectorPreferred",
+							"selectorCondition": "not_exists"
+						}
+					}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

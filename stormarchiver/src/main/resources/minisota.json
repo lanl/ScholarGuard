@@ -1,0 +1,121 @@
+{
+"traceName": "projects","uriPattern": "https://manifold.umn.edu/projects/the-perversity-of-things/resources",
+"uriRegex": "https://manifold.umn.edu/projects/the-perversity-of-things/resources$","actions": {
+ "1f964c3805bb17": {
+    "id": "1f964c3805bb17",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1f964c3805bb17",
+    "locationUrl": "https://manifold.umn.edu/projects/the-perversity-of-things/resources",
+    "children": {
+      "4a9bdbd02b67f2": {
+        "id": "4a9bdbd02b67f2",
+        "default_name_set": true,
+        "name": "Event 4 (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "svg.manicon-svg.svg-icon--arrowLongRight16",
+            "selectorMatches": 1,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "//A[text()=\"NEXT\"],id(\"skip-to-main\")/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[2]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]/svg[1]",
+            "selectorMatches": 0,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1f964c3805bb17",
+        "children": {
+          "104f79099f45774": {
+            "id": "104f79099f45774",
+            "default_name_set": true,
+            "name": "Event 10 (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "svg.manicon-svg.resource-card__arrow-link-icon.svg-icon--arrowRight16",
+                "selectorMatches": 10,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"skip-to-main\")/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/SECTION[1]/DIV[1]/DIV[1]/svg[1]",
+                "selectorMatches": 0,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "4a9bdbd02b67f2",
+            "children": {},
+            "eventOrder": 10,
+            "repeat": {
+              "along_with": {
+                "exit_cond": "click-back-button",
+                "selectorType": "built-in",
+                "selectorCondition": "browserback"
+              }
+            },
+            "frameIndex": "root"
+          },
+          "110ba3fa92eb07d": {
+            "id": "110ba3fa92eb07d",
+            "default_name_set": true,
+            "name": "Event 11 (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "svg.manicon-svg.resource-card__view-icon.svg-icon--eyeOpen16",
+                "selectorMatches": 10,
+                "selectorOrder": 0,
+                "selectorPreferred": true,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"skip-to-main\")/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/svg[1]",
+                "selectorMatches": 0,
+                "selectorOrder": 1,
+                "selectorPreferred": false,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "4a9bdbd02b67f2",
+            "children": {},
+            "eventOrder": 11,
+            "repeat": {
+              "along_with": {
+                "exit_cond": "element-to-be-clicked",
+                "selectorType": "CSSSelector",
+                "selectorCondition": "closebutton",
+                "selectorValue": "svg.manicon-svg.overlay-close__icon.svg-icon--close32"
+              }
+            },
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 4,
+        "repeat": {
+          "until": {
+            "selectorType": "new_resource_count",
+            "selectorCondition": "equals",
+            "selectorValue": 13
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}
+ 

@@ -1,0 +1,18 @@
+{
+	"traceName": "ALLHypothesis",
+	"uriPattern": "https://via.hypothes.is/[http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html#annotations:qT3MqG2XEei8k-98Jl140A]",
+	"uriRegex": "(https://doi.org/([^/]+)/([^/]+))",
+	"actions": {
+		"1902fd9f11b6ca": {
+			"id": "1902fd9f11b6ca",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1902fd9f11b6ca",
+			"locationURL": "https://via.hypothes.is/http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html#annotations:qT3MqG2XEei8k-98Jl140A",
+			"children": {},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

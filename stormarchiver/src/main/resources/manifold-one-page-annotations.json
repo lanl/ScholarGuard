@@ -1,0 +1,55 @@
+{
+"traceName": "manifold-annotations-v5",
+"uriPattern": "https://manifold.umn.edu/read/[fc03beb6-e670-4746-af17-4bac70ddb764]/section/[873bd50b-aea0-44d1-a5ad-895eba66e1b9]",
+"uriRegex": "https://manifold.umn.edu/read/([^/]+?)/section/([^/]+?)$","actions": {
+ "1f042c8095c41c": {
+    "id": "1f042c8095c41c",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1f042c8095c41c",
+    "locationUrl": "https://manifold.umn.edu/read/fc03beb6-e670-4746-af17-4bac70ddb764/section/873bd50b-aea0-44d1-a5ad-895eba66e1b9",
+    "children": {
+      "285eb6f1dd07da": {
+        "id": "285eb6f1dd07da",
+        "default_name_set": true,
+        "name": "Event 2 (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span.secondary.annotation-underline",
+            "selectorMatches": 3,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"ch01\")/P[4]/SPAN[1]/SPAN[6]",
+            "selectorMatches": 1,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1f042c8095c41c",
+        "children": {},
+        "eventOrder": 2,
+        "repeat": {
+          "along_with": {
+            "exit_cond": "element-to-be-clicked",
+            "selectorType": "CSSSelector",
+            "selectorCondition": "closebutton",
+            "selectorValue": "svg.manicon-svg.drawer-bar__close-icon.drawer-bar__close-icon--small.svg-icon--close16"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}
+ 

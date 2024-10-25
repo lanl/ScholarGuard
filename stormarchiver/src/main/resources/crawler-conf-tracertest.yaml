@@ -1,0 +1,145 @@
+# Custom configuration for StormCrawler
+# This is used to override the default values from crawler-default.xml and provide additional ones 
+# for your custom components.
+# Use this file with the parameter -config when launching your extension of ConfigurableTopology.  
+# This file does not contain all the key values but only the most frequently used ones. See crawler-default.xml for an extensive list.
+
+config: 
+  topology.workers: 1
+  topology.message.timeout.secs: 6000
+  topology.max.spout.pending: 1000
+  topology.debug: false
+
+  fetcher.threads.number: 1
+  
+  # give 2gb to the workers
+  worker.heap.memory.mb: 2048
+
+  # mandatory when using Flux
+  topology.kryo.register:
+    - com.digitalpebble.stormcrawler.Metadata
+
+  # metadata to transfer to the outlinks
+  # used by Fetcher for redirections, sitemapparser, etc...
+  # these are also persisted for the parent document (see below)
+  metadata.transfer:
+  # - customMetadataName
+    - event
+  # lists the metadata to persist to storage
+  # these are not transfered to the outlinks
+  metadata.persist:
+  # - _redirTo
+  # - error.cause
+  # - error.source
+  # - isSitemap
+  # - isFeed
+  # - warcs
+  # - event
+  # - trace
+   - filter
+   - discoveryDate
+   - lastProcessedDate
+   - clickCount
+   - selSessionDur
+   - proxyDur
+   - traceDur
+
+  http.agent.name: "Prototeam Archiver"
+  http.agent.version: "0.1"
+  http.agent.description: "LANL's RL Prototeam crawler"
+  http.agent.url: ""
+  http.agent.email: ""
+  http.skip.robots: true
+  #http.protocol.implementation: "gov.lanl.crawler.HttpSeleniumProtocol"
+  #https.protocol.implementation: "gov.lanl.crawler.HttpSeleniumProtocol"
+  #http.protocol.implementation: "com.digitalpebble.stormcrawler.protocol.selenium.RemoteDriverProtocol"
+  #https.protocol.implementation: "com.digitalpebble.stormcrawler.protocol.selenium.RemoteDriverProtocol"
+  #http.protocol.implementation: "gov.lanl.crawler.RemoteDriverProtocol"
+  #https.protocol.implementation: "gov.lanl.crawler.RemoteDriverProtocol"
+  http.protocol.implementation: "gov.lanl.crawler.RemoteDriverProtocolCommonWarc"
+  https.protocol.implementation: "gov.lanl.crawler.RemoteDriverProtocolCommonWarc"
+  #url to crawl
+  crawlurl: "https://www.slideshare.net/martinklein0815/first-steps-in-research-data-management-under-constraints-of-a-national-security-laboratory"
+  #crawlurl: "https://twitter.com/hvdsomp"  
+  # for crawling through a proxy:
+  #http.proxy.host: 127.0.0.1
+  #http.proxy.host: proxyout.lanl.gov
+  #http.proxy.host: 172.17.0.1
+  #http.proxy.port: 8080
+  http.proxy.dir: "./warcs/warcstore"
+  # storm 
+
+  #selenium.addresses: "http://172.17.0.1:4444/wd/hub"
+  selenium.addresses: "http://localhost:4444/wd/hub"
+  selenium.capabilities: {MaxInstances: 50, takesScreenshot: false,unexpectedAlertBehaviour: accept, loadImages: true, javascriptEnabled: true,browserName : chrome,chromeOptions: {args: ['user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36']},version : 3.11.0-californium} #,proxy:{'proxyType': 'manual','httpProxy': '172.17.0.1:8080','sslProxy':'172.17.0.1:8080','socksProxy':'172.17.0.1:8080'}}
+ # selenium.instances.num: 1  
+ # selenium.setScriptTimeout: 1000
+  selenium.implicitlyWait: 3000
+                
+  # "chrome" | "firefox"
+  #browser.name: "chrome"
+
+  # if docker browser.. https://github.com/SeleniumHQ/docker-selenium
+  #browser.remote.url: "http://172.17.0.2:4444/wd/hub"
+
+  # if not remote, provide the browser binary and drivers
+  # the path to the binary of the browser. If empty, the program will search in common paths
+  #browser.binary: "/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+
+  # for some browsers like chrome, an extra driver is necessary. Add the path to this driver here.
+  # for eg: https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver
+  #browser.driver: "/Users/harihar/dropbox/Projects/stormcrawler/browsers/chromedriver"
+  browser.driver: "/usr/local/bin/chromedriver"
+  # for crawling through a proxy with Basic authentication:
+  # http.proxy.user:
+  # http.proxy.pass:
+
+  # FetcherBolt queue dump : comment out to activate
+  # if a file exists on the worker machine with the corresponding port number
+  # the FetcherBolt will log the content of its internal queues to the logs
+  # fetcherbolt.queue.debug.filepath: "/tmp/fetcher-dump-{port}
+  # time bucket to use for the metrics sent by the Fetcher
+  fetcher.metrics.time.bucket.secs: 60
+
+  #parsefilters.config.file: "parsefilters.json"
+  #urlfilters.config.file: "urlfilters.json"
+  navigationfilters.config.file: "boundary-filters3.json"
+
+  # revisit a page daily (value in minutes)
+  # set it to -1 to never refetch a page //not working for mysql
+  # portal urls should not be refetched by second crawler 
+  fetchInterval.default: 432000 
+
+  # revisit a page with a fetch error after 2 hours (value in minutes)
+  # set it to -1 to never refetch a page
+  fetchInterval.fetch.error: 120
+
+  # never revisit a page with an error (or set a value in minutes)
+  fetchInterval.error: 432000
+
+  # custom fetch interval to be used when a document has the key/value in its metadata
+  # and has been fetched succesfully (value in minutes)
+  # fetchInterval.isFeed=true: 10
+
+  # configuration for the classes extending AbstractIndexerBolt
+  # indexer.md.filter: "someKey=aValue"
+  indexer.url.fieldname: "url"
+  indexer.text.fieldname: "content"
+  indexer.canonical.name: "canonical"
+  indexer.md.mapping:
+  - parse.title=title
+  - parse.keywords=keywords
+  - parse.description=description
+  - domain=domain
+
+  # Metrics consumers:
+  topology.metrics.consumer.register:
+     - class: "org.apache.storm.metric.LoggingMetricsConsumer"
+       parallelism.hint: 1
+  mysql.nosubtrace: "true"
+  mysql.url: "jdbc:mysql://localhost:3306/crawlp?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+  mysql.table: "urls"
+  mysql.user: "cache"
+  mysql.password: "plenty"
+  mysql.buffer.size: 1
+  mysql.min.query.interval: 5000

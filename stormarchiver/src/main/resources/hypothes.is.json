@@ -1,0 +1,39 @@
+{
+	"traceName": "Hypothesis Annotation",
+	"uriPattern": "https://hypothes.is/a/[qT3MqG2XEei8k-98Jl140A]",
+	"uriRegex": "https://hypothes.is/a/([^/]+)?(/$|$)",
+	"actions": {
+		"1c80773ca3ab53": {
+			"id": "1c80773ca3ab53",
+			"name": "Starting Resource",
+			"actionName": "load",
+			"selectors": [],
+			"parentId": "1c80773ca3ab53",
+			"locationURL": "https://hypothes.is/a/qT3MqG2XEei8k-98Jl140A",
+			"children": {
+				"2dc3e7d9f3d82a": {
+					"id": "2dc3e7d9f3d82a",
+					"name": "Any References in the Annotation",
+					"actionName": "click",
+					"selectors": [{
+						"selector": "blockquote.annotation-quote.ng-binding.ng-scope a",
+						"selectorType": "CSSSelector",
+						"selectorOrder": 0,
+						"selectorPreferred": true
+					}, {
+						"selector": "id(\"qT3MqG2XEei8k-98Jl140A\")/ANNOTATION-THREAD[1]/DIV[1]/DIV[1]/ANNOTATION[1]/DIV[1]/SECTION[1]/EXCERPT[1]/DIV[1]/DIV[1]/DIV[1]/BLOCKQUOTE[1]//a",
+						"selectorType": "XPath",
+						"selectorOrder": 1,
+						"selectorPreferred": false
+					}],
+					"parentId": "1c80773ca3ab53",
+					"children": {},
+					"eventOrder": 2,
+					"repeat": {}
+				}
+			},
+			"eventOrder": 1,
+			"repeat": {}
+		}
+	}
+}

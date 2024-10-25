@@ -1,0 +1,89 @@
+{
+  "traceName": "Github Trace",
+  "uriRegex": "(github.com)/([^\/]+)/([^\/]+)?(/$|$)",
+  "uriPattern": "https://www.slideshare.net/[hvdsomp]/[paul-evan-peters-lecture]",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3431.0 Safari/537.36",
+  "resourceURL": "https://www.slideshare.net/hvdsomp/paul-evan-peters-lecture",
+
+  "locationUrls": {},
+  "actions": {
+    "162b443bbce569": {
+      "id": "162b443bbce569",
+      "name": "Starting Resource",
+      "actionName": "load",
+      "selectors": [],
+      "parentId": "162b443bbce569",
+      "locationURL": "https://github.com/gorilla/mux",
+      "eventOrder": 1,
+      
+      "children": {
+        "2063e34a7f701a": {
+          "id": "2063e34a7f701a",
+          "name": "Event 2",
+          "actionName": "click",
+          "eventOrder": 2,
+          "selectors": [
+            {
+              "selector": "summary.btn.btn-sm.btn-primary",
+              "selectorType": "CSSSelector",
+              "selOrder": 0,
+              "selectorPreferred": true
+            },
+            {
+              "selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[5]/DETAILS[1]/SUMMARY[1]",
+              "selectorType": "XPath",
+              "selectorOrder": 1,
+              "selectorPreferred": false
+            }
+          ],
+          "parentId": "162b443bbce569",
+
+          "children": {
+            "36aa84a90529d1": {
+              "id": "36aa84a90529d1",
+              "name": "Event 3",
+              "actionName": "click",
+              "selectors": [
+                {
+                  "selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[5]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/A[text()=\"\n  Download ZIP\n\"]",
+                  "selectorType": "CSSSelector",
+                  "selOrder": 0,
+                  "selectorPreferred": false
+                },
+                {
+                  "selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[5]/DETAILS[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/A[2]",
+                  "selectorType": "XPath",
+                  "selectorOrder": 1,
+                  "selectorPreferred": true
+                }
+              ],
+              "parentId": "2063e34a7f701a",
+              "children": {},
+              "eventOrder": 3
+            }
+          }
+        },
+      
+        "474d0065a2de51": {
+          "id": "474d0065a2de51",
+          "name": "Event 4",
+          "actionName": "click",
+          "selectors": [{
+            "selector": "table.files.js-navigation-container.js-active-navigation-container a",
+            "selectorType": "CSSSelector",
+            "selOrder": 0,
+            "selectorPreferred": false
+          }, {
+            "selector": "id(\"js-repo-pjax-container\")/DIV[2]/DIV[1]/DIV[7]/TABLE[1]//a",
+            "selectorType": "XPath",
+            "selectorOrder": 1,
+            "selectorPreferred": true
+          }],
+          "parentId": "162b443bbce569",
+          "children": {},
+          "eventOrder": 4
+        }
+      }
+    }
+  }
+}

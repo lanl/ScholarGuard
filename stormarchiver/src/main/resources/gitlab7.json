@@ -1,0 +1,113 @@
+{
+"traceName": "gitlabtest","uriPattern": "https://gitlab.com/occam-archive/occam/-/issues","uriRegex": "https://gitlab.com/occam-archive/occam/-/issues$","actions": {
+  "1942b5d0e0cec4": {
+    "id": "1942b5d0e0cec4",
+    "default_name_set": false,
+    "name": "Starting Resource",
+    "actionName": "load",
+    "selectors": [],
+    "parentId": "1942b5d0e0cec4",
+    "locationUrl": "https://gitlab.com/occam-archive/occam/-/issues",
+    "children": {
+      "99d97404a8e047": {
+        "id": "99d97404a8e047",
+        "default_name_set": true,
+        "name": "Event 9 (click)",
+        "actionName": "click",
+        "selectors": [
+          {
+            "selector": "span.badge.gl-tab-counter-badge.badge-muted.badge-pill.gl-badge.sm",
+            "selectorMatches": 3,
+            "selectorOrder": 0,
+            "selectorPreferred": true,
+            "selectorType": "CSSSelector"
+          },
+          {
+            "selector": "id(\"__BVID__16___BV_tab_button__\")/SPAN[2]",
+            "selectorMatches": 1,
+            "selectorOrder": 1,
+            "selectorPreferred": false,
+            "selectorType": "XPath"
+          }
+        ],
+        "parentId": "1942b5d0e0cec4",
+        "children": {
+          "117b058571c4746": {
+            "id": "117b058571c4746",
+            "default_name_set": true,
+            "name": "Event 11 (click)",
+            "actionName": "click",
+            "selectors": [
+              {
+                "selector": "button.btn.btn-default.btn-md.gl-button",
+                "selectorMatches": 8,
+                "selectorOrder": 0,
+                "selectorPreferred": false,
+                "selectorType": "CSSSelector"
+              },
+              {
+                "selector": "id(\"content-body\")/DIV[3]/DIV[1]/DIV[3]/DIV[1]/BUTTON[2]",
+                "selectorMatches": 1,
+                "selectorOrder": 1,
+                "selectorPreferred": true,
+                "selectorType": "XPath"
+              }
+            ],
+            "parentId": "99d97404a8e047",
+            "children": {
+              "1277edb6a5317f3": {
+                "id": "1277edb6a5317f3",
+                "default_name_set": true,
+                "name": "issues",
+                "actionName": "click all links in an area",
+                "selectors": [
+                  {
+                    "selector": "div.issue-title.title a",
+                    "selectorMatches": 20,
+                    "selectorOrder": 0,
+                    "selectorPreferred": true,
+                    "selectorType": "CSSSelector"
+                  },
+                  {
+                    "selector": "id(\"issuable_10964554\")/DIV[1]/DIV[1]//a",
+                    "selectorMatches": 1,
+                    "selectorOrder": 1,
+                    "selectorPreferred": false,
+                    "selectorType": "XPath"
+                  }
+                ],
+                "parentId": "117b058571c4746",
+                "children": {},
+                "eventOrder": 12,
+                "repeat": {},
+                "frameIndex": "root"
+              }
+            },
+            "eventOrder": 11,
+            "repeat": {
+              "until": {
+                "selectorType": "selectorPreferred",
+                "selectorCondition": "default"
+              }
+            },
+            "frameIndex": "root"
+          }
+        },
+        "eventOrder": 9,
+        "repeat": {
+          "along_with": {
+            "exit_cond": "element-to-be-clicked",
+            "selectorType": "CSSSelector",
+            "selectorCondition": "closebutton",
+            "selectorValue": "span#js-onboarding-issues-link"
+          }
+        },
+        "frameIndex": "root"
+      }
+    },
+    "eventOrder": 1,
+    "repeat": {},
+    "frameIndex": ""
+  }
+}
+}
