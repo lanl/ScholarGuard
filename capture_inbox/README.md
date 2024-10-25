@@ -1,6 +1,6 @@
-The Capture Inbox (CI) is a server and deployed in the directory `/data/web/capture` (CI directory).
+The Capture Inbox (CI) is a server and deployed in the directory `~/capture` (CI directory).
 
-and logs to the ` /data/web/capture/log/wrapper.log ` .
+and logs to the ` ~/capture/log/wrapper.log ` .
 ### installation
 * clone the repository
 * change the my.properties at lib directory with your endpoints  and mysql info
